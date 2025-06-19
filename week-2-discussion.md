@@ -1,12 +1,12 @@
 # Statics Applied: Bridging Data & Decisions in Project Management
 
-Welcome to my portfolio showcasing key insights from Florida Southern College’s Elementary Statistics course. Here, I explore how statistical concepts and data analysis help drive smarter project management decisions.
+*Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
 
+# Week 2 Discussion Topic:
+#### Why is it important to consider both measures of center and measures of variation when analyzing a dataset? 
+### Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
 ---
 
-## Week 2 Discussion: Measures of Center & Variation
-
-Discussion Topic: Why is it important to consider both measures of center and measures of variation when analyzing a dataset? Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
 
 When analyzing business data sets, examining only measures of center provides an incomplete and potentially misleading picture. As Triola explains in our textbook, "we need objective measures instead of relying on subjective judgments" when evaluating variation (Triola, 2022, p. 105). This principle is essential when drawing accurate results because two data sets can have identical means, but dramatically different amounts of variation.
 
