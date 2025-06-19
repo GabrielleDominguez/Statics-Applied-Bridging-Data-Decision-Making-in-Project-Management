@@ -47,13 +47,13 @@ Each discussion contains:
 - Browse the weekly discussion files for detailed analysis and examples  
 - Review peer replies and responses to see collaborative learning  
 - Use referenced materials for deeper understanding  
-- Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for project management or statistics discussions!
+- Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for project management or data-driven discussions!
 
 ---
 
 ## About Me
 
-I am Gabrielle Dominguez, a PMP- and CSM-certified project manager and a student at Florida Southern College pursuing a Bachelor of Science in Business Analytics. I focus on leveraging data and analytics to optimize project outcomes and business performance.
+I am Gabrielle Dominguez, a PMP- and CSM-certified project manager and a student at Florida Southern College pursuing a Bachelor of Science in Business Adminstration and Business Analytics. I focus on leveraging data and analytics to optimize project outcomes and business performance.
 
 ---
 
