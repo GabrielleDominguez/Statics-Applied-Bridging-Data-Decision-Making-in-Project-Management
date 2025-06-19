@@ -3,10 +3,10 @@
 *Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
 
 # Week 4 Discussion Topic:
-#### Discuss how the Central Limit Theorem supports the use of sample data to estimate population parameters.
-### Provide an example showing a confidence interval for a population mean and interpret the result. Cite at least one reliable source.
+#### Discuss how the Central Limit Theorem supports the use of sample data to estimate population parameters. Provide an example showing a confidence interval for a population mean and interpret the result. Cite at least one reliable source.
 
 ---
+
 
 In project management, I often have to make instant decisions without having all of the information. The **Central Limit Theorem (CLT)** is a statistical concept that I am excited to add to my toolkit.
 
