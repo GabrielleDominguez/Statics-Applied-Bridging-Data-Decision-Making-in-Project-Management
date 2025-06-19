@@ -3,8 +3,7 @@
 *Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
 
 # Week 2 Discussion Topic:
-#### Why is it important to consider both measures of center and measures of variation when analyzing a dataset? 
-### Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
+#### Why is it important to consider both measures of center and measures of variation when analyzing a dataset? Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
 ---
 
 
