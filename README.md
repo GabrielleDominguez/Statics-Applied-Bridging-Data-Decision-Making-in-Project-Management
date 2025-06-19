@@ -32,9 +32,11 @@ Each discussion contains:
 
 ## Additional Resources
 
-- **Software Development Team Performance Analysis Image**:  
-  <img src="Software%20Development%20Team%20Performance%20Analysis.png" alt="Team Performance" width="400" />  
-  [View full image](Software%20Development%20Team%20Performance%20Analysis.png)
+- **Software Development Team Performance Analysis Image**:
+  
+  <img src="Software%20Development%20Team%20Performance%20Analysis.png" alt="Team Performance" width="400" 
+    />  
+
 
 - [Elementary Statistics Textbook](https://www.pearson.com) by Triola, M. F.
 
