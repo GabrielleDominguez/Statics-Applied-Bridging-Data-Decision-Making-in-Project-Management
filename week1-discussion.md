@@ -1,14 +1,11 @@
 # Statics Applied: Bridging Data & Decisions in Project Management
 
-Welcome to my portfolio showcasing key insights from Florida Southern College’s Elementary Statistics course. 
-Here, I explore how statistical concepts and data analysis help drive smarter project management decisions.
+*Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
+
+# Week 1 Discussion Topic:
+#### Choose a dataset that includes at least two types of data (e.g., nominal and interval). Describe the types of data and explain which graphical methods (such as frequency distribution tables or histograms) are most suitable to represent them. Justify your answer using course materials or a credible source.
 
 ---
-
-## Week 1 Discussion: Exploring Data Types & Graphs
-
-**Discussion Topic:** Choose a dataset that includes at least two types of data (e.g., nominal and interval). Describe the types of data and explain which graphical methods (such as frequency distribution tables or histograms) are most suitable to represent them. Justify your answer using course materials or a credible source.
-
 For this discussion, I chose a hypothetical dataset that looks at how different project management tools impact project success. I chose this concept because it ties into my business administration major, my minor in business analytics, and my experience as a project manager.
 
 The dataset has two main types of data:
