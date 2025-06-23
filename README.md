@@ -24,10 +24,9 @@ Each discussion contains:
 |------|---------------------------------------------|-----------------------------------------|
 | 1    | Exploring Data Types & Graphs               | [Week 1 Discussion](week01-discussion.md) |
 | 2    | Measures of Center and Variation with Boxplots | [Week 2 Discussion](week02-discussion.md) |
-| 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
+| 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md)<sup>⭐ Featured discussion</sup> |
 | 4    | Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
 | 5    | Hypothesis Testing: Means vs Proportions    | [Week 5 Discussion](week05-discussion.md) |
-
 
 ---
 
