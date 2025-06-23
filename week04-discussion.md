@@ -12,7 +12,7 @@
 
 In project management, I often have to make instant decisions without having all of the information. The **Central Limit Theorem (CLT)** is a statistical concept that I am excited to add to my toolkit.
 
-The CLT states that with a sufficiently large random sample (usually n > 30), the distribution of sample means will approximate a normal distribution, even if the population itself is not normally distributed (Triola, 2022).
+The CLT states that with a sufficiently large random sample (usually n > 30), *the distribution of sample means will approximate a normal distribution, even if the population itself is not normally distributed* (Triola, 2022).
 
 Here’s how I’d apply this principle: Often I find myself estimating how long code reviews typically take to better plan team capacity. Let's say over the last six months, a team logs 450 code reviews. If I randomly sample 40 of them and find a mean duration of 2.8 hours with a standard deviation of 1.2 hours, the CLT applies (since n = 40). From there, I can calculate a 95% confidence interval for the mean:
 
