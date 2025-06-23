@@ -17,17 +17,15 @@ Each discussion contains:
 - Relevant **references** for further study  
 
 ---
-
 ## Weekly Discussions
 
 | Week | Topic                                       | File                                    |
-|-------|---------------------------------------------|-----------------------------------------|
-| 1     | Exploring Data Types & Graphs               | [Week 1 Discussion](week01-discussion.md) |
-| 2     | Measures of Center and Variation with Boxplots | [Week 2 Discussion](week02-discussion.md) |
-| 3     | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) |
-| 4     | Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
-| 5     | Hypothesis Testing: Means vs Proportions    | [Week 5 Discussion](week05-discussion.md) |
-
+|------|---------------------------------------------|-----------------------------------------|
+| 1    | Exploring Data Types & Graphs               | [Week 1 Discussion](week01-discussion.md) |
+| 2    | Measures of Center and Variation with Boxplots | [Week 2 Discussion](week02-discussion.md) |
+| 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) ← ⭐ Featured discussion |
+| 4    | Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
+| 5    | Hypothesis Testing: Means vs Proportions    | [Week 5 Discussion](week05-discussion.md) |
 ---
 
 ## Visual Resources
@@ -59,7 +57,7 @@ Each discussion contains:
 
 ## Additional Resources
 
-- **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com)
+- **Elementary Statistics Textbook** by Triola, M. F.: [Amazon Link](https://www.amazon.com/Elementary-Statistics-Mario-F-Triola/dp/0134461993)
 
 ---
 
@@ -74,7 +72,7 @@ Each discussion contains:
 
 ## About Me
 
-I am Gabrielle Dominguez, a PMP- and CSM-certified project manager and a student at Florida Southern College pursuing a Bachelor of Science in Business Administration and Business Analytics. I focus on leveraging data and analytics to optimize project outcomes and business performance.
+I am Gabrielle Dominguez, a PMP & CSM-certified project manager and a student at Florida Southern College pursuing a Bachelor of Science in Business Administration and Business Analytics. I focus on leveraging data and analytics to optimize project outcomes and business performance.
 
 **I am actively seeking opportunities to leverage these skills and contribute meaningful value.**
 
@@ -85,6 +83,7 @@ I am Gabrielle Dominguez, a PMP- and CSM-certified project manager and a student
 This repository is for educational and portfolio purposes. Please contact me before redistributing any content.
 
 ---
+
 Thank you for visiting!
 
 — Gabrielle Dominguez, PMP, CSM  
@@ -92,3 +91,4 @@ Thank you for visiting!
 <br>
 
 [![Email Me](https://img.shields.io/badge/Email-Me-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielledominguez05@gmail.com)
+
