@@ -31,7 +31,7 @@ Each discussion contains:
 ---
 
 
-## Visual Resources
+## Interactive Visuals
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
