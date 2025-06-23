@@ -63,5 +63,5 @@ Pearson Education. (2022). *Statistics: Making sense of data and decisions*.
 
 ---
 
-[← Back to Home](../README.md)
+[← Back to Home](https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/)
 
