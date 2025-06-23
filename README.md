@@ -1,6 +1,6 @@
 # Statics Applied: Bridging Data & Decision Making in Project Management
 
-Welcome to my portfolio showcasing key insights and practical applications from Elementary Statistics coursework at Florida Southern College.
+Welcome to my portfolio showcasing key insights and practical applications from Elementary Statistics coursework at **Florida Southern College**.
 
 This repository demonstrates how I apply statistical concepts to drive smarter project management decisions, illustrated through real-world examples, engaging discussions, and collaborative peer interactions.
 
@@ -17,15 +17,17 @@ Each discussion contains:
 - Relevant **references** for further study  
 
 ---
+
 ## Weekly Discussions
 
 | Week | Topic                                       | File                                    |
 |------|---------------------------------------------|-----------------------------------------|
 | 1    | Exploring Data Types & Graphs               | [Week 1 Discussion](week01-discussion.md) |
 | 2    | Measures of Center and Variation with Boxplots | [Week 2 Discussion](week02-discussion.md) |
-| 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) ← ⭐ Featured discussion |
+| 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
 | 4    | Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
 | 5    | Hypothesis Testing: Means vs Proportions    | [Week 5 Discussion](week05-discussion.md) |
+
 
 ---
 
