@@ -26,7 +26,7 @@ I would use a **_histogram_** for the success rates. This graph would display ho
 
 This kind of analysis would help answer whether using a project management platform actually improves on-time task completion and gives insight into which platforms are more widely adopted or easier to implement. This would be valuable information for any business to have access to when deciding what software is worth their invest of time and money.
 
-From the course content, we learned that statistics helps us “describe data, make inferences, and support decisions under uncertainty” (Pearson Education, 2022). This analysis supports that idea well because of the measurement of project outcomes and the use of data to explore which tools may contribute most to team success.
+From the course content, we learned that statistics helps us *"describe data, make inferences, and support decisions under uncertainty"* (Pearson Education, 2022). This analysis supports that idea well because of the measurement of project outcomes and the use of data to explore which tools may contribute most to team success.
 
 ---
 
