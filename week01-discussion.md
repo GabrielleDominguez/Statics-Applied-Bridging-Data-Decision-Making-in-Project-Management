@@ -48,4 +48,5 @@ Pearson Education. (2022). *Elementary statistics* course materials.
 
 ---
 
-[← Back to Home](../README.md)
+[← Back to Home](README.md)
+
