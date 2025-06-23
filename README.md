@@ -24,15 +24,30 @@ Each discussion contains:
 |------|---------------------------------------------|-----------------------------------------|
 | 1    | Exploring Data Types & Graphs               | [Week 1 Discussion](week01-discussion.md) |
 | 2    | Measures of Center and Variation with Boxplots | [Week 2 Discussion](week02-discussion.md) |
-| 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) ← ⭐ Featured discussion |
+| 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
 | 4    | Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
 | 5    | Hypothesis Testing: Means vs Proportions    | [Week 5 Discussion](week05-discussion.md) |
 
 ---
 
+
 ## Visual Resources
 
 <table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td align="center" style="padding: 15px;" width="50%">
+      <b>Project Management Platform Adoption</b><br><br>
+      <a href="week01-discussion.html">
+        <img src="Screenshot%202025-06-23%20104128.png" alt="Project Management Platform Adoption" width="360" />
+      </a>
+    </td>
+    <td align="center" style="padding: 15px;" width="50%">
+      <b>Project Milestone Completion Distribution</b><br><br>
+      <a href="week01-discussion.html">
+        <img src="Screenshot%202025-06-23%20104113.png" alt="Project Milestone Completion Distribution" width="360" />
+      </a>
+    </td>
+  </tr>
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Software Development Team Performance Analysis</b><br><br>
@@ -47,31 +62,13 @@ Each discussion contains:
       </a>
     </td>
   </tr>
-  <tr>
-    <td align="center" style="padding: 15px;" width="50%">
-      <b>Project Milestone Completion Distribution</b><br><br>
-      <a href="week01-discussion.html">
-        <img src="Screenshot%202025-06-23%20104113.png" alt="Project Milestone Completion Distribution" width="360" />
-      </a>
-    </td>
-    <td align="center" style="padding: 15px;" width="50%">
-      <b>Project Management Platform Adoption</b><br><br>
-      <a href="week01-discussion.html">
-        <img src="Screenshot%202025-06-23%20104128.png" alt="Project Management Platform Adoption" width="360" />
-      </a>
-    </td>
-  </tr>
 </table>
-
-</table>
-
 
 ---
 
 ## Additional Resources
 
-- **Elementary Statistics Textbook** by Triola, M. F.: [Amazon Link](https://www.amazon.com/Elementary-Statistics-Mario-F-Triola/dp/0134462002)
-
+- **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
 
 ---
 
