@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenny Rogers Decision Framework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .framework-container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .title h2 {
+            font-size: 1.8rem;
+            color: #ecf0f1;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #bdc3c7;
+            font-size: 1rem;
+        }
+
+        .dice-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+        }
+
+        .die {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(145deg, #ffffff, #e8e8e8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #2c3e50;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            animation: gentleRoll 3s ease-in-out infinite;
+        }
+
+        @keyframes gentleRoll {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+        }
+
+        .expected-value {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .decision-framework {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .decision-card {
+            flex: 1;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .decision-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hold-card {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .fold-card {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .walk-card {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        }
+
+        .decision-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .decision-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .decision-range {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .kenny-quote {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            font-style: italic;
+            color: #ecf0f1;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .decision-framework {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .dice-section {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .framework-container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="framework-container">
+        <div class="title">
+            <h2>The Kenny Rogers Decision Framework</h2>
+            <p class="subtitle">"Know when to hold 'em, fold 'em, walk away"</p>
+        </div>
+
+        <div class="dice-section">
+            <div class="die">🎲</div>
+            <div class="expected-value">Expected Value: +$0.67 per game</div>
+        </div>
+
+        <div class="decision-framework">
+            <div class="decision-card hold-card">
+                <span class="decision-icon">🤝</span>
+                <div class="decision-title">Hold Them</div>
+                <div class="decision-range">1-9 wins in 30 games<br>Normal variance</div>
+            </div>
+
+            <div class="decision-card fold-card">
+                <span class="decision-icon">❌</span>
+                <div class="decision-title">Fold Them</div>
+                <div class="decision-range">< 0.92 wins in 30 games<br>Statistical warning</div>
+            </div>
+
+            <div class="decision-card walk-card">
+                <span class="decision-icon">🚶</span>
+                <div class="decision-title">Walk Away</div>
+                <div class="decision-range">9+ wins in 30 games<br>Take profits</div>
+            </div>
+        </div>
+
+        <div class="kenny-quote">
+            "The math shows it's a 'fair' game in my favor, but Kenny Rogers makes a good point:<br>
+            you got to know when to walk away."
+        </div>
+    </div>
+</body>
+</html>
