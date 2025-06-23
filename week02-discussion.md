@@ -21,8 +21,7 @@ While both teams have identical means (15 user stories completed), their variati
 
 This difference in variation has critical business consequences. A development team with excessive variation in sprint completion can create significant project management challenges.
 
-**Team Alpha's consistent performance** enables reliable sprint planning and delivery schedules.  
-**Team Beta's high variation,** even though they are capable of delivering 25 user stories per sprint, creates uncertainty that could often jeopardize project timelines and client commitments.
+**Team Alpha's consistent performance** enables reliable sprint planning and delivery schedules. **Team Beta's high variation,** even though they are capable of delivering 25 user stories per sprint, creates uncertainty that could often jeopardize project timelines and client commitments.
 
 The **_boxplot_** shows that while both teams are centered on the same mean, one team has a much greater range of results. This contrast makes it easy for stakeholders to spot the difference in their project performance.
 
