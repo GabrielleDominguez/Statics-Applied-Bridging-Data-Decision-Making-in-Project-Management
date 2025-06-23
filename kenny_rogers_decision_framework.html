@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenny Rogers Decision Framework</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .visual {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .dice {
+            font-size: 4rem;
+            margin: 1rem 0;
+            animation: roll 3s ease-in-out infinite;
+        }
+
+        @keyframes roll {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+        }
+
+        .expected-value {
+            font-size: 1.2rem;
+            color: #28a745;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .kenny-wisdom {
+            font-style: italic;
+            color: #666;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .decisions {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            gap: 1rem;
+        }
+
+        .decision {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .hold { background: #e3f2fd; color: #1976d2; }
+        .fold { background: #ffebee; color: #d32f2f; }
+        .walk { background: #fff3e0; color: #f57c00; }
+
+        @media (max-width: 600px) {
+            .decisions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .decision {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="visual">
+        <div class="dice">🎲</div>
+        
+        <h2 style="margin: 1rem 0; color: #333; font-size: 1.5rem;">The Kenny Rogers Decision Framework</h2>
+        
+        <div class="expected-value">
+            Expected Value: +$0.67 per game
+        </div>
+        
+        <div class="kenny-wisdom">
+            "You got to know when to hold 'em, fold 'em, walk away"
+        </div>
+        
+        <div class="decisions">
+            <div class="decision hold">
+                <strong>Hold</strong> 1-9 wins
+            </div>
+            <div class="decision fold">
+                <strong>Fold</strong> < 0.92 wins
+            </div>
+            <div class="decision walk">
+                <strong>Walk</strong> 9+ wins
+            </div>
+        </div>
+    </div>
+</body>
+</html>
