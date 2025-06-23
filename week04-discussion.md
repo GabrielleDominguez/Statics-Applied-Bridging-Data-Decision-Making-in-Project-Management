@@ -59,7 +59,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ## References
 
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.  
-Pearson Education. (2022). *Statistics: Making sense of data and decisions*.
+Pearson Education. (2022). *Elementary statistics* course materials.
 
 ---
 
