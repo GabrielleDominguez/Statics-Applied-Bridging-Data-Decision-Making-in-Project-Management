@@ -47,9 +47,8 @@ As a project manager, I use this same framework. Every project has expected outc
 ---
 ## Kenny Rogers-Inspired Risk Framework
 
-<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Kenny%20Rogers%20PNG.png?raw=true" width="400">
+<img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="400" />
 
-> **[🎲 Click here to view the interactive version](https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/kenny_rogers_decision_framework.html)**  
 
 **References:**  
 Rogers, K. (1978). *The Gambler* [Song]. On *The Gambler*. United Artists Records.  
