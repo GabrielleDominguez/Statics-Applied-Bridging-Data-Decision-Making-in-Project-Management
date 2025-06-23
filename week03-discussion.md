@@ -1,6 +1,6 @@
 # Week 3 Discussion: Using Probability to Make Strategic Decisions
 
-> *This discussion demonstrates how expected value and binomial probability inform smarter, more disciplined decision-making under uncertainty—both in games of chance and in project management.*
+> *This discussion demonstrates how expected value and binomial probability inform smarter, more disciplined decision-making under uncertainty, both in the game of chance and project management.*
 
 ---
 
