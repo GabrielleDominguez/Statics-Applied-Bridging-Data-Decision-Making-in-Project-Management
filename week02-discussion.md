@@ -1,15 +1,18 @@
-# Statics Applied: Bridging Data & Decisions in Project Management
+# Week 2 Discussion: Why Measures of Center & Variation Matter
 
-*Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
+> *This discussion demonstrates how variation can uncover critical performance differences that averages alone may conceal, enhancing analysis of team output and delivery risk.*
 
-# Week 2 Discussion Topic:
-#### Why is it important to consider both measures of center and measures of variation when analyzing a dataset? Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
 ---
 
+## **Discussion Topic**
 
-When analyzing business data sets, examining only measures of center provides an incomplete and potentially misleading picture. As Triola explains in our textbook, "we need objective measures instead of relying on subjective judgments" when evaluating variation (Triola, 2022, p. 105). This principle is essential when drawing accurate results because two data sets can have identical means, but dramatically different amounts of variation.
+Why is it important to consider both measures of center and measures of variation when analyzing a dataset? Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
 
-Drawing from my project management experience, I've created the following scenario: Two software development teams, **Team Alpha** and **Team Beta**, both complete an average of 15 user stories per sprint over their last 10 sprints. (A user story is a feature or task that needs to be completed, and a sprint is the 1-4 week window given to complete the tasks.) Their performance data shows:
+---
+
+When analyzing business data sets, examining only measures of center provides an incomplete and potentially misleading picture. As Triola explains in our textbook, *"we need objective measures instead of relying on subjective judgments"* when evaluating variation (Triola, 2022, p. 105). This principle is essential when drawing accurate results because two data sets can have identical means, but dramatically different amounts of variation.
+
+Drawing from my project management experience, I've created the following scenario: Two software development teams, **Team Alpha** and **Team Beta**, both complete an average of 15 user stories per sprint over their last 10 sprints. (A *user-story* is a feature or task that needs to be completed, and a *sprint* is the 1–4 week window given to complete the tasks.) Their performance data shows:
 
 **Team Alpha completion rates:** 14, 15, 16, 15, 14, 15, 16, 14, 15, 16  
 **Team Beta completion rates:** 8, 25, 12, 18, 6, 22, 15, 19, 10, 15
@@ -21,16 +24,22 @@ This difference in variation has critical business consequences. A development t
 **Team Alpha's consistent performance** enables reliable sprint planning and delivery schedules.  
 **Team Beta's high variation,** even though they are capable of delivering 25 user stories per sprint, creates uncertainty that could often jeopardize project timelines and client commitments.
 
-The boxplot shows that while both teams are centered on the same mean, one team has a much greater range of results. This contrast makes it easy for stakeholders to spot the difference in their project performance.
+The **_boxplot_** shows that while both teams are centered on the same mean, one team has a much greater range of results. This contrast makes it easy for stakeholders to spot the difference in their project performance.
 
 ---
 
-![Software Development Team Performance Analysis](https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Software%20Development%20Team%20Performance%20Analysis.png)
+## Boxplot Visualization
+
+<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Software%20Development%20Team%20Performance%20Analysis.png?raw=true" width="400">
 
 ---
 
 ## References
 
-Pearson Education. (2022). *Elementary statistics* (13th ed.). Pearson.  
-Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.
+Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.  
+Pearson Education. (2022). *Elementary statistics* course materials.
+
+---
+
+[← Back to Home](../README.md)
 
