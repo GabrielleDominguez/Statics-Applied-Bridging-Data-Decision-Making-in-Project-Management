@@ -56,4 +56,4 @@ Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson
 
 ---
 
-[← Back to Home](../README.md)
+[← Back to Home](https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/)
