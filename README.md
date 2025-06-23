@@ -32,8 +32,6 @@ Each discussion contains:
 
 ## Visual Resources
 
-## Visual Resources
-
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
@@ -72,7 +70,7 @@ Each discussion contains:
 
 ## Additional Resources
 
-- **Elementary Statistics Textbook** by Triola, M. F.: [Amazon Link](https://www.amazon.com/Elementary-Statistics-Mario-F-Triola/dp/0134461993)
+- **Elementary Statistics Textbook** by Triola, M. F.: [Amazon Link](https://www.amazon.com/Elementary-Statistics-Mario-F-Triola/dp/0134462002)
 
 
 ---
