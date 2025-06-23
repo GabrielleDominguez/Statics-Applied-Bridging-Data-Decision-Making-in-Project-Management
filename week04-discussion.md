@@ -55,6 +55,31 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > I am looking forward to continuing to learn alongside you this semester.
 
 ---
+## CLT and Confidence Interval Visuals
+
+<!-- CLT 2 and 3 side-by-side -->
+<table>
+  <tr>
+    <td align="center" style="padding: 10px;">
+      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%202.png?raw=true" width="450">
+    </td>
+    <td align="center" style="padding: 10px;">
+      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%203.png?raw=true" width="450">
+    </td>
+  </tr>
+</table>
+
+<!-- CLT 4 full width but limited height -->
+<table>
+  <tr>
+    <td align="center" style="padding: 10px;">
+      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" width="900" style="height: 400px; object-fit: contain;">
+    </td>
+  </tr>
+</table>
+
+
+---
 
 ## References
 
