@@ -34,15 +34,15 @@ As a project manager, I use this same framework. Every project has expected outc
 > **Response from Gabrielle Dominguez:**  
 > Hi Alexis,  
 >  
-> You raise an excellent question in regards to when the game becomes "unfair." From my vantage point, the answer has both mathematical and subjective parts.  
+> You raise an excellent question in regards to when the game becomes "unfair." From my vantage point, the answer has **both mathematical and subjective parts.**   
 >  
-> Mathematically, the game remains "fair" to play as long as there's no tampering from the gamemaster. e.g., there are no trick dice in use, they pay out what they promise, and the rules don't change while you're playing. But what you're getting at connects to something economists call "utility theory" - the idea that the same outcome affects different people differently.  
+> Mathematically, the game remains "fair" to play as long as there's no tampering from the gamemaster. e.g., there are no trick dice in use, they pay out what they promise, and the rules don't change while you're playing. But what you're getting at connects to something economists call **"utility theory" - the idea that the same outcome affects different people differently.** 
 >  
 > An example that comes to mind: Take two players, Player A only has $10 they can afford to lose and Player B has abundant resources and can easily play 100+ rounds. They're both playing the same game with the same $0.67 expected value per round, but their experience is going to be completely different. Player A might feel like the game is rigged after a few losses and the circumstances force them to quit. In contrast, Player B can stick it out through the bad streaks and actually see that positive expected value pay off.  
 >  
-> This ties into diminishing marginal utility; losing a dollar hurts Player A way more than it hurts Player B. The math stays the same, but the practical impact depends on what each person can handle.  
+> This ties into **diminishing marginal utility;** losing a dollar hurts Player A way more than it hurts Player B. The math stays the same, but the practical impact depends on what each person can handle.  
 >  
-> In short: from my vantage point, the game becomes "unfair" not when the statistics change, but when external circumstances force a player to quit before the probabilities can work in their favor. The game doesn't discriminate, but our personal circumstances create very different playing fields.
+> In short: from my vantage point, **the game becomes "unfair" not when the statistics change, but when external circumstances force a player to quit before the probabilities can work in their favor.** The game doesn't discriminate, but our personal circumstances create very different playing fields.
 
 ---
 ## Kenny Rogers-Inspired Risk Framework
