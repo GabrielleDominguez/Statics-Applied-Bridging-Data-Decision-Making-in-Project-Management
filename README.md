@@ -61,6 +61,7 @@ Each discussion contains:
 
 - **Elementary Statistics Textbook** by Triola, M. F.: [Amazon Link](https://www.amazon.com/Elementary-Statistics-Mario-F-Triola/dp/0134461993)
 
+
 ---
 
 ## How to Use This Repository
