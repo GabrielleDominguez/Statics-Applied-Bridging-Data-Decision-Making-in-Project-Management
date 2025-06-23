@@ -27,6 +27,41 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ---
 
+> **Reply from Hannah Blake:**  
+> Hi Gabrielle,
+>
+> Great post! I really liked how you connected hypothesis testing to project management—it made the topic feel much more real-world and applicable. Your examples were super clear, especially the one about measuring compliance after cybersecurity training.  
+> I also thought your point about focusing on performance improvements instead of just completion rates was really smart. Have you ever had a situation where the data didn’t support what was expected? It’d be interesting to see how hypothesis testing could guide next steps in that case.  
+> Thanks for sharing such a thoughtful perspective!
+
+> **Response from Gabrielle Dominguez:**  
+> Hi Hannah! This is a great question on what to do when you run into unexpected results - which happens more frequently than you would think. I haven't used hypothesis testing in practice yet, but I can explain to you how valuable it could be on a situational basis.  
+>  
+> For example, I worked on a software upgrade project where we expected to improve performance based on historical data (past patterns), but the results were disappointing. If we had used hypothesis testing from the start, we could have set clear performance benchmarks and determined whether the upgrade actually failed to meet expectations or if other factors were at play.  
+>  
+> The structured approach really does seem like it would prevent jumping to conclusions and help with better decision-making when reality doesn't match expectations.  
+>  
+> How do you think you'll apply hypothesis testing in your future career field? Maybe it will be of similar nature to the work I do!
+
+---
+
+> **Reply from Alexis Martin:**  
+> Hi Gabrielle,
+> 
+> You did a great job of determining whether hypothesis testing could support better decision-making in project management.  
+> I like how you used clear examples for both proportion and mean, like checking if training increases compliance or if upgrades reduce response times. It really shows how statistics can help you prove whether the changes made a difference. I also love how you think beyond just statistics and how the data can show real value and importance. I am wondering, when looking at all these projects, how do you determine which performance metrics are worth testing?
+
+> **Response from Gabrielle Dominguez:**  
+> Thank you, Alexis, for your kind words and great question. Determining which performance metrics are worth testing is indeed a crucial consideration.  
+>  
+> When managing projects, I go back to the 'why' behind the project we are working to complete. What is the goal? For example, if I am working on migrating an internal database to a new platform, the metric may be how many people are adopting the new system and using it in real-time, instead of hesitating because they do not like change. In this case, I would test the adoption rate of the platform. I already know the migration was successful, but this gives me a new lens to look through: how easy is it to use for an early adopter?  
+>  
+> Some projects are more nuanced than this, these are when they are opinion-based and there is no clear metric to measure. An example of this would be client satisfaction with a product or service they receive. There is no inherent metric to measure satisfaction because satisfaction is their measurement. This is why many companies send surveys to try and put words/metrics to feelings. For example, you go to a restaurant and they send you a survey asking about your food, server, and experience. They could gather this data by using a 1-5 rating system and put data to what was once only a feeling.  
+>  
+> Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the semester.
+
+---
+
 **References:**  
 Rogers, K. (1978). *The Gambler* [Song]. On *The Gambler*. United Artists Records.  
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson  
