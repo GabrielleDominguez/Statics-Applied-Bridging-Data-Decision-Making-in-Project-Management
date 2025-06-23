@@ -1,12 +1,14 @@
-# Statics Applied: Bridging Data & Decisions in Project Management
+# Week 4 Discussion: How the Central Limit Theorem Supports Confident Decision-Making
 
-*Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
-
-# Week 4 Discussion Topic:
-#### Discuss how the Central Limit Theorem supports the use of sample data to estimate population parameters. Provide an example showing a confidence interval for a population mean and interpret the result. Cite at least one reliable source.
+> *This discussion explores how the Central Limit Theorem allows project managers to use sample data to reliably estimate population parameters, enhancing planning accuracy and leadership confidence.*
 
 ---
 
+## **Discussion Topic**
+
+#### Discuss how the Central Limit Theorem supports the use of sample data to estimate population parameters. Provide an example showing a confidence interval for a population mean and interpret the result. Cite at least one reliable source.
+
+---
 
 In project management, I often have to make instant decisions without having all of the information. The **Central Limit Theorem (CLT)** is a statistical concept that I am excited to add to my toolkit.
 
@@ -18,9 +20,9 @@ Here’s how I’d apply this principle: Often I find myself estimating how long
 - **Margin of error** = 1.96 × 0.19 ≈ 0.37  
 - **Confidence interval** = 2.8 ± 0.37 → between **2.43 and 3.17 hours**
 
-This tells me that I can be **95% confident** that the true average time for code reviews of similar work will fall within this range—there is no guesswork. I have a statistically backed estimate that will help me plan more realistically and communicate with the team.
+This tells me that I can be **95% confident** that the true average time for code reviews of similar work will fall within this range - there is no guesswork. I have a statistically backed estimate that will help me plan more realistically and communicate with the team.
 
-Earlier in my career, I felt pressure to know all the answers or be the most technically knowledgeable person in the room. Over time, I’ve learned that the best leaders aren't the people who have all the answers—but rather, the ones who know how to ask the right questions and use the right tools. **CLT is one of those tools** that will help me make smarter, more confident decisions.
+Earlier in my career, I felt pressure to know all the answers or be the most technically knowledgeable person in the room. Over time, I’ve learned that the best leaders aren't the people who have all the answers - but rather, the ones who know how to ask the right questions and use the right tools. **CLT is one of those tools** that will help me make smarter, more confident decisions.
 
 ---
 
@@ -28,7 +30,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > Hey Gabrielle, your response was clear to read and helped me understand CLT even more. I wonder what would happen if the random sample were even more than 40? Would we still feel 95% confident that the reviews would fall in the range? I agree that CLT can help us make smarter, more confident decisions.
 
 > **Response from Gabrielle Dominguez:**  
-> This is a great question, Chloe. You're spot on about sample size—if I used 80 or 100 code reviews instead of 40, the confidence interval would actually get tighter.  
+> This is a great question, Chloe. You're spot on about sample size - if I used 80 or 100 code reviews instead of 40, the confidence interval would actually get tighter.  
 >  
 > With a larger sample, the **standard error decreases** because we're dividing by the square root of a bigger number. This shrinks our margin of error, so instead of that 2.43 to 3.17 hour range, we might get something like 2.55 to 3.05 hours. We'd still be 95% confident, but with **much more precision**. This is exactly why I'm excited about applying this principle to project data.  
 >  
@@ -54,7 +56,12 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-**References:**  
+## References
+
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.  
 Pearson Education. (2022). *Statistics: Making sense of data and decisions*.
+
+---
+
+[← Back to Home](../README.md)
 
