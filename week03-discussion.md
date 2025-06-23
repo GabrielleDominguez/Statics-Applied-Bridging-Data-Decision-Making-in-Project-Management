@@ -12,7 +12,7 @@
 ---
 Would I play this game repeatedly? Yes, but with clear decision criteria inspired by both statistics and family wisdom.
 
-Growing up, my grandfather used to sing a Kenny Rogers song called "The Gambler." In the chorus Kenny says, "You need to know when to hold them, fold them, and when to walk away" (Rogers, 1978). This country star, intentionally or not, perfectly captured how strategy comes into play in the dice game scenario.
+Growing up, my grandfather used to sing a Kenny Rogers song called "The Gambler." In the chorus Kenny says, *"You need to know when to hold them, fold them, and when to walk away"* (Rogers, 1978). This country star, intentionally or not, perfectly captured how strategy comes into play in the dice game scenario.
 
 This game follows a binomial probability distribution with positive expected value: (1/6 × $10) + (5/6 × $0) - $1 = $0.67 per game. Using binomial formulas μ = np and σ = √npq (Triola, 2022, p. 224), if I play 30 games, I expect 5 wins with a standard deviation of 2.04 wins.
 
