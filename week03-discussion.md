@@ -1,10 +1,14 @@
-# Statics Applied: Bridging Data & Decisions in Project Management
+# Week 3 Discussion: Using Probability to Make Strategic Decisions
 
-*Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
+> *This discussion demonstrates how expected value and binomial probability inform smarter, more disciplined decision-making under uncertainty—both in games of chance and in project management.*
 
-# Week 3 Discussion Topic: 
-#### Imagine you’re offered a game where a fair six-sided die is rolled. If it lands on a 6, you win $10. If it lands on any other number, you win nothing. It costs $1 to play each time.
+---
+
+## **Discussion Topic**
+
+#### Imagine you’re offered a game where a fair six-sided die is rolled. If it lands on a 6, you win $10. If it lands on any other number, you win nothing. It costs $1 to play each time.  
 ### Would you play this game repeatedly? Why or why not? What role does probability play in your decision, and how would you determine if this is a "fair" game in the long run?
+
 ---
 Would I play this game repeatedly? Yes, but with clear decision criteria inspired by both statistics and family wisdom.
 
@@ -41,7 +45,16 @@ As a project manager, I use this same framework. Every project has expected outc
 > In short: from my vantage point, the game becomes "unfair" not when the statistics change, but when external circumstances force a player to quit before the probabilities can work in their favor. The game doesn't discriminate, but our personal circumstances create very different playing fields.
 
 ---
+## Kenny Rogers-Inspired Risk Framework
+
+<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Kenny%20Rogers%20PNG.png?raw=true" width="400">
+
+> **[🎲 Click here to view the interactive version](https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/kenny_rogers_decision_framework.html)**  
 
 **References:**  
 Rogers, K. (1978). *The Gambler* [Song]. On *The Gambler*. United Artists Records.  
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson  
+
+---
+
+[← Back to Home](../README.md)
