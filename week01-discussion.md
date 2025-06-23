@@ -1,11 +1,16 @@
-# Statics Applied: Bridging Data & Decisions in Project Management
+# Week 1 Discussion: Exploring Data Types & Graphs
 
-*Part of my Elementary Statistics coursework at Florida Southern College, exploring how stats drive smarter project management decisions.*
-
-# Week 1 Discussion Topic:
-#### Choose a dataset that includes at least two types of data (e.g., nominal and interval). Describe the types of data and explain which graphical methods (such as frequency distribution tables or histograms) are most suitable to represent them. Justify your answer using course materials or a credible source.
+> *This discussion explores how different types of data can be used to analyze project management tools and their impact on project success, demonstrating the use of nominal and ratio data with appropriate graphical methods.*
 
 ---
+
+
+## **Discussion Topic**
+
+Choose a dataset that includes at least two types of data (e.g., nominal and interval). Describe the types of data and explain which graphical methods (such as frequency distribution tables or histograms) are most suitable to represent them. Justify your answer using course materials or a credible source.
+
+---
+
 For this discussion, I chose a hypothetical dataset that looks at how different project management tools impact project success. I chose this concept because it ties into my business administration major, my minor in business analytics, and my experience as a project manager.
 
 The dataset has two main types of data:
@@ -30,3 +35,4 @@ From the course content, we learned that statistics helps us “describe data, m
 
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.  
 Pearson Education. (2022). *Elementary statistics* course materials.
+
