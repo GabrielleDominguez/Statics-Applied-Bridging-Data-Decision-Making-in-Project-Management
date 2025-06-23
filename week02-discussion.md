@@ -6,7 +6,7 @@
 
 ## **Discussion Topic**
 
-Why is it important to consider both measures of center and measures of variation when analyzing a dataset? Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
+#### Why is it important to consider both measures of center and measures of variation when analyzing a dataset? Provide an example and construct a boxplot to visualize your explanation. Cite your sources.
 
 ---
 
