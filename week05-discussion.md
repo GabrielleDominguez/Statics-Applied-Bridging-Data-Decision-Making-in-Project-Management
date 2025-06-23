@@ -28,9 +28,8 @@ This statistical approach would help me move beyond basic project metrics and de
 ---
 
 > **Reply from Hannah Blake:**  
-> Hi Gabrielle,
->
-> Great post! I really liked how you connected hypothesis testing to project management—it made the topic feel much more real-world and applicable. Your examples were super clear, especially the one about measuring compliance after cybersecurity training.  
+> Hi Gabrielle, great post! I really liked how you connected hypothesis testing to project management—it made the topic feel much more real-world and applicable. Your examples were super clear, especially the one about measuring compliance after cybersecurity training.
+> 
 > I also thought your point about focusing on performance improvements instead of just completion rates was really smart. Have you ever had a situation where the data didn’t support what was expected? It’d be interesting to see how hypothesis testing could guide next steps in that case.  
 > Thanks for sharing such a thoughtful perspective!
 
@@ -46,9 +45,8 @@ This statistical approach would help me move beyond basic project metrics and de
 ---
 
 > **Reply from Alexis Martin:**  
-> Hi Gabrielle,
+> Hi Gabrielle, you did a great job of determining whether hypothesis testing could support better decision-making in project management.
 > 
-> You did a great job of determining whether hypothesis testing could support better decision-making in project management.  
 > I like how you used clear examples for both proportion and mean, like checking if training increases compliance or if upgrades reduce response times. It really shows how statistics can help you prove whether the changes made a difference. I also love how you think beyond just statistics and how the data can show real value and importance. I am wondering, when looking at all these projects, how do you determine which performance metrics are worth testing?
 
 > **Response from Gabrielle Dominguez:**  
