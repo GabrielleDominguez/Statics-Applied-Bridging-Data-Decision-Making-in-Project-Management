@@ -49,8 +49,10 @@ As a project manager, I use this same framework. Every project has expected outc
 
 <img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="400" />
 
+---
 
-**References:**  
+## References
+
 Rogers, K. (1978). *The Gambler* [Song]. On *The Gambler*. United Artists Records.  
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson  
 
