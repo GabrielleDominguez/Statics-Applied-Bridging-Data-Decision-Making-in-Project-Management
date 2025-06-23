@@ -31,7 +31,7 @@ Each discussion contains:
 ---
 
 
-## Interactive Visuals
+## Project-Based Illustrations
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
