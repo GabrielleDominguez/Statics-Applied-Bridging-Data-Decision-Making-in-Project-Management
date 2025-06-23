@@ -32,28 +32,39 @@ Each discussion contains:
 
 ## Visual Resources
 
+## Visual Resources
+
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Software Development Team Performance Analysis</b><br><br>
-      <img src="Software%20Development%20Team%20Performance%20Analysis.png" alt="Team Performance Analysis" width="320" />
+      <a href="week02-discussion.md">
+        <img src="Software%20Development%20Team%20Performance%20Analysis.png" alt="Team Performance Analysis" width="320" />
+      </a>
     </td>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Kenny Rogers Decision Framework</b><br><br>
-      <img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="360" />
+      <a href="week03-discussion.md">
+        <img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="360" />
+      </a>
     </td>
   </tr>
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Project Milestone Completion Distribution</b><br><br>
-      <img src="Screenshot%202025-06-23%20104113.png" alt="Project Milestone Completion Distribution" width="360" />
+      <a href="week05-discussion.md">
+        <img src="Screenshot%202025-06-23%20104113.png" alt="Project Milestone Completion Distribution" width="360" />
+      </a>
     </td>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Project Management Platform Adoption</b><br><br>
-      <img src="Screenshot%202025-06-23%20104128.png" alt="Project Management Platform Adoption" width="360" />
+      <a href="week04-discussion.md">
+        <img src="Screenshot%202025-06-23%20104128.png" alt="Project Management Platform Adoption" width="360" />
+      </a>
     </td>
   </tr>
 </table>
+
 
 ---
 
