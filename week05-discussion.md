@@ -62,9 +62,10 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ---
 
-**References:**  
-Rogers, K. (1978). *The Gambler* [Song]. On *The Gambler*. United Artists Records.  
-Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson  
+## References
+
+Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.  
+Pearson Education. (2022). *Elementary statistics* course materials.
 
 ---
 
