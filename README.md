@@ -62,10 +62,18 @@ Each discussion contains:
       </a>
     </td>
   </tr>
+  <tr>
+    <td align="center" style="padding: 15px;" colspan="2">
+      <b>CLT & Confidence Interval</b><br><br>
+      <a href="https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/week04-discussion.html">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" alt="CLT & Confidence Interval" width="360" />
+      </a>
+    </td>
+  </tr>
 </table>
 
----
 
+---
 ## Additional Resources
 
 - **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
