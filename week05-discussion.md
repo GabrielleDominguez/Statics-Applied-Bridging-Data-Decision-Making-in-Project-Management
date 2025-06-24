@@ -61,21 +61,29 @@ This statistical approach would help me move beyond basic project metrics and de
 > 
 
 ---
+
 ## Z Test and T Test Visuals
 
 <div style="text-align: center;">
-  <img 
-    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" 
-    alt="Z Test Visual Final" 
-    width="720" 
-    style="margin-bottom: 40px;" 
-  />
-  <img 
-    src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/c036336eb9f646fa3d1c747a894f8b80e8251d69/t%20test%20final.png" 
-    alt="T Test Visual Final" 
-    width="720" 
-  />
+  <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" target="_blank" rel="noopener">
+    <img 
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" 
+      alt="Z Test Visual Final" 
+      width="720" 
+      style="margin-bottom: 40px;" 
+    />
+  </a>
+  <br />
+  <a href="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/c036336eb9f646fa3d1c747a894f8b80e8251d69/t%20test%20final.png" target="_blank" rel="noopener">
+    <img 
+      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/c036336eb9f646fa3d1c747a894f8b80e8251d69/t%20test%20final.png" 
+      alt="T Test Visual Final" 
+      width="720" 
+    />
+  </a>
 </div>
+
+---
 
 
 
