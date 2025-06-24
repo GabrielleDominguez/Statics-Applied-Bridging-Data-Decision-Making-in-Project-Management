@@ -25,11 +25,14 @@ This difference in variation has critical business consequences. A development t
 
 The **_boxplot_** shows that while both teams are centered on the same mean, one team has a much greater range of results. This contrast makes it easy for stakeholders to spot the difference in their project performance.
 
----
+<!-- Lightbox2 CSS and JS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
+---
 ## Boxplot Visualization
 
-<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Software%20Development%20Team%20Performance%20Analysis.png?raw=true" width="400">
+[<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Software%20Development%20Team%20Performance%20Analysis.png?raw=true" alt="Software Development Team Performance Analysis" width="400" />](https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Software%20Development%20Team%20Performance%20Analysis.png?raw=true)
 
 ---
 
