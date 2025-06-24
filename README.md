@@ -30,7 +30,6 @@ Each discussion contains:
 
 ---
 
-
 ## Project-Based Illustrations
 
 <table style="width: 100%; table-layout: fixed;">
@@ -88,14 +87,10 @@ Each discussion contains:
       </a>
     </td>
   </tr>
-
-
-
-
-
-
+</table>
 
 ---
+
 ## Additional Resources
 
 - **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
@@ -128,6 +123,9 @@ This repository is for educational and portfolio purposes. Please contact me bef
 Thank you for visiting!
 
 — Gabrielle Dominguez, PMP, CSM  
+
+[![Email Me](https://img.shields.io/badge/Email-Me-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielledominguez05@gmail.com)
+
 
 <br>
 
