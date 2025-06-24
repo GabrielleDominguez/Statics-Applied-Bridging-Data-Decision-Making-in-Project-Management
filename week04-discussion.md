@@ -55,16 +55,21 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > I am looking forward to continuing to learn alongside you this semester.
 
 ---
+
 ## CLT and Confidence Interval Visuals
 
 <!-- CLT 2 and 3 side-by-side -->
 <table>
   <tr>
     <td align="center" style="padding: 10px;">
-      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%202.png?raw=true" width="450">
+      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%202.png?raw=true" target="_blank" rel="noopener">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%202.png?raw=true" width="450" alt="CLT 2" />
+      </a>
     </td>
     <td align="center" style="padding: 10px;">
-      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%203.png?raw=true" width="450">
+      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%203.png?raw=true" target="_blank" rel="noopener">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%203.png?raw=true" width="450" alt="CLT 3" />
+      </a>
     </td>
   </tr>
 </table>
@@ -73,11 +78,12 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <table>
   <tr>
     <td align="center" style="padding: 10px;">
-      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" width="900" style="height: 400px; object-fit: contain;">
+      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" target="_blank" rel="noopener">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" width="900" style="height: 400px; object-fit: contain;" alt="CLT 4" />
+      </a>
     </td>
   </tr>
 </table>
-
 
 ---
 
