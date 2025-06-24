@@ -45,9 +45,10 @@ As a project manager, I use this same framework. Every project has expected outc
 > In short: from my vantage point, **the game becomes "unfair" not when the statistics change, but when external circumstances force a player to quit before the probabilities can work in their favor.** The game doesn't discriminate, but our personal circumstances create very different playing fields.
 
 ---
+
 ## Kenny Rogers-Inspired Risk Framework
 
-<img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="400" />
+[<img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="400" />](Kenny%20Rogers%20PNG.png)
 
 ---
 
