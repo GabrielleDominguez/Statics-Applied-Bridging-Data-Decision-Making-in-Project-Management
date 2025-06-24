@@ -58,6 +58,8 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ## CLT and Confidence Interval Visuals
 
+<p><a href="javascript:history.back()">← Back</a></p>
+
 <!-- CLT 2 and 3 side-by-side -->
 <table>
   <tr>
@@ -84,6 +86,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     </td>
   </tr>
 </table>
+
 
 ---
 
