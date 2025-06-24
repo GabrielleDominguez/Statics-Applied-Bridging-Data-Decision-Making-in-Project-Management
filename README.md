@@ -34,6 +34,7 @@ Each discussion contains:
 ## Project-Based Illustrations
 
 <table style="width: 100%; table-layout: fixed;">
+
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Project Management Platform Adoption</b><br><br>
@@ -48,6 +49,7 @@ Each discussion contains:
       </a>
     </td>
   </tr>
+
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Software Development Team Performance Analysis</b><br><br>
@@ -62,15 +64,39 @@ Each discussion contains:
       </a>
     </td>
   </tr>
-  <tr>
-    <td align="center" style="padding: 15px;" colspan="2">
-      <b>CLT & Confidence Interval</b><br><br>
-      <a href="https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/week04-discussion.html">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" alt="CLT & Confidence Interval" width="360" />
-      </a>
-    </td>
-  </tr>
-</table>
+<tr>
+<tr>
+ <tr>
+ <tr>
+  <td align="center" style="padding: 15px;" width="50%">
+    <b>CLT & Confidence Interval</b><br><br>
+    <a href="https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/week04-discussion.html">
+      <img 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" 
+        alt="CLT & Confidence Interval" 
+        width="360" 
+        height="210" 
+        style="object-fit: contain;"
+      />
+    </a>
+  </td>
+  <td align="center" style="padding: 15px;" width="50%">
+    <b>Z Test Visual</b><br><br>
+    <a href="https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/week04-discussion.html">
+      <img 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" 
+        alt="Z Test Visual Final" 
+        style="max-width: 360px; max-height: 230px; width: auto; height: auto;" 
+      />
+    </a>
+  </td>
+</tr>
+
+
+
+
+
+
 
 
 ---
