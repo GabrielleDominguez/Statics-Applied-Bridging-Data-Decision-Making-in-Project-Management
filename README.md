@@ -42,15 +42,15 @@ Each discussion contains:
         />
       </a>
     </td>
-    <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
-      <a href="week01-discussion.html">
-        <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/13b453545c3de0b8508596d6079d6a9b762cbef5/Thumbnail%202%20FINAL.png" 
-          alt="Graphic 2" 
-          style="width: 600px; height: auto; object-fit: contain;" 
-        />
-      </a>
-    </td>
+ <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
+  <a href="week01-discussion.html">
+    <img 
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/13b453545c3de0b8508596d6079d6a9b762cbef5/Thumbnail%202%20FINAL.png" 
+      alt="Graphic 2" 
+      style="width: 600px; height: auto; object-fit: contain;" 
+    />
+  </a>
+</td>
   </tr>
 
   <tr>
