@@ -35,55 +35,39 @@ Each discussion contains:
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
-      <b>Project Management Platform Adoption</b><br><br>
       <a href="week01-discussion.html">
-        <img src="Screenshot%202025-06-23%20104128.png" alt="Project Management Platform Adoption" width="360" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumbnail%201.png?raw=true" alt="Week 1 Graphic 1" width="360" />
       </a>
     </td>
     <td align="center" style="padding: 15px;" width="50%">
-      <b>Project Milestone Completion Distribution</b><br><br>
       <a href="week01-discussion.html">
-        <img src="Screenshot%202025-06-23%20104113.png" alt="Project Milestone Completion Distribution" width="360" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumbnail%202.png?raw=true" alt="Week 1 Graphic 2" width="360" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
-      <b>Software Development Team Performance Analysis</b><br><br>
       <a href="week02-discussion.html">
-        <img src="Software%20Development%20Team%20Performance%20Analysis.png" alt="Team Performance Analysis" width="320" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/Thumbnail%203.png?raw=true" alt="Week 2 Graphic" width="360" />
       </a>
     </td>
     <td align="center" style="padding: 15px;" width="50%">
-      <b>Kenny Rogers Decision Framework</b><br><br>
       <a href="week03-discussion.html">
-        <img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="360" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumbail%204.png?raw=true" alt="Week 3 Graphic" width="360" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td align="center" style="padding: 15px;" width="50%">
-      <b>CLT & Confidence Interval</b><br><br>
       <a href="week04-discussion.html">
-        <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" 
-          alt="CLT & Confidence Interval" 
-          width="360" 
-          height="210" 
-          style="object-fit: contain;" 
-        />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumnail%205.png?raw=true" alt="Week 4 Graphic" width="360" />
       </a>
     </td>
     <td align="center" style="padding: 15px;" width="50%">
-      <b>Z Test Visual</b><br><br>
       <a href="week05-discussion.html">
-        <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" 
-          alt="Z Test Visual Final" 
-          style="max-width: 360px; max-height: 230px; width: auto; height: auto;" 
-        />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumbail%206%20final.png?raw=true" alt="Week 5 Graphic" width="360" />
       </a>
     </td>
   </tr>
