@@ -79,7 +79,7 @@ Each discussion contains:
     </td>
     <td align="center" style="padding: 15px;" width="50%">
       <b>Z Test Visual</b><br><br>
-      <a href="week04-discussion.html">
+      <a href="week05-discussion.html">
         <img 
           src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" 
           alt="Z Test Visual Final" 
@@ -88,7 +88,6 @@ Each discussion contains:
       </a>
     </td>
   </tr>
-</table>
 
 
 
