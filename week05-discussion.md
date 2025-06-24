@@ -63,18 +63,20 @@ This statistical approach would help me move beyond basic project metrics and de
 ---
 ## Z Test and T Test Visuals
 
-<div style="display: flex; justify-content: center;">
-  <table style="table-layout: fixed; width: 820px;">
-    <tr>
-      <td style="padding: 10px; text-align: center;">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20test.png?raw=true" style="width: 100%; max-width: 400px;" alt="Z Test Visual" />
-      </td>
-      <td style="padding: 10px; text-align: center;">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/t%20test.png?raw=true" style="width: 100%; max-width: 400px;" alt="T Test Visual" />
-      </td>
-    </tr>
-  </table>
+<div style="text-align: center;">
+  <img 
+    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" 
+    alt="Z Test Visual Final" 
+    width="720" 
+    style="margin-bottom: 40px;" 
+  />
+  <img 
+    src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/c036336eb9f646fa3d1c747a894f8b80e8251d69/t%20test%20final.png" 
+    alt="T Test Visual Final" 
+    width="720" 
+  />
 </div>
+
 
 
 
