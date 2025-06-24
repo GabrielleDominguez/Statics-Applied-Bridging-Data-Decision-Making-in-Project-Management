@@ -37,7 +37,7 @@ Each discussion contains:
     <td align="center" style="padding: 15px;" width="50%">
       <a href="week01-discussion.html">
         <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/34fe8371416c5746295e2042b259105528fff198/thumbnail%201.png" 
+          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/d1af8e6496f8fbecd31d93a1343f75e861ca7162/thumbnail%201%20FINAL%20V2.png" 
           alt="Graphic 1" 
           style="width: 700px; height: auto; object-fit: contain; background: #fff;" 
         />
@@ -46,7 +46,7 @@ Each discussion contains:
     <td align="center" style="padding: 15px;" width="50%">
       <a href="week01-discussion.html">
         <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumbnail%202.png?raw=true" 
+          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/13b453545c3de0b8508596d6079d6a9b762cbef5/Thumbnail%202%20FINAL.png" 
           alt="Graphic 2" 
           style="width: 600px; height: auto; object-fit: contain; background: #fff;" 
         />
@@ -96,6 +96,7 @@ Each discussion contains:
     </td>
   </tr>
 </table>
+
 
 
 ## Additional Resources
