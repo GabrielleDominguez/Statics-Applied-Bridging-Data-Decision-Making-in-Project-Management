@@ -128,6 +128,3 @@ Thank you for visiting!
 
 
 <br>
-
-[![Email Me](https://img.shields.io/badge/Email-Me-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielledominguez05@gmail.com)
-
