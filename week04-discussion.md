@@ -58,37 +58,31 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ## CLT and Confidence Interval Visuals
 
-<p><a href="javascript:history.back()">← Back</a></p>
+<p><a href="javascript:history.back()"
 
-<!-- CLT 2 and 3 side-by-side -->
+<!-- New CLT 1 stacked -->
 <table>
   <tr>
     <td align="center" style="padding: 10px;">
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%202.png?raw=true" target="_blank" rel="noopener">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%202.png?raw=true" width="450" alt="CLT 2" />
-      </a>
-    </td>
-    <td align="center" style="padding: 10px;">
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%203.png?raw=true" target="_blank" rel="noopener">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%203.png?raw=true" width="450" alt="CLT 3" />
+      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/b2407e871e595a4db8c57b892dc482938d369a0e/new%20CLT%201.png?raw=true" target="_blank" rel="noopener">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/b2407e871e595a4db8c57b892dc482938d369a0e/new%20CLT%201.png?raw=true" width="500" alt="New CLT 1" />
       </a>
     </td>
   </tr>
 </table>
 
-<!-- CLT 4 full width but limited height -->
+<!-- New CLT 2 stacked -->
 <table>
   <tr>
     <td align="center" style="padding: 10px;">
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" target="_blank" rel="noopener">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/CLT%204.png?raw=true" width="900" style="height: 400px; object-fit: contain;" alt="CLT 4" />
+      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/b2407e871e595a4db8c57b892dc482938d369a0e/new%20CLT%202.png?raw=true" target="_blank" rel="noopener">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/b2407e871e595a4db8c57b892dc482938d369a0e/new%20CLT%202.png?raw=true" width="500" alt="New CLT 2" />
       </a>
     </td>
   </tr>
 </table>
 
 
----
 
 ## References
 
