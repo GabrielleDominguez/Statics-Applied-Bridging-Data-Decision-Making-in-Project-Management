@@ -28,18 +28,31 @@ This kind of analysis would help answer whether using a project management platf
 
 From the course content, we learned that statistics helps us *"describe data, make inferences, and support decisions under uncertainty"* (Pearson Education, 2022). This analysis supports that idea well because of the measurement of project outcomes and the use of data to explore which tools may contribute most to team success.
 
+<!-- Lightbox2 CSS and JS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 ---
 
 ## Graph Visualizations
 
 <table>
   <tr>
-    <td><img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" width="450"></td>
-    <td><img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" width="450"></td>
+    <td>
+      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" data-lightbox="graphs" data-title="Project Management Platform Adoption">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" width="450" alt="Project Management Platform Adoption" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" data-lightbox="graphs" data-title="Project Milestone Completion Distribution">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" width="450" alt="Project Milestone Completion Distribution" />
+      </a>
+    </td>
   </tr>
 </table>
 
 ---
+
 
 ## References
 
