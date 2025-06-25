@@ -28,30 +28,64 @@ This kind of analysis would help answer whether using a project management platf
 
 From the course content, we learned that statistics helps us *"describe data, make inferences, and support decisions under uncertainty"* (Pearson Education, 2022). This analysis supports that idea well because of the measurement of project outcomes and the use of data to explore which tools may contribute most to team success.
 
-<!-- Lightbox2 CSS and JS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
 ---
-
 ## Graph Visualizations
+<style>
+  .img-container {
+    position: relative;
+    display: inline-block;
+    width: 450px;
+  }
+  .img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .magnify-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 22px;
+    color: black;
+    opacity: 0.3;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    pointer-events: none; /* so clicks pass through */
+    transition: opacity 0.3s ease;
+    user-select: none;
+  }
+  .img-container:hover .magnify-icon {
+    opacity: 1;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+</style>
 
 <table>
   <tr>
     <td>
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" data-lightbox="graphs" data-title="Project Management Platform Adoption">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" width="450" alt="Project Management Platform Adoption" />
-      </a>
+      <div class="img-container">
+        <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" target="_blank" rel="noopener noreferrer">
+          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" alt="Project Management Platform Adoption" />
+          <div class="magnify-icon" aria-hidden="true">🔍</div>
+        </a>
+      </div>
     </td>
     <td>
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" data-lightbox="graphs" data-title="Project Milestone Completion Distribution">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" width="450" alt="Project Milestone Completion Distribution" />
-      </a>
+      <div class="img-container">
+        <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" target="_blank" rel="noopener noreferrer">
+          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" alt="Project Milestone Completion Distribution" />
+          <div class="magnify-icon" aria-hidden="true">🔍</div>
+        </a>
+      </div>
     </td>
   </tr>
 </table>
-
----
 
 
 ## References
