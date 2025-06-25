@@ -86,12 +86,15 @@ Each discussion contains:
   <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
     <a href="week05-discussion.html">
       <img 
-        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/404578037a46f8bd008a4e1afab6681b958d8e76/thumbnail%206%2C%20test%204.png" 
-        alt="Week 5 Graphic - Test 4" 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/d6f151112a5ef17b29abd9a9b1a6b1406d1a995e/thumbnail%206%2C%20test%206.png" 
+        alt="Week 5 Graphic - Test 6" 
         style="width: 600px; height: auto; object-fit: contain;" />
     </a>
   </td>
 </tr>
+
+
+
 
 ---
 
