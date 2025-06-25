@@ -30,6 +30,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 ---
 ## Graph Visualizations
+
 <style>
   .img-container {
     position: relative;
@@ -41,52 +42,34 @@ From the course content, we learned that statistics helps us *"describe data, ma
     width: 100%;
     height: auto;
   }
-  .magnify-icon {
+  .zoom-plus {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    font-size: 22px;
-    color: black;
-    opacity: 0.3;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    text-align: center;
-    pointer-events: none; /* so clicks pass through */
-    transition: opacity 0.3s ease;
-    user-select: none;
-  }
-  .img-container:hover .magnify-icon {
-    opacity: 1;
-  }
-  a:hover {
+    top: 6px;
+    right: 6px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4); /* subtle dark gray */
+    background: transparent;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 1;
     cursor: pointer;
+    user-select: none;
+    pointer-events: none; /* clicks pass through */
+    transition: color 0.3s ease;
+  }
+  .img-container:hover .zoom-plus {
+    color: rgba(0, 0, 0, 0.7); /* slightly darker on hover */
   }
 </style>
 
-<table>
-  <tr>
-    <td>
-      <div class="img-container">
-        <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104128.png?raw=true" alt="Project Management Platform Adoption" />
-          <div class="magnify-icon" aria-hidden="true">🔍</div>
-        </a>
-      </div>
-    </td>
-    <td>
-      <div class="img-container">
-        <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Screenshot%202025-06-23%20104113.png?raw=true" alt="Project Milestone Completion Distribution" />
-          <div class="magnify-icon" aria-hidden="true">🔍</div>
-        </a>
-      </div>
-    </td>
-  </tr>
-</table>
-
+<div class="img-container">
+  <a href="IMAGE_URL" target="_blank" rel="noopener noreferrer" title="Click to enlarge">
+    <img src="IMAGE_URL" alt="Alt Text" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </a>
+</div>
 
 ## References
 
