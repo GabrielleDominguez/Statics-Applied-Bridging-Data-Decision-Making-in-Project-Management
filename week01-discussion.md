@@ -41,6 +41,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
     display: block;
     width: 100%;
     height: auto;
+    cursor: pointer;
   }
   .zoom-plus {
     position: absolute;
@@ -48,28 +49,89 @@ From the course content, we learned that statistics helps us *"describe data, ma
     right: 6px;
     font-weight: normal;
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.4); /* subtle dark gray */
+    color: rgba(0, 0, 0, 0.4);
     background: transparent;
     padding: 0;
-    width: auto;
-    height: auto;
-    line-height: 1;
-    cursor: pointer;
     user-select: none;
-    pointer-events: none; /* clicks pass through */
+    pointer-events: none;
     transition: color 0.3s ease;
   }
   .img-container:hover .zoom-plus {
-    color: rgba(0, 0, 0, 0.7); /* slightly darker on hover */
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Modal styles */
+  .modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal.active {
+    display: flex;
+  }
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 8px;
+  }
+  .modal-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
   }
 </style>
 
 <div class="img-container">
-  <a href="IMAGE_URL" target="_blank" rel="noopener noreferrer" title="Click to enlarge">
-    <img src="IMAGE_URL" alt="Alt Text" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
-  </a>
+  <img src="IMAGE_URL" alt="Alt Text" id="img-to-zoom" />
+  <div class="zoom-plus" aria-hidden="true">+</div>
 </div>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
+  <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
+  <img src="" alt="" id="modal-img" />
+</div>
+
+<script>
+  const img = document.getElementById('img-to-zoom');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
+
+  img.addEventListener('click', () => {
+    modal.classList.add('active');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+
+  // Also close modal if user clicks outside the image
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
+
+  // Optional: close modal on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+    }
+  });
+</script>
 
 ## References
 
