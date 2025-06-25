@@ -73,28 +73,27 @@ Each discussion contains:
       </a>
     </td>
   </tr>
-
-  <tr>
-    <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
-      <a href="week04-discussion.html">
-        <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumnail%205.png?raw=true" 
-          alt="Graphic 5" 
-          style="width: 600px; height: auto; object-fit: contain;" 
-        />
-      </a>
-    </td>
-    <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
-      <a href="week05-discussion.html">
-        <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumbail%206.png?raw=true" 
-          alt="Graphic 6" 
-          style="width: 600px; height: auto; object-fit: contain;" 
-        />
-      </a>
-    </td>
-  </tr>
-</table>
+  
+<tr>
+  <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
+    <a href="week04-discussion.html">
+      <img 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/8c4f724222070eb46f3559983df6db39bf0ab724/thumbnail%205%20sample.png" 
+        alt="Graphic 5" 
+        style="width: 600px; height: auto; object-fit: contain;" 
+      />
+    </a>
+  </td>
+  <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
+    <a href="week05-discussion.html">
+      <img 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/thumbail%206.png?raw=true" 
+        alt="Graphic 6" 
+        style="width: 600px; height: auto; object-fit: contain;" 
+      />
+    </a>
+  </td>
+</tr>
 
 
 
