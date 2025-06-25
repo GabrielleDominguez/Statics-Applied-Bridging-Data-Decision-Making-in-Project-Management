@@ -32,6 +32,8 @@ Each discussion contains:
 
 ## Project-Based Illustrations
 
+## Project-Based Illustrations
+
 <table style="width: 100%; table-layout: fixed;">
   <!-- Week 1 -->
   <tr>
@@ -53,7 +55,7 @@ Each discussion contains:
     </td>
   </tr>
 
-  <!-- Week 2 & 3 -->
+  <!-- Week 2 & Week 3 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
       <a href="week02-discussion.html">
@@ -73,26 +75,25 @@ Each discussion contains:
     </td>
   </tr>
 
-  <!-- Week 4 & 5 -->
-  <tr>
-    <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
-      <a href="week04-discussion.html">
-        <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e88496bb5e6e59ab748c24dcd787f72b42791203/thumbnail%205%2C%20test%20v5.png" 
-          alt="Week 4 Illustration - Final V5" 
-          style="width: 600px; height: auto; object-fit: contain;" />
-      </a>
-    </td>
-    <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
-      <a href="week05-discussion.html">
-        <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbail%206.png" 
-          alt="Week 5 Graphic" 
-          style="width: 600px; height: auto; object-fit: contain;" />
-      </a>
-    </td>
-  </tr>
-</table>
+  <!-- Week 4 & Week 5 -->
+<tr>
+  <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
+    <a href="week04-discussion.html">
+      <img 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e0bbd7a7f691cc705e804e1b6d612bef786205f1/thumbnail%205%2C%20post%20(final%20v2).png" 
+        alt="Week 4 Illustration - Final V2" 
+        style="width: 600px; height: auto; object-fit: contain;" />
+    </a>
+  </td>
+  <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
+    <a href="week05-discussion.html">
+      <img 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/4ad8b64afc667e74b8c563d156bc68156320e232/thumbnail%206%2C%20test%201.png" 
+        alt="Week 5 Graphic - Test 1" 
+        style="width: 600px; height: auto; object-fit: contain;" />
+    </a>
+  </td>
+</tr>
 
 ---
 
