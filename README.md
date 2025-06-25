@@ -74,24 +74,25 @@ Each discussion contains:
   </tr>
 
   <!-- Week 4 & Week 5 -->
-<tr>
-  <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
-    <a href="week04-discussion.html">
-      <img 
-        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e0bbd7a7f691cc705e804e1b6d612bef786205f1/thumbnail%205%2C%20post%20(final%20v2).png" 
-        alt="Week 4 Illustration - Final V2" 
-        style="width: 600px; height: auto; object-fit: contain;" />
-    </a>
-  </td>
-  <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
-    <a href="week05-discussion.html">
-      <img 
-        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/fc606cfcb57888b5af6a9465f7b1351dd3d6da65/thumbnail%206%2C%20test%2013.png" 
-        alt="Week 5 Graphic - Test 13" 
-        style="width: 600px; height: auto; object-fit: contain;" />
-    </a>
-  </td>
-</tr>
+  <tr>
+    <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
+      <a href="week04-discussion.html">
+        <img 
+          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e0bbd7a7f691cc705e804e1b6d612bef786205f1/thumbnail%205%2C%20post%20(final%20v2).png" 
+          alt="Week 4 Illustration - Final V2" 
+          style="width: 600px; height: auto; object-fit: contain;" />
+      </a>
+    </td>
+    <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
+      <a href="week05-discussion.html">
+        <img 
+          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/8cc55ef3de1ad83375d63420fb7fe0f23ea9bb32/thumbnail%206%2C%20test%2014.png" 
+          alt="Week 5 Graphic - Test 14 Final" 
+          style="width: 600px; height: auto; object-fit: contain;" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 
