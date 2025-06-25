@@ -86,13 +86,12 @@ Each discussion contains:
   <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
     <a href="week05-discussion.html">
       <img 
-        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/d6f151112a5ef17b29abd9a9b1a6b1406d1a995e/thumbnail%206%2C%20test%206.png" 
-        alt="Week 5 Graphic - Test 6" 
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/fc606cfcb57888b5af6a9465f7b1351dd3d6da65/thumbnail%206%2C%20test%2013.png" 
+        alt="Week 5 Graphic - Test 13" 
         style="width: 600px; height: auto; object-fit: contain;" />
     </a>
   </td>
 </tr>
-
 
 
 
@@ -128,8 +127,7 @@ This repository is for educational and portfolio purposes. Please contact me bef
 ---
 
 Thank you for visiting!  
-— Gabrielle Dominguez, PMP, CSM  
+— Gabrielle Dominguez, PMP, CSM
 
 [![Email Me](https://img.shields.io/badge/Email-Me-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielledominguez05@gmail.com)
-
 
