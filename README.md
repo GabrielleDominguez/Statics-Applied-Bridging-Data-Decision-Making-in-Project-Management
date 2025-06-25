@@ -27,9 +27,6 @@ Each discussion contains:
 | 3    | Probability and Decision Making with Dice Game | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
 | 4    | Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
 | 5    | Hypothesis Testing: Means vs Proportions    | [Week 5 Discussion](week05-discussion.md) |
-
----
-
 ## Project-Based Illustrations
 
 <table style="width: 100%; table-layout: fixed;">
@@ -86,14 +83,17 @@ Each discussion contains:
     <td align="center" style="padding: 15px; background-color: #fff;" width="50%">
       <a href="week05-discussion.html">
         <img 
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/8cc55ef3de1ad83375d63420fb7fe0f23ea9bb32/thumbnail%206%2C%20test%2014.png" 
-          alt="Week 5 Graphic - Test 14 Final" 
+          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%206%2C%20post%20v3.png" 
+          alt="Week 5 Graphic - Final v3" 
           style="width: 600px; height: auto; object-fit: contain;" />
       </a>
     </td>
   </tr>
 </table>
 
+---
+
+## Project-Based Illustrations
 
 
 ---
