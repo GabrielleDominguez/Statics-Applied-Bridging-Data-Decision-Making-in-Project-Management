@@ -35,14 +35,14 @@ From the course content, we learned that statistics helps us *"describe data, ma
   .image-row {
     display: flex;
     gap: 12px;
-    justify-content: flex-start; /* align left, change if you want center */
-    flex-wrap: nowrap; /* keep in one row, no wrapping */
+    justify-content: space-between; /* distribute evenly */
+    flex-wrap: nowrap; /* keep in one row */
   }
 
   .img-container {
     position: relative;
-    width: 150px; /* small thumbnails */
-    flex-shrink: 0; /* don’t shrink below this */
+    flex: 1 1 0; /* flex-grow and flex-shrink to fill space equally */
+    max-width: none; /* remove max-width so flex works fully */
   }
 
   .img-container img {
