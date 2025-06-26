@@ -1,4 +1,3 @@
-<!-- Portfolio Introduction -->
 # Statics Applied: Bridging Data & Decision Making in Project Management
 
 Welcome to my portfolio showcasing key insights and practical applications from Elementary Statistics coursework at **Florida Southern College**.
@@ -40,87 +39,61 @@ Each discussion contains:
 ## Project-Based Illustrations
 
 <table style="width: 100%; table-layout: fixed;">
-  <!-- Repeatable Cell Structure for Each Week -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-      <a href="week01-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-        <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-          <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-        </svg>
-      </a>
-      <a href="week01-discussion.html" style="display: block;">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%201%2C%20post.png"
-          alt="Week 1 Graphic"
-          width="100%"
-          style="max-width: 600px; border-radius: 6px;"
-        />
+      <a href="week01-discussion.html">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%201%2C%20post.png" alt="Week 1 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
       </a>
     </td>
-
     <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-      <a href="week01-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-        <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-          <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-        </svg>
-      </a>
-      <a href="week01-discussion.html" style="display: block;">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%202%2C%20post.png"
-          alt="Week 1 Graph Variation"
-          width="100%"
-          style="max-width: 600px; border-radius: 6px;"
-        />
+      <a href="week01-discussion.html">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%202%2C%20post.png" alt="Week 1 Variation" width="100%" style="max-width: 600px; border-radius: 6px;" />
       </a>
     </td>
   </tr>
-  <!-- Repeat similar rows for Week 2–5 as you've done above -->
+  <tr>
+    <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+      <a href="week02-discussion.html">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%203%2C%20post.png" alt="Week 2 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+      </a>
+    </td>
+    <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+      <a href="week03-discussion.html">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%204%2C%20post%20w%20star%20v3.png" alt="Week 3 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+      <a href="week04-discussion.html">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%205%2C%20post%20%28final%20v2%29.png" alt="Week 4 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+      </a>
+    </td>
+    <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+      <a href="week05-discussion.html">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%206%2C%20post%20v6.png" alt="Week 5 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+      </a>
+    </td>
+  </tr>
 </table>
 
 <style>
-svg {
-  width: 14px !important;
-  height: 14px !important;
-  min-width: 14px !important;
-  min-height: 14px !important;
-}
+/* Paperclip styling removed from all elements except explicitly defined */
 
+/* Desktop Image Hover */
 @media (hover: hover) and (pointer: fine) {
-  td[style*="background-color: #fff"] {
-    transition: background-color 0.2s ease;
-  }
-
-  td[style*="background-color: #fff"]:hover {
-    background-color: #f7f7f7 !important;
-  }
-
   a[href*="week"] img {
-    transition: filter 0.3s ease;
+    transition: opacity 0.3s ease;
   }
 
   a[href*="week"]:hover img {
-    filter: brightness(0.85) contrast(1.05);
-  }
-
-  a[href*="week"] svg {
-    transition: stroke 0.3s ease, opacity 0.3s ease;
-  }
-
-  a[href*="week"]:hover svg {
-    stroke: #333;
-    opacity: 1;
+    opacity: 0.85;
   }
 }
 
+/* No Image Darkening on Mobile */
 @media (max-width: 768px) {
-  td[style*="background-color: #fff"]:hover {
-    background-color: #f8f8f8 !important;
-  }
-
-  a[href*="week"]:hover img,
-  a[href*="week"]:hover svg {
-    filter: none;
-    transform: none;
+  a[href*="week"]:hover img {
     opacity: 1;
   }
 }
@@ -139,7 +112,7 @@ svg {
 - Browse the weekly discussion files for detailed analysis and examples  
 - Review peer replies and responses to see collaborative learning  
 - Use referenced materials for deeper understanding  
-- Let's keep the conversation going: connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven insights
+- Connect on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven insights
 
 ---
 
@@ -150,7 +123,5 @@ This repository is for educational and portfolio purposes. Please contact me bef
 ---
 
 Thank you for visiting!  
-— Gabrielle Dominguez, PMP, CSM  
-[<img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" width="20" height="20" style="vertical-align:middle;">](mailto:gabrielledominguez05@gmail.com)
+— Gabrielle Dominguez, PMP, CSM <br>[<img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" width="20" height="20" style="vertical-align:middle;">](mailto:gabrielledominguez05@gmail.com)  
 [<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="20" height="20" style="vertical-align:middle;">](https://www.linkedin.com/in/gabrielle-r-dominguez)
-
