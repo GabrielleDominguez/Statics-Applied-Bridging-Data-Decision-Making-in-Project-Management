@@ -36,6 +36,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
     position: relative;
     display: inline-block;
     width: 450px;
+    margin: 10px;
   }
   .img-container img {
     display: block;
@@ -60,13 +61,14 @@ From the course content, we learned that statistics helps us *"describe data, ma
     color: rgba(0, 0, 0, 0.7);
   }
 
-  /* Modal styles */
   .modal {
-    display: none; /* hidden by default */
+    display: none;
     position: fixed;
     z-index: 1000;
-    left: 0; top: 0;
-    width: 100vw; height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
@@ -93,7 +95,12 @@ From the course content, we learned that statistics helps us *"describe data, ma
 </style>
 
 <div class="img-container">
-  <img src="IMAGE_URL" alt="Alt Text" id="img-to-zoom" />
+  <img src="IMAGE_URL_1" alt="First Image" class="zoomable" />
+  <div class="zoom-plus" aria-hidden="true">+</div>
+</div>
+
+<div class="img-container">
+  <img src="IMAGE_URL_2" alt="Second Image" class="zoomable" />
   <div class="zoom-plus" aria-hidden="true">+</div>
 </div>
 
@@ -103,29 +110,29 @@ From the course content, we learned that statistics helps us *"describe data, ma
 </div>
 
 <script>
-  const img = document.getElementById('img-to-zoom');
+  const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
 
-  img.addEventListener('click', () => {
-    modal.classList.add('active');
-    modalImg.src = img.src;
-    modalImg.alt = img.alt;
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.classList.add('active');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
   });
 
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
   });
 
-  // Also close modal if user clicks outside the image
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
     }
   });
 
-  // Optional: close modal on ESC key
   document.addEventListener('keydown', (e) => {
     if (e.key === "Escape" && modal.classList.contains('active')) {
       modal.classList.remove('active');
