@@ -8,8 +8,6 @@ This repository demonstrates how I apply statistical concepts to drive smarter p
 
 ## About This Project
 
-*As a project manager passionate about data-driven decision making, I am applying statistical theories and methods to improve processes, planning, and outcomes in business settings. These weekly discussions reflect my learning journey and how I connect course material to practical scenarios.* 
-
 Each discussion contains:  
 - A **professor’s prompt** outlining the topic  
 - My **written analysis** applying statistics to project management  
