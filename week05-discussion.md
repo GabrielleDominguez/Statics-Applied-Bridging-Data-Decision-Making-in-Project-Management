@@ -45,7 +45,7 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ---
 
-## Z Test and T Test Visuals
+## Z Test & T Test Visualizations
 
 <div style="text-align: center;">
   <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" target="_blank" rel="noopener">
