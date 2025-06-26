@@ -37,8 +37,8 @@ Each discussion contains:
     width: 100%;
   }
 
-  .clip-container img {
-    width: 100%;
+  .clip-container img.main-img {
+    width: 600px;
     height: auto;
     border-radius: 4px;
     display: block;
@@ -48,8 +48,8 @@ Each discussion contains:
     position: absolute;
     top: 6px;
     right: 6px;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     opacity: 0.4;
     transition: opacity 0.2s ease;
     pointer-events: none;
@@ -69,9 +69,10 @@ Each discussion contains:
           <img
             src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/c07f9deae71ee44ee9b6c215b9ac8890221f271e/thumbnail%201%2C%20post.png"
             alt="Week 1 Graphic - Updated"
+            class="main-img"
           />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
             alt=""
             class="clip-icon"
           />
@@ -84,9 +85,10 @@ Each discussion contains:
           <img
             src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/c07f9deae71ee44ee9b6c215b9ac8890221f271e/thumbnail%202%2C%20post.png"
             alt="Week 1 Graph Variation - Updated"
+            class="main-img"
           />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
             alt=""
             class="clip-icon"
           />
@@ -103,9 +105,10 @@ Each discussion contains:
           <img
             src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/5bbfc26ccf0bdb77807f6c550823e9def342452b/thumbnail%203%2C%20post.png"
             alt="Week 2 Slot 3 - Final Thumbnail"
+            class="main-img"
           />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
             alt=""
             class="clip-icon"
           />
@@ -118,9 +121,10 @@ Each discussion contains:
           <img
             src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/a6e29fe5131c603b0cf0589c7cd2849d3b79f7e5/thumbnail%204%2C%20post%20w%20star%20v3.png"
             alt="Week 3 Graphic - Star V3"
+            class="main-img"
           />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
             alt=""
             class="clip-icon"
           />
@@ -137,9 +141,10 @@ Each discussion contains:
           <img
             src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e0bbd7a7f691cc705e804e1b6d612bef786205f1/thumbnail%205%2C%20post%20(final%20v2).png"
             alt="Week 4 Illustration - Final V2"
+            class="main-img"
           />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
             alt=""
             class="clip-icon"
           />
@@ -152,9 +157,10 @@ Each discussion contains:
           <img
             src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e5de1c69e920603f9ccbef413e3522006daa5435/thumbnail%206%2C%20post%20v6.png"
             alt="Week 5 Graphic - Final v6"
+            class="main-img"
           />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
             alt=""
             class="clip-icon"
           />
