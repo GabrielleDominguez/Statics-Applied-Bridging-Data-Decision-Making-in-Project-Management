@@ -32,11 +32,17 @@ From the course content, we learned that statistics helps us *"describe data, ma
 ## Graph Visualizations
 
 <style>
+  .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
   .img-container {
     position: relative;
-    display: inline-block;
-    width: 450px;
-    margin: 10px;
+    flex: 1 1 300px;
+    max-width: 400px;
   }
 
   .img-container img {
@@ -64,7 +70,6 @@ From the course content, we learned that statistics helps us *"describe data, ma
     color: rgba(0, 0, 0, 0.7);
   }
 
-  /* Modal styles */
   .modal {
     display: none;
     position: fixed;
@@ -101,14 +106,16 @@ From the course content, we learned that statistics helps us *"describe data, ma
   }
 </style>
 
-<div class="img-container">
-  <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
-  <div class="zoom-plus" aria-hidden="true">+</div>
-</div>
+<div class="image-row">
+  <div class="img-container">
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
 
-<div class="img-container">
-  <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
-  <div class="zoom-plus" aria-hidden="true">+</div>
+  <div class="img-container">
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
 </div>
 
 <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
@@ -132,7 +139,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
-    modalImg.src = ''; // Reset to avoid flashing previous image
+    modalImg.src = '';
   });
 
   modal.addEventListener('click', (e) => {
