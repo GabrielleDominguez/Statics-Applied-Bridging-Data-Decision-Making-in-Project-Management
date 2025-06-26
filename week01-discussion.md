@@ -38,12 +38,14 @@ From the course content, we learned that statistics helps us *"describe data, ma
     width: 450px;
     margin: 10px;
   }
+
   .img-container img {
     display: block;
     width: 100%;
     height: auto;
     cursor: pointer;
   }
+
   .zoom-plus {
     position: absolute;
     top: 6px;
@@ -57,10 +59,12 @@ From the course content, we learned that statistics helps us *"describe data, ma
     pointer-events: none;
     transition: color 0.3s ease;
   }
+
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
 
+  /* Modal styles */
   .modal {
     display: none;
     position: fixed;
@@ -73,15 +77,18 @@ From the course content, we learned that statistics helps us *"describe data, ma
     justify-content: center;
     align-items: center;
   }
+
   .modal.active {
     display: flex;
   }
+
   .modal img {
     max-width: 90%;
     max-height: 90%;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
   }
+
   .modal-close {
     position: fixed;
     top: 20px;
@@ -95,12 +102,12 @@ From the course content, we learned that statistics helps us *"describe data, ma
 </style>
 
 <div class="img-container">
-  <img src="IMAGE_URL_1" alt="First Image" class="zoomable" />
+  <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
   <div class="zoom-plus" aria-hidden="true">+</div>
 </div>
 
 <div class="img-container">
-  <img src="IMAGE_URL_2" alt="Second Image" class="zoomable" />
+  <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
   <div class="zoom-plus" aria-hidden="true">+</div>
 </div>
 
@@ -125,17 +132,20 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
+    modalImg.src = ''; // Reset to avoid flashing previous image
   });
 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
+      modalImg.src = '';
     }
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === "Escape" && modal.classList.contains('active')) {
       modal.classList.remove('active');
+      modalImg.src = '';
     }
   });
 </script>
