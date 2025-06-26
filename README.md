@@ -9,7 +9,7 @@ This repository demonstrates how I apply statistical concepts to drive smarter p
 ## About This Project
 
 Each discussion contains:  
-- A **professor’s prompt** outlining the topic  
+- A **professor's prompt** outlining the topic  
 - My **written analysis** applying statistics to project management  
 - **Peer replies** and my **responses** to deepen the conversation  
 - Relevant **references** for further study  
@@ -29,17 +29,6 @@ Each discussion contains:
 ---
 
 ## Project-Based Illustrations
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-Based Illustrations</title>
-</head>
-<body>
-
-## Project-Based Illustrations
-    ## Project-Based Illustrations
     
 <table style="width: 100%; table-layout: fixed;">
         <!-- Week 1 -->
@@ -149,88 +138,105 @@ Each discussion contains:
     </table>
 
 <style>
-/* Base styles for all devices - Keep paperclips at desktop size */
-svg {
+/* Base styles - Force paperclip size on ALL devices */
+svg[viewBox="0 0 24 24"] {
     width: 14px !important;
     height: 14px !important;
     min-width: 14px !important;
     min-height: 14px !important;
+    max-width: 14px !important;
+    max-height: 14px !important;
+    flex-shrink: 0 !important;
 }
 
-/* Enhanced hover effects for desktop */
+/* Desktop hover effects - Much more pronounced */
 @media (hover: hover) and (pointer: fine) {
-    /* More noticeable cell hover effects */
+    /* Strong cell hover effects */
     td[style*="background-color: #fff"] {
         transition: all 0.3s ease;
         border-radius: 8px;
     }
     
     td[style*="background-color: #fff"]:hover {
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        transform: translateY(-2px);
-        background-color: #fafafa !important;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+        transform: translateY(-4px);
+        background-color: #f5f5f5 !important;
     }
     
-    /* Enhanced image hover effects */
+    /* Strong image hover effects */
     a[href*="week"] img {
         transition: all 0.3s ease;
+        border-radius: 6px;
     }
 
     a[href*="week"]:hover img {
-        opacity: 0.9;
-        filter: brightness(1.05) saturate(1.1);
-        transform: scale(1.02);
+        opacity: 0.85;
+        filter: brightness(1.1) saturate(1.15) contrast(1.05);
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     
-    /* Enhanced paperclip hover effect */
+    /* Strong paperclip hover effect */
     a[href*="week"] svg {
         transition: all 0.3s ease;
     }
     
     a[href*="week"]:hover svg {
-        opacity: 1;
-        stroke: #333;
-        transform: scale(1.1);
+        opacity: 1 !important;
+        stroke: #222 !important;
+        transform: scale(1.2);
     }
 }
 
-/* Mobile optimizations - Keep paperclips same size, disable transform effects */
+/* Mobile-specific fixes */
 @media (max-width: 768px) {
-    /* Ensure paperclips stay at desktop size on mobile */
-    svg {
+    /* Absolutely force paperclip size on mobile */
+    svg[viewBox="0 0 24 24"] {
         width: 14px !important;
         height: 14px !important;
         min-width: 14px !important;
         min-height: 14px !important;
         max-width: 14px !important;
         max-height: 14px !important;
+        transform: none !important;
+        scale: none !important;
     }
     
-    /* Disable transform effects on mobile to prevent layout issues */
+    /* Disable problematic transforms on mobile */
     td[style*="background-color: #fff"]:hover {
-        transform: none;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: none !important;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        background-color: #f8f8f8 !important;
     }
     
     a[href*="week"]:hover img {
-        transform: none;
-        filter: brightness(1.02);
+        transform: none !important;
+        filter: brightness(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     
     a[href*="week"]:hover svg {
-        transform: none;
+        transform: none !important;
+        scale: none !important;
+        opacity: 0.9 !important;
+        stroke: #444 !important;
     }
     
-    /* Larger touch target for paperclips without changing visual size */
-    a[href*="week"][style*="position: absolute"] {
-        padding: 6px;
-        margin: -6px;
+    /* Better touch targets for paperclips */
+    a[style*="position: absolute"] {
+        padding: 8px;
+        margin: -8px;
+        min-width: 30px;
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-/* Prevent any unwanted scaling on very small screens */
+/* Extra small screens */
 @media (max-width: 480px) {
-    svg {
+    svg[viewBox="0 0 24 24"] {
         width: 14px !important;
         height: 14px !important;
     }
@@ -238,6 +244,7 @@ svg {
 </style>
 
 ---
+
 ## Additional Resources
 
 - **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
@@ -249,7 +256,7 @@ svg {
 - Browse the weekly discussion files for detailed analysis and examples  
 - Review peer replies and responses to see collaborative learning  
 - Use referenced materials for deeper understanding  
-- Let’s keep the conversation going: connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven insights
+- Let's keep the conversation going: connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven insights
 
 ---
 
@@ -268,6 +275,7 @@ This repository is for educational and portfolio purposes. Please contact me bef
 ---
 
 Thank you for visiting!  
-— Gabrielle Dominguez, PMP, CSM  
+— Gabrielle Dominguez, PMP, CSM
+
 [<img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" width="20" height="20" style="vertical-align:middle;">](mailto:gabrielledominguez05@gmail.com)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="20" height="20" style="vertical-align:middle;">](https://www.linkedin.com/in/gabrielle-r-dominguez)
