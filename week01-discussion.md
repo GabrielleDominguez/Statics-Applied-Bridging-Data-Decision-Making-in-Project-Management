@@ -28,20 +28,22 @@ This kind of analysis would help answer whether using a project management platf
 
 From the course content, we learned that statistics helps us *"describe data, make inferences, and support decisions under uncertainty"* (Pearson Education, 2022). This analysis supports that idea well because of the measurement of project outcomes and the use of data to explore which tools may contribute most to team success.
 
----## Graph Visualizations
+---
+
+## Graph Visualizations
 
 <style>
   .image-row {
     display: flex;
     gap: 12px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: space-between; /* distribute evenly */
+    flex-wrap: nowrap; /* keep in one row */
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 0;
-    max-width: none;
+    flex: 1 1 0; /* flex-grow and flex-shrink to fill space equally */
+    max-width: none; /* remove max-width so flex works fully */
   }
 
   .img-container img {
@@ -54,27 +56,45 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   .zoom-plus {
     position: absolute;
-    top: 6px;
-    right: 6px;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    padding: 4px;
-    color: #444;
+    top: 4px;
+    right: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    background: transparent;
+    padding: 0;
     user-select: none;
     pointer-events: none;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: color 0.3s ease;
   }
 
-  .zoom-plus::before {
-    content: "🔍";
-    display: block;
-    line-height: 1;
+  /* Tooltip styling */
+  .zoom-plus::after {
+    content: "Click to enlarge";
+    position: absolute;
+    top: -24px; /* above the plus sign */
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    user-select: none;
+    transform: translateY(10px);
+    z-index: 10;
   }
 
   .img-container:hover .zoom-plus {
-    background: rgba(255, 255, 255, 0.9);
-    transform: scale(1.1);
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .img-container:hover .zoom-plus::after {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .modal {
@@ -116,12 +136,12 @@ From the course content, we learned that statistics helps us *"describe data, ma
 <div class="image-row">
   <div class="img-container">
     <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true"></div>
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 
   <div class="img-container">
     <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true"></div>
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
 
