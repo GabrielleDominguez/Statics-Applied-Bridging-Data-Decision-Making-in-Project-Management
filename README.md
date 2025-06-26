@@ -132,5 +132,5 @@ This repository is for educational and portfolio purposes. Please contact me bef
 Thank you for visiting!  
 — Gabrielle Dominguez, PMP, CSM
 
-[![Email Me](https://img.shields.io/badge/Email-Me-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielledominguez05@gmail.com)
+[![Email Me](https://img.shields.io/badge/Email-Me-2e7d32?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielledominguez05@gmail.com)&nbsp;&nbsp;
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrielle-r-dominguez)
