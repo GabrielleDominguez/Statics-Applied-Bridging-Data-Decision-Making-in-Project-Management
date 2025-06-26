@@ -30,86 +30,101 @@ Each discussion contains:
 
 ## Project-Based Illustrations
 
-> 📎 Click each image to view full discussion
-
 <table style="width: 100%; table-layout: fixed;">
+
   <!-- Week 1 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff;">
-      📎<br/>
-      <a href="week01-discussion.html" style="text-decoration: none;">
+      <a href="week01-discussion.html" title="View image" style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Paperclip_icon_gray.svg" alt="paperclip icon" width="14" style="vertical-align: middle; margin-bottom: 4px;" />
+      </a><br/>
+      <a href="week01-discussion.html">
         <img
           src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%201%2C%20post.png"
           alt="Week 1 Graphic"
           width="100%"
-          style="max-width: 600px; border-radius: 6px; display: block;"
+          style="max-width: 600px; border-radius: 6px;"
         />
       </a>
     </td>
+
     <td align="center" style="padding: 15px; background-color: #fff;">
-      📎<br/>
-      <a href="week01-discussion.html" style="text-decoration: none;">
+      <a href="week01-discussion.html" title="View image" style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Paperclip_icon_gray.svg" alt="paperclip icon" width="14" style="vertical-align: middle; margin-bottom: 4px;" />
+      </a><br/>
+      <a href="week01-discussion.html">
         <img
           src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%202%2C%20post.png"
-          alt="Week 1 Graphic 2"
+          alt="Week 1 Graph Variation"
           width="100%"
-          style="max-width: 600px; border-radius: 6px; display: block;"
+          style="max-width: 600px; border-radius: 6px;"
         />
       </a>
     </td>
   </tr>
 
-  <!-- Week 2 & 3 -->
+  <!-- Week 2 & Week 3 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff;">
-      📎<br/>
-      <a href="week02-discussion.html" style="text-decoration: none;">
+      <a href="week02-discussion.html" title="View image" style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Paperclip_icon_gray.svg" alt="paperclip icon" width="14" style="vertical-align: middle; margin-bottom: 4px;" />
+      </a><br/>
+      <a href="week02-discussion.html">
         <img
           src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%203%2C%20post.png"
           alt="Week 2 Graphic"
           width="100%"
-          style="max-width: 600px; border-radius: 6px; display: block;"
+          style="max-width: 600px; border-radius: 6px;"
         />
       </a>
     </td>
+
     <td align="center" style="padding: 15px; background-color: #fff;">
-      📎<br/>
-      <a href="week03-discussion.html" style="text-decoration: none;">
+      <a href="week03-discussion.html" title="View image" style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Paperclip_icon_gray.svg" alt="paperclip icon" width="14" style="vertical-align: middle; margin-bottom: 4px;" />
+      </a><br/>
+      <a href="week03-discussion.html">
         <img
           src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%204%2C%20post%20w%20star%20v3.png"
           alt="Week 3 Graphic"
           width="100%"
-          style="max-width: 600px; border-radius: 6px; display: block;"
+          style="max-width: 600px; border-radius: 6px;"
         />
       </a>
     </td>
   </tr>
 
-  <!-- Week 4 & 5 -->
+  <!-- Week 4 & Week 5 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff;">
-      📎<br/>
-      <a href="week04-discussion.html" style="text-decoration: none;">
+      <a href="week04-discussion.html" title="View image" style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Paperclip_icon_gray.svg" alt="paperclip icon" width="14" style="vertical-align: middle; margin-bottom: 4px;" />
+      </a><br/>
+      <a href="week04-discussion.html">
         <img
           src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%205%2C%20post%20(final%20v2).png"
           alt="Week 4 Graphic"
           width="100%"
-          style="max-width: 600px; border-radius: 6px; display: block;"
+          style="max-width: 600px; border-radius: 6px;"
         />
       </a>
     </td>
+
     <td align="center" style="padding: 15px; background-color: #fff;">
-      📎<br/>
-      <a href="week05-discussion.html" style="text-decoration: none;">
+      <a href="week05-discussion.html" title="View image" style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Paperclip_icon_gray.svg" alt="paperclip icon" width="14" style="vertical-align: middle; margin-bottom: 4px;" />
+      </a><br/>
+      <a href="week05-discussion.html">
         <img
           src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%206%2C%20post%20v6.png"
           alt="Week 5 Graphic"
           width="100%"
-          style="max-width: 600px; border-radius: 6px; display: block;"
+          style="max-width: 600px; border-radius: 6px;"
         />
       </a>
     </td>
   </tr>
+
 </table>
 
 ---
