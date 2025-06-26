@@ -36,14 +36,14 @@ From the course content, we learned that statistics helps us *"describe data, ma
   .image-row {
     display: flex;
     gap: 12px;
-    justify-content: space-between; /* distribute evenly */
-    flex-wrap: nowrap; /* keep in one row */
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 0; /* flex-grow and flex-shrink to fill space equally */
-    max-width: none; /* remove max-width so flex works fully */
+    flex: 1 1 0;
+    max-width: none;
   }
 
   .img-container img {
@@ -68,33 +68,8 @@ From the course content, we learned that statistics helps us *"describe data, ma
     transition: color 0.3s ease;
   }
 
-  /* Tooltip styling */
-  .zoom-plus::after {
-    content: "Click to enlarge";
-    position: absolute;
-    top: -24px; /* above the plus sign */
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    white-space: nowrap;
-    user-select: none;
-    transform: translateY(10px);
-    z-index: 10;
-  }
-
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
-  }
-
-  .img-container:hover .zoom-plus::after {
-    opacity: 1;
-    transform: translateY(0);
   }
 
   .modal {
