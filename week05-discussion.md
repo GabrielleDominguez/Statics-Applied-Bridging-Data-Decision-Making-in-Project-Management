@@ -45,23 +45,6 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ---
 
-> **Reply from Hannah Blake:**  
-> I also thought your point about focusing on performance improvements instead of just completion rates was really smart. Have you ever had a situation where the data didn’t support what was expected? It’d be interesting to see how hypothesis testing could guide next steps in that case.  
-> Thanks for sharing such a thoughtful perspective!
-
-> **Response from Gabrielle Dominguez:**  
-> Hi Hannah! This is a great question on what to do when you run into unexpected results - which happens more frequently than you would think. I haven't used hypothesis testing in practice yet, but I can explain to you how valuable it could be on a situational basis.  
->  
-> For example, I worked on a software upgrade project where we expected to improve performance based on historical data (past patterns), but the results were disappointing. If we had used hypothesis testing from the start, we could have set clear performance benchmarks and determined whether the upgrade actually failed to meet expectations or if other factors were at play.  
->  
-> The structured approach really does seem like it would prevent jumping to conclusions and help with better decision-making when reality doesn't match expectations.  
->  
-> How do you think you'll apply hypothesis testing in your future career field? Maybe it will be of similar nature to the work I do!
-> Hi Gabrielle, great post! I really liked how you connected hypothesis testing to project management—it made the topic feel much more real-world and applicable. Your examples were super clear, especially the one about measuring compliance after cybersecurity training.
-> 
-
----
-
 ## Z Test and T Test Visuals
 
 <div style="text-align: center;">
