@@ -48,9 +48,113 @@ As a project manager, I use this same framework. Every project has expected outc
 
 ## Kenny Rogers-Inspired Risk Framework
 
-[<img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" width="400" />](Kenny%20Rogers%20PNG.png)
+<style>
+  .kenny-img-container {
+    position: relative;
+    width: 400px;
+    display: inline-block;
+  }
 
----
+  .kenny-img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .kenny-plus {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.4);
+    user-select: none;
+    pointer-events: none;
+    transition: color 0.3s ease;
+  }
+
+  .kenny-img-container:hover .kenny-plus {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .kenny-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kenny-modal.active {
+    display: flex;
+  }
+
+  .kenny-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 8px;
+  }
+
+  .kenny-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
+
+<div class="kenny-img-container">
+  <img src="Kenny%20Rogers%20PNG.png" alt="Kenny Rogers Decision Framework" id="kenny-zoom" />
+  <div class="kenny-plus">+</div>
+</div>
+
+<div id="kenny-modal" class="kenny-modal" role="dialog" aria-modal="true">
+  <span id="kenny-close" class="kenny-close" aria-label="Close modal">&times;</span>
+  <img src="" alt="Zoomed Kenny" id="kenny-modal-img" />
+</div>
+
+<script>
+  const kennyImg = document.getElementById('kenny-zoom');
+  const kennyModal = document.getElementById('kenny-modal');
+  const kennyModalImg = document.getElementById('kenny-modal-img');
+  const kennyClose = document.getElementById('kenny-close');
+
+  kennyImg.addEventListener('click', () => {
+    kennyModal.classList.add('active');
+    kennyModalImg.src = kennyImg.src;
+    kennyModalImg.alt = kennyImg.alt;
+  });
+
+  kennyClose.addEventListener('click', () => {
+    kennyModal.classList.remove('active');
+    kennyModalImg.src = '';
+  });
+
+  kennyModal.addEventListener('click', (e) => {
+    if (e.target === kennyModal) {
+      kennyModal.classList.remove('active');
+      kennyModalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && kennyModal.classList.contains('active')) {
+      kennyModal.classList.remove('active');
+      kennyModalImg.src = '';
+    }
+  });
+</script>
 
 ## References
 
