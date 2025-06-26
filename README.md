@@ -133,7 +133,7 @@ Each discussion contains:
             </a>
             <a href="week05-discussion.html" style="display: block;">
                 <img
-                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%206%2C%20post%20v6.png"
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/d8b3ff2531a08bbf8b79bcd4d01ce67d4890aa4b/thumbnail%206%2C%20post%20v7.png?raw=true"
                     alt="Week 5 Graphic"
                     width="100%"
                     style="max-width: 600px; border-radius: 6px;"
@@ -182,7 +182,7 @@ svg {
 
 ## Additional Resources
 
-- **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
+- Elementary Statistics Textbook by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
 
 ---
 
