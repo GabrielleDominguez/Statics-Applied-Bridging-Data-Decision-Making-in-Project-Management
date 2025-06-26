@@ -9,7 +9,7 @@ This repository demonstrates how I apply statistical concepts to drive smarter p
 ## About This Project
 
 Each discussion contains:  
-- A **professor’s prompt** outlining the topic  
+- A **professor's prompt** outlining the topic  
 - My **written analysis** applying statistics to project management  
 - **Peer replies** and my **responses** to deepen the conversation  
 - Relevant **references** for further study  
@@ -157,7 +157,7 @@ svg {
     min-height: 14px !important;
 }
 
-/* Enhanced hover effects for desktop */
+/* Enhanced hover effects for desktop only */
 @media (hover: hover) and (pointer: fine) {
     /* More noticeable cell hover effects */
     td[style*="background-color: #fff"] {
@@ -171,15 +171,14 @@ svg {
         background-color: #fafafa !important;
     }
     
-    /* Enhanced image hover effects */
+    /* Enhanced image hover effects - darkening only on desktop */
     a[href*="week"] img {
         transition: all 0.3s ease;
     }
 
     a[href*="week"]:hover img {
-        opacity: 0.9;
-        filter: brightness(1.05) saturate(1.1);
-        transform: scale(1.02);
+        opacity: 0.75;
+        filter: brightness(0.85);
     }
     
     /* Enhanced paperclip hover effect */
@@ -194,7 +193,7 @@ svg {
     }
 }
 
-/* Mobile optimizations - Keep paperclips same size, disable transform effects */
+/* Mobile optimizations - NO darkening effects */
 @media (max-width: 768px) {
     /* Ensure paperclips stay at desktop size on mobile */
     svg {
@@ -212,9 +211,11 @@ svg {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     
+    /* NO hover effects for images on mobile */
     a[href*="week"]:hover img {
+        opacity: 1;
+        filter: none;
         transform: none;
-        filter: brightness(1.02);
     }
     
     a[href*="week"]:hover svg {
@@ -249,7 +250,7 @@ svg {
 - Browse the weekly discussion files for detailed analysis and examples  
 - Review peer replies and responses to see collaborative learning  
 - Use referenced materials for deeper understanding  
-- Let’s keep the conversation going: connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven insights
+- Let's keep the conversation going: connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven insights
 
 ---
 
