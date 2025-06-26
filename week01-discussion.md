@@ -33,17 +33,16 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 <style>
   .image-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 16px;
-    justify-items: center;
-    margin-bottom: 1rem;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start; /* align left, change if you want center */
+    flex-wrap: nowrap; /* keep in one row, no wrapping */
   }
 
   .img-container {
     position: relative;
-    width: 100%;
-    max-width: 400px;
+    width: 150px; /* small thumbnails */
+    flex-shrink: 0; /* don’t shrink below this */
   }
 
   .img-container img {
@@ -51,14 +50,15 @@ From the course content, we learned that statistics helps us *"describe data, ma
     width: 100%;
     height: auto;
     cursor: pointer;
+    border-radius: 4px;
   }
 
   .zoom-plus {
     position: absolute;
-    top: 6px;
-    right: 6px;
+    top: 4px;
+    right: 4px;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
     background: transparent;
     padding: 0;
@@ -157,6 +157,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
     }
   });
 </script>
+---
 
 ## References
 
