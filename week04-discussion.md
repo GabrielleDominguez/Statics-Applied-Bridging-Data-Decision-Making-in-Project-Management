@@ -39,38 +39,41 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > I am glad CLT is making sense to you too! I have a feeling it'll change how many of us approach decision making. I am looking forward to picking up more tools like this throughout the semester alongside you.
 
 ---
-
 <h3>CLT & Confidence Interval Visualizations</h3>
 
-<table style="width: 100%; table-layout: fixed;">
-  <tr>
-    <td align="center">
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8c4f724222070eb46f3559983df6db39bf0ab724/thumbnail%205%20sample.png?raw=true" data-lightbox="clt" data-title="Thumbnail 5 Sample">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8c4f724222070eb46f3559983df6db39bf0ab724/thumbnail%205%20sample.png?raw=true" width="450" alt="Thumbnail 5 Sample" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%202.png?raw=true" data-lightbox="clt" data-title="CLT Article 2">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%202.png?raw=true" width="450" alt="CLT Article 2" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%203.png?raw=true" data-lightbox="clt" data-title="CLT Article 3">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%203.png?raw=true" width="450" alt="CLT Article 3" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%204.png?raw=true" data-lightbox="clt" data-title="CLT Article 4">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%204.png?raw=true" width="450" alt="CLT Article 4" />
-      </a>
-    </td>
-  </tr>
-</table>
+<div class="image-row">
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8c4f724222070eb46f3559983df6db39bf0ab724/thumbnail%205%20sample.png?raw=true" alt="Thumbnail 5 Sample" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
 
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%202.png?raw=true" alt="CLT Article 2" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
+</div>
 
+<div class="image-row" style="margin-top: 12px;">
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%203.png?raw=true" alt="CLT Article 3" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
 
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%204.png?raw=true" alt="CLT Article 4" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
+</div>
+
+<!-- Modal for Zoom -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
+  <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
+  <img src="" alt="" id="modal-img" />
+</div>
+
+<!-- Reuse existing styles and script -->
+
+---
 
 ## References
 
