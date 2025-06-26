@@ -132,5 +132,5 @@ This repository is for educational and portfolio purposes. Please contact me bef
 Thank you for visiting!  
 — Gabrielle Dominguez, PMP, CSM  
 
-[<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" width="20" height="20">](mailto:gabrielledominguez05@gmail.com)
-[<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="20" height="20">](https://www.linkedin.com/in/gabrielle-r-dominguez)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Email" width="20" height="20">](mailto:gabrielledominguez05@gmail.com)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="20" height="20">](https://www.linkedin.com/in/gabrielle-r-dominguez)
