@@ -35,12 +35,12 @@ Each discussion contains:
     <tr>
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
             <!-- Chevron icon for mobile only -->
-            <a href="week01-discussion.html" class="mobile-chevron" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
+            <a href="week01-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
                     <polyline points="9 6 15 12 9 18" />
                 </svg>
             </a>
-            <a href="week01-discussion.html" style="display: block;">
+            <a href="week01-discussion.html" class="thumbnail-link" style="display: block;">
                 <img
                     src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%201%2C%20post.png"
                     alt="Week 1 Graphic"
@@ -52,12 +52,12 @@ Each discussion contains:
 
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
             <!-- Chevron icon for mobile only -->
-            <a href="week01-discussion.html" class="mobile-chevron" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
+            <a href="week01-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
                     <polyline points="9 6 15 12 9 18" />
                 </svg>
             </a>
-            <a href="week01-discussion.html" style="display: block;">
+            <a href="week01-discussion.html" class="thumbnail-link" style="display: block;">
                 <img
                     src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%202%2C%20post.png"
                     alt="Week 1 Graph Variation"
@@ -72,12 +72,12 @@ Each discussion contains:
     <tr>
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
             <!-- Chevron icon for mobile only -->
-            <a href="week02-discussion.html" class="mobile-chevron" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
+            <a href="week02-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
                     <polyline points="9 6 15 12 9 18" />
                 </svg>
             </a>
-            <a href="week02-discussion.html" style="display: block;">
+            <a href="week02-discussion.html" class="thumbnail-link" style="display: block;">
                 <img
                     src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%203%2C%20post.png"
                     alt="Week 2 Graphic"
@@ -89,12 +89,12 @@ Each discussion contains:
 
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
             <!-- Chevron icon for mobile only -->
-            <a href="week03-discussion.html" class="mobile-chevron" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
+            <a href="week03-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
                     <polyline points="9 6 15 12 9 18" />
                 </svg>
             </a>
-            <a href="week03-discussion.html" style="display: block;">
+            <a href="week03-discussion.html" class="thumbnail-link" style="display: block;">
                 <img
                     src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%204%2C%20post%20w%20star%20v3.png"
                     alt="Week 3 Graphic"
@@ -109,12 +109,12 @@ Each discussion contains:
     <tr>
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
             <!-- Chevron icon for mobile only -->
-            <a href="week04-discussion.html" class="mobile-chevron" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
+            <a href="week04-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
                     <polyline points="9 6 15 12 9 18" />
                 </svg>
             </a>
-            <a href="week04-discussion.html" style="display: block;">
+            <a href="week04-discussion.html" class="thumbnail-link" style="display: block;">
                 <img
                     src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%205%2C%20post%20%28final%20v2%29.png"
                     alt="Week 4 Graphic"
@@ -126,12 +126,12 @@ Each discussion contains:
 
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
             <!-- Chevron icon for mobile only -->
-            <a href="week05-discussion.html" class="mobile-chevron" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
+            <a href="week05-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
                     <polyline points="9 6 15 12 9 18" />
                 </svg>
             </a>
-            <a href="week05-discussion.html" style="display: block;">
+            <a href="week05-discussion.html" class="thumbnail-link" style="display: block;">
                 <img
                     src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/d8b3ff2531a08bbf8b79bcd4d01ce67d4890aa4b/thumbnail%206%2C%20post%20v7.png?raw=true"
                     alt="Week 5 Graphic"
@@ -156,13 +156,13 @@ Each discussion contains:
   }
 }
 
-/* Desktop hover darkening */
+/* Desktop hover darkening only on the thumbnail image links */
 @media (hover: hover) and (pointer: fine) {
-  a[href*="week"] img {
+  a.thumbnail-link img {
     transition: all 0.3s ease;
   }
 
-  a[href*="week"]:hover img {
+  a.thumbnail-link:hover img {
     filter: brightness(0.88);
   }
 }
