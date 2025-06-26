@@ -31,114 +31,113 @@ Each discussion contains:
 ## Project-Based Illustrations
     
 <table style="width: 100%; table-layout: fixed;">
-        <!-- Week 1 -->
-        <tr>
-            <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-                <a href="week01-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-                        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-                    </svg>
-                </a>
-                <a href="week01-discussion.html" style="display: block; transition: opacity 0.2s;">
-                    <img
-                        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%201%2C%20post.png"
-                        alt="Week 1 Graphic"
-                        width="100%"
-                        style="max-width: 600px; border-radius: 6px;"
-                    />
-                </a>
-            </td>
+    <!-- Week 1 -->
+    <tr>
+        <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <a href="week01-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
+                <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
+                    <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                </svg>
+            </a>
+            <a href="week01-discussion.html" style="display: block; transition: opacity 0.2s;">
+                <img
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%201%2C%20post.png"
+                    alt="Week 1 Graphic"
+                    width="100%"
+                    style="max-width: 600px; border-radius: 6px;"
+                />
+            </a>
+        </td>
 
-            <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-                <a href="week01-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-                        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-                    </svg>
-                </a>
-                <a href="week01-discussion.html" style="display: block; transition: opacity 0.2s;">
-                    <img
-                        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%202%2C%20post.png"
-                        alt="Week 1 Graph Variation"
-                        width="100%"
-                        style="max-width: 600px; border-radius: 6px;"
-                    />
-                </a>
-            </td>
-        </tr>
+        <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <a href="week01-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
+                <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
+                    <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                </svg>
+            </a>
+            <a href="week01-discussion.html" style="display: block; transition: opacity 0.2s;">
+                <img
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%202%2C%20post.png"
+                    alt="Week 1 Graph Variation"
+                    width="100%"
+                    style="max-width: 600px; border-radius: 6px;"
+                />
+            </a>
+        </td>
+    </tr>
 
-        <!-- Week 2 & Week 3 -->
-        <tr>
-            <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-                <a href="week02-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-                        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-                    </svg>
-                </a>
-                <a href="week02-discussion.html" style="display: block; transition: opacity 0.2s;">
-                    <img
-                        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%203%2C%20post.png"
-                        alt="Week 2 Graphic"
-                        width="100%"
-                        style="max-width: 600px; border-radius: 6px;"
-                    />
-                </a>
-            </td>
+    <!-- Week 2 & 3 -->
+    <tr>
+        <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <a href="week02-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
+                <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
+                    <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                </svg>
+            </a>
+            <a href="week02-discussion.html" style="display: block; transition: opacity 0.2s;">
+                <img
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%203%2C%20post.png"
+                    alt="Week 2 Graphic"
+                    width="100%"
+                    style="max-width: 600px; border-radius: 6px;"
+                />
+            </a>
+        </td>
 
-            <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-                <a href="week03-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-                        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-                    </svg>
-                </a>
-                <a href="week03-discussion.html" style="display: block; transition: opacity 0.2s;">
-                    <img
-                        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%204%2C%20post%20w%20star%20v3.png"
-                        alt="Week 3 Graphic"
-                        width="100%"
-                        style="max-width: 600px; border-radius: 6px;"
-                    />
-                </a>
-            </td>
-        </tr>
+        <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <a href="week03-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
+                <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
+                    <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                </svg>
+            </a>
+            <a href="week03-discussion.html" style="display: block; transition: opacity 0.2s;">
+                <img
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%204%2C%20post%20w%20star%20v3.png"
+                    alt="Week 3 Graphic"
+                    width="100%"
+                    style="max-width: 600px; border-radius: 6px;"
+                />
+            </a>
+        </td>
+    </tr>
 
-        <!-- Week 4 & Week 5 -->
-        <tr>
-            <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-                <a href="week04-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-                        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-                    </svg>
-                </a>
-                <a href="week04-discussion.html" style="display: block; transition: opacity 0.2s;">
-                    <img
-                        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%205%2C%20post%20%28final%20v2%29.png"
-                        alt="Week 4 Graphic"
-                        width="100%"
-                        style="max-width: 600px; border-radius: 6px;"
-                    />
-                </a>
-            </td>
+    <!-- Week 4 & 5 -->
+    <tr>
+        <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <a href="week04-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
+                <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
+                    <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                </svg>
+            </a>
+            <a href="week04-discussion.html" style="display: block; transition: opacity 0.2s;">
+                <img
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%205%2C%20post%20%28final%20v2%29.png"
+                    alt="Week 4 Graphic"
+                    width="100%"
+                    style="max-width: 600px; border-radius: 6px;"
+                />
+            </a>
+        </td>
 
-            <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-                <a href="week05-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
-                        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-                    </svg>
-                </a>
-                <a href="week05-discussion.html" style="display: block; transition: opacity 0.2s;">
-                    <img
-                        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%206%2C%20post%20v6.png"
-                        alt="Week 5 Graphic"
-                        width="100%"
-                        style="max-width: 600px; border-radius: 6px;"
-                    />
-                </a>
-            </td>
-        </tr>
-    </table>
+        <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <a href="week05-discussion.html" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10;">
+                <svg width="14" height="14" viewBox="0 0 24 24" style="opacity: 0.7; stroke: #666; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round;">
+                    <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                </svg>
+            </a>
+            <a href="week05-discussion.html" style="display: block; transition: opacity 0.2s;">
+                <img
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%206%2C%20post%20v6.png"
+                    alt="Week 5 Graphic"
+                    width="100%"
+                    style="max-width: 600px; border-radius: 6px;"
+                />
+            </a>
+        </td>
+    </tr>
+</table>
 
 <style>
-/* Base styles - Force paperclip size on ALL devices */
 svg[viewBox="0 0 24 24"] {
     width: 14px !important;
     height: 14px !important;
@@ -149,21 +148,17 @@ svg[viewBox="0 0 24 24"] {
     flex-shrink: 0 !important;
 }
 
-/* Desktop hover effects - Much more pronounced */
 @media (hover: hover) and (pointer: fine) {
-    /* Strong cell hover effects */
     td[style*="background-color: #fff"] {
         transition: all 0.3s ease;
         border-radius: 8px;
     }
-    
+
     td[style*="background-color: #fff"]:hover {
         box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
-        transform: translateY(-4px);
-        background-color: #f5f5f5 !important;
+        background-color: #f0f0f0 !important;
     }
-    
-    /* Strong image hover effects */
+
     a[href*="week"] img {
         transition: all 0.3s ease;
         border-radius: 6px;
@@ -171,58 +166,49 @@ svg[viewBox="0 0 24 24"] {
 
     a[href*="week"]:hover img {
         opacity: 0.85;
-        filter: brightness(1.1) saturate(1.15) contrast(1.05);
-        transform: scale(1.03);
+        filter: brightness(0.9) saturate(1.1) contrast(1.05);
+        transform: none;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
-    
-    /* Strong paperclip hover effect */
+
     a[href*="week"] svg {
         transition: all 0.3s ease;
     }
-    
+
     a[href*="week"]:hover svg {
         opacity: 1 !important;
         stroke: #222 !important;
-        transform: scale(1.2);
+        transform: none;
     }
 }
 
-/* Mobile-specific fixes */
 @media (max-width: 768px) {
-    /* Absolutely force paperclip size on mobile */
     svg[viewBox="0 0 24 24"] {
         width: 14px !important;
         height: 14px !important;
-        min-width: 14px !important;
-        min-height: 14px !important;
-        max-width: 14px !important;
-        max-height: 14px !important;
         transform: none !important;
         scale: none !important;
     }
-    
-    /* Disable problematic transforms on mobile */
+
     td[style*="background-color: #fff"]:hover {
         transform: none !important;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         background-color: #f8f8f8 !important;
     }
-    
+
     a[href*="week"]:hover img {
         transform: none !important;
         filter: brightness(1.05);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     a[href*="week"]:hover svg {
         transform: none !important;
         scale: none !important;
         opacity: 0.9 !important;
         stroke: #444 !important;
     }
-    
-    /* Better touch targets for paperclips */
+
     a[style*="position: absolute"] {
         padding: 8px;
         margin: -8px;
@@ -234,7 +220,6 @@ svg[viewBox="0 0 24 24"] {
     }
 }
 
-/* Extra small screens */
 @media (max-width: 480px) {
     svg[viewBox="0 0 24 24"] {
         width: 14px !important;
@@ -243,39 +228,3 @@ svg[viewBox="0 0 24 24"] {
 }
 </style>
 
----
-
-## Additional Resources
-
-- **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
-
----
-
-## How to Use This Repository
-
-- Browse the weekly discussion files for detailed analysis and examples  
-- Review peer replies and responses to see collaborative learning  
-- Use referenced materials for deeper understanding  
-- Let's keep the conversation going: connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven insights
-
----
-
-## About Me
-
-I am Gabrielle Dominguez, a PMP & CSM-certified project manager and a student at Florida Southern College pursuing a Bachelor of Science in Business Administration and Business Analytics. I focus on leveraging data and analytics to optimize project outcomes and business performance.
-
-**I am actively seeking opportunities to leverage these skills and contribute meaningful value.**
-
----
-
-## License
-
-This repository is for educational and portfolio purposes. Please contact me before redistributing any content.
-
----
-
-Thank you for visiting!  
-— Gabrielle Dominguez, PMP, CSM
-
-[<img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" width="20" height="20" style="vertical-align:middle;">](mailto:gabrielledominguez05@gmail.com)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="20" height="20" style="vertical-align:middle;">](https://www.linkedin.com/in/gabrielle-r-dominguez)
