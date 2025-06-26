@@ -140,8 +140,13 @@ Each discussion contains:
 </table>
 
 <style>
+a[href*="week"] img {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
 a[href*="week"]:hover img {
-  opacity: 0.7;
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 </style>
 
