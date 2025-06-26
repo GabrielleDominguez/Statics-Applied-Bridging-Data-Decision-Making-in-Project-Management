@@ -33,15 +33,16 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 <style>
   .image-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
-    justify-content: center;
+    justify-items: center;
+    margin-bottom: 1rem;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 300px;
+    width: 100%;
     max-width: 400px;
   }
 
