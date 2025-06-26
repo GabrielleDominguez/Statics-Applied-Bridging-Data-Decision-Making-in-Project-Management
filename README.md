@@ -72,7 +72,7 @@ Each discussion contains:
             class="main-img"
           />
           <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
           </svg>
         </div>
       </a>
@@ -86,14 +86,14 @@ Each discussion contains:
             class="main-img"
           />
           <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
           </svg>
         </div>
       </a>
     </td>
   </tr>
 
-  <!-- Week 2 & Week 3 -->
+  <!-- Week 2 & 3 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week02-discussion.html">
@@ -104,7 +104,7 @@ Each discussion contains:
             class="main-img"
           />
           <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
           </svg>
         </div>
       </a>
@@ -118,14 +118,14 @@ Each discussion contains:
             class="main-img"
           />
           <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
           </svg>
         </div>
       </a>
     </td>
   </tr>
 
-  <!-- Week 4 & Week 5 -->
+  <!-- Week 4 & 5 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week04-discussion.html">
@@ -136,7 +136,7 @@ Each discussion contains:
             class="main-img"
           />
           <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
           </svg>
         </div>
       </a>
@@ -150,7 +150,7 @@ Each discussion contains:
             class="main-img"
           />
           <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
           </svg>
         </div>
       </a>
