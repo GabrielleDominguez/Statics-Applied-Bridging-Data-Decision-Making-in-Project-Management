@@ -44,19 +44,19 @@ Each discussion contains:
     display: block;
   }
 
-  .clip-icon {
+  .clip-icon-svg {
     position: absolute;
     top: 6px;
     right: 6px;
-    width: 14px;
-    height: 14px;
-    opacity: 0.4;
-    transition: opacity 0.2s ease;
+    width: 16px;
+    height: 16px;
+    fill: rgba(100, 100, 100, 0.4);
+    transition: fill 0.2s ease;
     pointer-events: none;
   }
 
-  .clip-container:hover .clip-icon {
-    opacity: 0.7;
+  .clip-container:hover .clip-icon-svg {
+    fill: rgba(100, 100, 100, 0.7);
   }
 </style>
 
@@ -71,11 +71,9 @@ Each discussion contains:
             alt="Week 1 Graphic - Updated"
             class="main-img"
           />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
-            alt=""
-            class="clip-icon"
-          />
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+          </svg>
         </div>
       </a>
     </td>
@@ -87,11 +85,9 @@ Each discussion contains:
             alt="Week 1 Graph Variation - Updated"
             class="main-img"
           />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
-            alt=""
-            class="clip-icon"
-          />
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+          </svg>
         </div>
       </a>
     </td>
@@ -107,11 +103,9 @@ Each discussion contains:
             alt="Week 2 Slot 3 - Final Thumbnail"
             class="main-img"
           />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
-            alt=""
-            class="clip-icon"
-          />
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+          </svg>
         </div>
       </a>
     </td>
@@ -123,11 +117,9 @@ Each discussion contains:
             alt="Week 3 Graphic - Star V3"
             class="main-img"
           />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
-            alt=""
-            class="clip-icon"
-          />
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+          </svg>
         </div>
       </a>
     </td>
@@ -143,11 +135,9 @@ Each discussion contains:
             alt="Week 4 Illustration - Final V2"
             class="main-img"
           />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
-            alt=""
-            class="clip-icon"
-          />
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+          </svg>
         </div>
       </a>
     </td>
@@ -159,11 +149,9 @@ Each discussion contains:
             alt="Week 5 Graphic - Final v6"
             class="main-img"
           />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paper_clip_icon.svg/1024px-Paper_clip_icon.svg.png"
-            alt=""
-            class="clip-icon"
-          />
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.44 11.05l-8.1 8.11a4.5 4.5 0 0 1-6.36-6.36l8.1-8.11a3.5 3.5 0 0 1 4.95 4.95l-8.1 8.11a2 2 0 0 1-2.83-2.83l7.07-7.07" stroke="none" fill="currentColor" />
+          </svg>
         </div>
       </a>
     </td>
