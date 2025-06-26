@@ -40,7 +40,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-<h3>CLT and Confidence Interval Visualizations</h3>
+<h3>CLT & Confidence Interval Visualizations</h3>
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
