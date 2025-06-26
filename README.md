@@ -29,6 +29,17 @@ Each discussion contains:
 ---
 
 ## Project-Based Illustrations
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Based Illustrations</title>
+</head>
+<body>
+
+## Project-Based Illustrations
+    ## Project-Based Illustrations
     
 <table style="width: 100%; table-layout: fixed;">
         <!-- Week 1 -->
@@ -138,61 +149,91 @@ Each discussion contains:
     </table>
 
 <style>
-/* Mobile-friendly hover effects */
-@media (hover: hover) and (pointer: fine) {
-    /* Desktop hover effects - subtle */
-    td[style*="background-color: #fff"]:hover {
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.2s ease;
-    }
-    
-    a[href*="week"] img {
-        transition: opacity 0.2s ease, filter 0.2s ease;
-    }
-
-    a[href*="week"]:hover img {
-        opacity: 0.95;
-        filter: brightness(1.02);
-    }
-    
-    /* Paperclip hover effect */
-    a[href*="week"] svg {
-        transition: opacity 0.2s ease;
-    }
-    
-    a[href*="week"]:hover svg {
-        opacity: 0.9;
-    }
-}
-
-/* Mobile optimizations */
-@media (max-width: 768px) {
-    /* Larger touch targets for paperclips */
-    a[href*="week"] svg {
-        width: 16px !important;
-        height: 16px !important;
-        min-width: 16px;
-        min-height: 16px;
-    }
-    
-    /* Disable hover effects on mobile */
-    td[style*="background-color: #fff"]:hover {
-        box-shadow: none;
-    }
-    
-    a[href*="week"]:hover img,
-    a[href*="week"]:hover svg {
-        opacity: 0.7;
-        filter: none;
-    }
-}
-
-/* Base styles for all devices */
+/* Base styles for all devices - Keep paperclips at desktop size */
 svg {
     width: 14px !important;
     height: 14px !important;
-    min-width: 14px;
-    min-height: 14px;
+    min-width: 14px !important;
+    min-height: 14px !important;
+}
+
+/* Enhanced hover effects for desktop */
+@media (hover: hover) and (pointer: fine) {
+    /* More noticeable cell hover effects */
+    td[style*="background-color: #fff"] {
+        transition: all 0.3s ease;
+        border-radius: 8px;
+    }
+    
+    td[style*="background-color: #fff"]:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+        background-color: #fafafa !important;
+    }
+    
+    /* Enhanced image hover effects */
+    a[href*="week"] img {
+        transition: all 0.3s ease;
+    }
+
+    a[href*="week"]:hover img {
+        opacity: 0.9;
+        filter: brightness(1.05) saturate(1.1);
+        transform: scale(1.02);
+    }
+    
+    /* Enhanced paperclip hover effect */
+    a[href*="week"] svg {
+        transition: all 0.3s ease;
+    }
+    
+    a[href*="week"]:hover svg {
+        opacity: 1;
+        stroke: #333;
+        transform: scale(1.1);
+    }
+}
+
+/* Mobile optimizations - Keep paperclips same size, disable transform effects */
+@media (max-width: 768px) {
+    /* Ensure paperclips stay at desktop size on mobile */
+    svg {
+        width: 14px !important;
+        height: 14px !important;
+        min-width: 14px !important;
+        min-height: 14px !important;
+        max-width: 14px !important;
+        max-height: 14px !important;
+    }
+    
+    /* Disable transform effects on mobile to prevent layout issues */
+    td[style*="background-color: #fff"]:hover {
+        transform: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    a[href*="week"]:hover img {
+        transform: none;
+        filter: brightness(1.02);
+    }
+    
+    a[href*="week"]:hover svg {
+        transform: none;
+    }
+    
+    /* Larger touch target for paperclips without changing visual size */
+    a[href*="week"][style*="position: absolute"] {
+        padding: 6px;
+        margin: -6px;
+    }
+}
+
+/* Prevent any unwanted scaling on very small screens */
+@media (max-width: 480px) {
+    svg {
+        width: 14px !important;
+        height: 14px !important;
+    }
 }
 </style>
 
