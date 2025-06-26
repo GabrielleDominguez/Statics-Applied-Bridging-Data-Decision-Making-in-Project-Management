@@ -29,6 +29,18 @@ Each discussion contains:
 ---
 
 ## Project-Based Illustrations
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Based Illustrations</title>
+</head>
+<body>
+
+## Project-Based Illustrations
+    ## Project-Based Illustrations
+    
 <table style="width: 100%; table-layout: fixed;">
         <!-- Week 1 -->
         <tr>
@@ -137,7 +149,7 @@ Each discussion contains:
     </table>
 
 <style>
-/* Paperclip sizing fixed */
+/* Base styles for all devices - Keep paperclips at desktop size */
 svg {
     width: 14px !important;
     height: 14px !important;
@@ -145,49 +157,71 @@ svg {
     min-height: 14px !important;
 }
 
-/* Hover effects only on desktop */
+/* Enhanced hover effects for desktop only */
 @media (hover: hover) and (pointer: fine) {
-    /* Darken image on hover */
+    /* Enhanced image hover effects - darkening only on desktop */
     a[href*="week"] img {
-        transition: opacity 0.3s ease;
-    }
-    a[href*="week"]:hover img {
-        opacity: 0.75;
-        filter: brightness(0.85);
-    }
-
-    /* Paperclip icon hover effect */
-    a[href*="week"] svg {
         transition: all 0.3s ease;
     }
-    a[href*="week"]:hover svg {
+
+    a[href*="week"]:hover img {
+        filter: brightness(0.88);
+    }
+    
+    /* Enhanced paperclip hover effect - only when hovering directly on paperclip */
+    a[href*="week"][style*="position: absolute"] svg {
+        transition: all 0.3s ease;
+    }
+    
+    a[href*="week"][style*="position: absolute"]:hover svg {
         opacity: 1;
         stroke: #333;
         transform: scale(1.1);
     }
 }
 
-/* Mobile devices: no hover darkening or scaling */
+/* Mobile optimizations - NO darkening effects */
 @media (max-width: 768px) {
+    /* Ensure paperclips stay at desktop size on mobile */
     svg {
         width: 14px !important;
         height: 14px !important;
         min-width: 14px !important;
         min-height: 14px !important;
+        max-width: 14px !important;
+        max-height: 14px !important;
     }
+    
+
+    
+    /* NO hover effects for images on mobile */
     a[href*="week"]:hover img {
-        opacity: 1 !important;
-        filter: none !important;
-        transform: none !important;
+        opacity: 1;
+        filter: none;
+        transform: none;
     }
+    
     a[href*="week"]:hover svg {
-        transform: none !important;
+        transform: none;
+    }
+    
+    /* Larger touch target for paperclips without changing visual size */
+    a[href*="week"][style*="position: absolute"] {
+        padding: 6px;
+        margin: -6px;
+    }
+}
+
+/* Prevent any unwanted scaling on very small screens */
+@media (max-width: 480px) {
+    svg {
+        width: 14px !important;
+        height: 14px !important;
     }
 }
 </style>
 
 ---
-
 ## Additional Resources
 
 - **Elementary Statistics Textbook** by Triola, M. F.: [Pearson Website](https://www.pearson.com/en-us/subject-catalog/p/elementary-statistics/P200000006399/9780137366446?srsltid=AfmBOop8xN8ZxkM5WyngISxC95exMUdZT0OO9hPBOkOjo8TVQgPUJjXr)
