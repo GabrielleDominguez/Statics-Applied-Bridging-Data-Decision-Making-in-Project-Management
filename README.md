@@ -148,6 +148,13 @@ a[href*="week"]:hover img {
   transform: scale(1.03);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
+
+svg {
+  width: 14px !important;
+  height: 14px !important;
+  min-width: 14px;
+  min-height: 14px;
+}
 </style>
 
 ---
