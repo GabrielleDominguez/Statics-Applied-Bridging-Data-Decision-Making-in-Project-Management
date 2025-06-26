@@ -30,25 +30,67 @@ Each discussion contains:
 
 ## Project-Based Illustrations
 
+<style>
+  .clip-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .clip-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .clip-icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  .clip-container:hover .clip-icon {
+    opacity: 0.7;
+  }
+</style>
+
 <table style="width: 100%; table-layout: fixed;">
   <!-- Week 1 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week01-discussion.html">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/c07f9deae71ee44ee9b6c215b9ac8890221f271e/thumbnail%201%2C%20post.png"
-          alt="Week 1 Graphic - Updated"
-          style="width: 600px; height: auto; object-fit: contain;"
-        />
+        <div class="clip-container">
+          <img
+            src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/c07f9deae71ee44ee9b6c215b9ac8890221f271e/thumbnail%201%2C%20post.png"
+            alt="Week 1 Graphic - Updated"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            alt=""
+            class="clip-icon"
+          />
+        </div>
       </a>
     </td>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week01-discussion.html">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/c07f9deae71ee44ee9b6c215b9ac8890221f271e/thumbnail%202%2C%20post.png"
-          alt="Week 1 Graph Variation - Updated"
-          style="width: 600px; height: auto; object-fit: contain;"
-        />
+        <div class="clip-container">
+          <img
+            src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/c07f9deae71ee44ee9b6c215b9ac8890221f271e/thumbnail%202%2C%20post.png"
+            alt="Week 1 Graph Variation - Updated"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            alt=""
+            class="clip-icon"
+          />
+        </div>
       </a>
     </td>
   </tr>
@@ -57,20 +99,32 @@ Each discussion contains:
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week02-discussion.html">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/5bbfc26ccf0bdb77807f6c550823e9def342452b/thumbnail%203%2C%20post.png"
-          alt="Week 2 Slot 3 - Final Thumbnail"
-          style="width: 600px; height: auto; object-fit: contain;"
-        />
+        <div class="clip-container">
+          <img
+            src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/5bbfc26ccf0bdb77807f6c550823e9def342452b/thumbnail%203%2C%20post.png"
+            alt="Week 2 Slot 3 - Final Thumbnail"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            alt=""
+            class="clip-icon"
+          />
+        </div>
       </a>
     </td>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week03-discussion.html">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/a6e29fe5131c603b0cf0589c7cd2849d3b79f7e5/thumbnail%204%2C%20post%20w%20star%20v3.png"
-          alt="Week 3 Graphic - Star V3"
-          style="width: 600px; height: auto; object-fit: contain;"
-        />
+        <div class="clip-container">
+          <img
+            src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/a6e29fe5131c603b0cf0589c7cd2849d3b79f7e5/thumbnail%204%2C%20post%20w%20star%20v3.png"
+            alt="Week 3 Graphic - Star V3"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            alt=""
+            class="clip-icon"
+          />
+        </div>
       </a>
     </td>
   </tr>
@@ -79,20 +133,32 @@ Each discussion contains:
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week04-discussion.html">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e0bbd7a7f691cc705e804e1b6d612bef786205f1/thumbnail%205%2C%20post%20(final%20v2).png"
-          alt="Week 4 Illustration - Final V2"
-          style="width: 600px; height: auto; object-fit: contain;"
-        />
+        <div class="clip-container">
+          <img
+            src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e0bbd7a7f691cc705e804e1b6d612bef786205f1/thumbnail%205%2C%20post%20(final%20v2).png"
+            alt="Week 4 Illustration - Final V2"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            alt=""
+            class="clip-icon"
+          />
+        </div>
       </a>
     </td>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week05-discussion.html">
-        <img
-          src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e5de1c69e920603f9ccbef413e3522006daa5435/thumbnail%206%2C%20post%20v6.png"
-          alt="Week 5 Graphic - Final v6"
-          style="width: 600px; height: auto; object-fit: contain;"
-        />
+        <div class="clip-container">
+          <img
+            src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/e5de1c69e920603f9ccbef413e3522006daa5435/thumbnail%206%2C%20post%20v6.png"
+            alt="Week 5 Graphic - Final v6"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Paperclip_icon_fontawesome.svg"
+            alt=""
+            class="clip-icon"
+          />
+        </div>
       </a>
     </td>
   </tr>
