@@ -38,7 +38,8 @@ Each discussion contains:
   }
 
   .clip-container img.main-img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     border-radius: 4px;
     display: block;
@@ -50,13 +51,20 @@ Each discussion contains:
     right: 6px;
     width: 16px;
     height: 16px;
-    fill: rgba(100, 100, 100, 0.4);
-    transition: fill 0.2s ease;
     pointer-events: none;
   }
 
-  .clip-container:hover .clip-icon-svg {
-    fill: rgba(100, 100, 100, 0.7);
+  .clip-icon-svg path {
+    fill: none;
+    stroke: rgba(100, 100, 100, 0.4);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.2s ease;
+  }
+
+  .clip-container:hover .clip-icon-svg path {
+    stroke: rgba(100, 100, 100, 0.7);
   }
 </style>
 
@@ -71,8 +79,8 @@ Each discussion contains:
             alt="Week 1 Graphic - Updated"
             class="main-img"
           />
-          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.5 6.5L9 14a3 3 0 0 0 4.2 4.2l7.5-7.5a5 5 0 0 0-7-7L5 13"/>
           </svg>
         </div>
       </a>
@@ -85,15 +93,15 @@ Each discussion contains:
             alt="Week 1 Graph Variation - Updated"
             class="main-img"
           />
-          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.5 6.5L9 14a3 3 0 0 0 4.2 4.2l7.5-7.5a5 5 0 0 0-7-7L5 13"/>
           </svg>
         </div>
       </a>
     </td>
   </tr>
 
-  <!-- Week 2 & 3 -->
+  <!-- Week 2 & Week 3 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week02-discussion.html">
@@ -103,8 +111,8 @@ Each discussion contains:
             alt="Week 2 Slot 3 - Final Thumbnail"
             class="main-img"
           />
-          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.5 6.5L9 14a3 3 0 0 0 4.2 4.2l7.5-7.5a5 5 0 0 0-7-7L5 13"/>
           </svg>
         </div>
       </a>
@@ -117,15 +125,15 @@ Each discussion contains:
             alt="Week 3 Graphic - Star V3"
             class="main-img"
           />
-          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.5 6.5L9 14a3 3 0 0 0 4.2 4.2l7.5-7.5a5 5 0 0 0-7-7L5 13"/>
           </svg>
         </div>
       </a>
     </td>
   </tr>
 
-  <!-- Week 4 & 5 -->
+  <!-- Week 4 & Week 5 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; width: 50%;">
       <a href="week04-discussion.html">
@@ -135,8 +143,8 @@ Each discussion contains:
             alt="Week 4 Illustration - Final V2"
             class="main-img"
           />
-          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.5 6.5L9 14a3 3 0 0 0 4.2 4.2l7.5-7.5a5 5 0 0 0-7-7L5 13"/>
           </svg>
         </div>
       </a>
@@ -149,8 +157,8 @@ Each discussion contains:
             alt="Week 5 Graphic - Final v6"
             class="main-img"
           />
-          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M7.5 3a4.5 4.5 0 0 0-4.5 4.5v9a3.5 3.5 0 0 0 7 0v-7a1.5 1.5 0 0 0-3 0v7a.5.5 0 0 1-1 0v-9a3.5 3.5 0 0 1 7 0v7a4.5 4.5 0 0 1-9 0v-9z"/>
+          <svg class="clip-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.5 6.5L9 14a3 3 0 0 0 4.2 4.2l7.5-7.5a5 5 0 0 0-7-7L5 13"/>
           </svg>
         </div>
       </a>
