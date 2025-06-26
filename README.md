@@ -111,7 +111,7 @@ Each discussion contains:
 - Browse the weekly discussion files for detailed analysis and examples  
 - Review peer replies and responses to see collaborative learning  
 - Use referenced materials for deeper understanding  
-- Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for project management and data-driven discussions
+- Let’s keep the conversation going: connect with me on [LinkedIn](https://www.linkedin.com/in/gabrielle-r-dominguez) for more project management and data-driven discussions
 
 ---
 
