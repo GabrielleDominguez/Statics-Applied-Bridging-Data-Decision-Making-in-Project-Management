@@ -47,13 +47,14 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     display: flex;
     gap: 12px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-bottom: 8px; /* controls space between rows */
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(50% - 6px); /* Two per row */
-    max-width: calc(50% - 6px);
+    flex: 1 1 0;
+    max-width: none;
   }
 
   .img-container img {
@@ -62,6 +63,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     height: auto;
     cursor: pointer;
     border-radius: 4px;
+    margin: 0;
   }
 
   .zoom-plus {
@@ -121,25 +123,28 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <div class="image-row">
   <div class="img-container">
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8c4f724222070eb46f3559983df6db39bf0ab724/thumbnail%205%20sample.png?raw=true" alt="Thumbnail 5 Sample" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <div class="zoom-plus">+</div>
   </div>
 
   <div class="img-container">
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%202.png?raw=true" alt="CLT Article 2" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <div class="zoom-plus">+</div>
   </div>
+</div>
 
+<div class="image-row">
   <div class="img-container">
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%203.png?raw=true" alt="CLT Article 3" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <div class="zoom-plus">+</div>
   </div>
 
   <div class="img-container">
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%204.png?raw=true" alt="CLT Article 4" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <div class="zoom-plus">+</div>
   </div>
 </div>
 
+<!-- Modal -->
 <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
