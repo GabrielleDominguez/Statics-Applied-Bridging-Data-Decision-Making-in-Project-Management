@@ -57,8 +57,9 @@ This statistical approach would help me move beyond basic project metrics and de
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(48.5% - 1px); /* 10% larger than previous (final desktop size) */
-    max-width: calc(48.5% - 1px);
+    /* 10% smaller than original 48.5% */
+    flex: 1 1 calc(43.65% - 1px);
+    max-width: calc(43.65% - 1px);
   }
 
   .img-container img {
@@ -129,8 +130,9 @@ This statistical approach would help me move beyond basic project metrics and de
     }
 
     .zoom-plus {
-      top: 9px;  /* 20% more padding from previous */
-      right: 9px;
+      /* 20% push from desktop 5px = 6px */
+      top: 6px;
+      right: 6px;
     }
   }
 </style>
