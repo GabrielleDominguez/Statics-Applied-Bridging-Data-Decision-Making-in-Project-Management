@@ -40,21 +40,22 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-## CLT & Confidence Interval Visualizations
+## Forecasting Visualizations
 
 <style>
   .image-row {
     display: flex;
-    gap: 12px;
+    gap: 8px; /* tighter gap = wider images */
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 8px;
+    max-width: 100%;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 0;
-    max-width: none;
+    flex: 1 1 calc(50% - 4px); /* two per row with gap */
+    max-width: 100%;
   }
 
   .img-container img {
@@ -116,6 +117,12 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     font-weight: bold;
     cursor: pointer;
     user-select: none;
+  }
+
+  @media (max-width: 640px) {
+    .img-container {
+      flex: 1 1 100%; /* stack on small screens */
+    }
   }
 </style>
 
