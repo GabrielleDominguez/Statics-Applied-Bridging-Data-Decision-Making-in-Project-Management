@@ -130,9 +130,9 @@ This statistical approach would help me move beyond basic project metrics and de
       grid-gap: 3px 3px;
     }
     .zoom-plus {
-      top: 1.25px !important;      /* pushed further out */
-      right: 1.25px !important;
-      background: rgba(255, 165, 0, 0.3) !important; /* translucent orange */
+      top: 5px !important;       /* big push */
+      right: 5px !important;
+      background: rgba(128, 0, 128, 0.3) !important; /* translucent purple */
       color: rgba(0, 0, 0, 0.5) !important;
       pointer-events: none !important;
     }
@@ -199,7 +199,7 @@ This statistical approach would help me move beyond basic project metrics and de
     }
   });
 </script>
- 
+
 ---
  
 ## References
