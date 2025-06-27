@@ -45,16 +45,16 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   .image-row {
     display: flex;
-    gap: 8px; /* tighter gap = wider images */
+    gap: 6px;              /* smaller gap */
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;     /* no wrapping, always one row */
     margin-bottom: 8px;
     max-width: 100%;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(50% - 4px); /* two per row with gap */
+    flex: 0 0 calc(50% - 3px); /* exactly half minus half gap */
     max-width: 100%;
   }
 
@@ -117,12 +117,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     font-weight: bold;
     cursor: pointer;
     user-select: none;
-  }
-
-  @media (max-width: 640px) {
-    .img-container {
-      flex: 1 1 100%; /* stack on small screens */
-    }
   }
 </style>
 
