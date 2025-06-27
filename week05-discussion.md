@@ -11,7 +11,7 @@
 
 In project management, **hypothesis testing** could provide a structured approach for validating project outcomes and promoting data-driven decisions. The process involves five steps: stating your **null and alternative hypotheses**, selecting a significance level (typically *0.05*), choosing the appropriate test statistic, calculating the **P-value**, and making a decision based on the results (Triola, 2020).
 
-When selecting what method to use, I need to factor in the type of data I have available to me. If I was measuring success rates, compliance percentages, or other yes/no outcomes, I would use **proportion tests with z-statistics**. When measuring performance metrics, think response times or processing speeds, I'd use **mean tests with t-statistics**.
+When selecting what method to use, I need to factor in the type of data I have available to me. If I was measuring success rates, compliance percentages, or other yes/no outcomes, I would use **proportion tests** with z-statistics. When measuring performance metrics, think response times or processing speeds, I'd use **mean tests** with t-statistics.
 
 For a lot of project managers, project success is often measured by completion rates. Hypothesis testing would allow me to shift the focus to actual performance improvements with statistical evidence.
 
@@ -35,7 +35,7 @@ This statistical approach would help me move beyond basic project metrics and de
 > **Response from Gabrielle Dominguez:**  
 > Thank you, Alexis, for your kind words and great question. **Determining which performance metrics are worth testing** is indeed a crucial consideration.  
 >  
-> When managing projects, I go back to the **'why' behind the project** we are working to complete. **What is the goal?** For example, if I am working on migrating an internal database to a new platform, the metric may be how many people are adopting the new system and using it in real time, instead of hesitating because they do not like change. In this case, I would test the **adoption rate** of the platform. I already know the migration was successful, but this gives me a new lens to look through: **how easy is it to use for an early adopter?**
+> When managing projects, I go back to the **'why'** behind the project we are working to complete. **What is the goal?** For example, if I am working on migrating an internal database to a new platform, the metric may be how many people are adopting the new system and using it in real time, instead of hesitating because they do not like change. In this case, I would test the **adoption rate** of the platform. I already know the migration was successful, but this gives me a new lens to look through: **how easy is it to use for an early adopter?**
 > 
 > Some projects are more nuanced than this, these are when they are opinion-based and there is no clear metric to measure. An example of this would be client satisfaction with a product or service. There is no inherent metric to measure satisfaction because **satisfaction is their measurement**. This is why many companies send surveys to try and put words or metrics to feelings.  
 >  
