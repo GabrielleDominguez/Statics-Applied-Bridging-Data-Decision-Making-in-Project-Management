@@ -48,7 +48,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     gap: 12px;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin-bottom: 8px; /* controls space between rows */
+    margin-bottom: 8px;
   }
 
   .img-container {
@@ -63,7 +63,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     height: auto;
     cursor: pointer;
     border-radius: 4px;
-    margin: 0;
   }
 
   .zoom-plus {
@@ -122,25 +121,13 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 <div class="image-row">
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8c4f724222070eb46f3559983df6db39bf0ab724/thumbnail%205%20sample.png?raw=true" alt="Thumbnail 5 Sample" class="zoomable" />
-    <div class="zoom-plus">+</div>
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/1cc095e3bb0ed53c7f412445878e02807fc15b9b/Article%204%2C%20image%201.png?raw=true" alt="Article 4 - Image 1" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%202.png?raw=true" alt="CLT Article 2" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
-</div>
-
-<div class="image-row">
-  <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%203.png?raw=true" alt="CLT Article 3" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
-
-  <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%204.png?raw=true" alt="CLT Article 4" class="zoomable" />
-    <div class="zoom-plus">+</div>
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/1cc095e3bb0ed53c7f412445878e02807fc15b9b/Article%204%2C%20image%202.png?raw=true" alt="Article 4 - Image 2" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
 
