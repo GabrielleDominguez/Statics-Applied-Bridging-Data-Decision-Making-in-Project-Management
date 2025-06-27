@@ -50,15 +50,15 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-row {
     display: flex;
-    gap: 3px; /* 2/3 closer horizontally */
+    gap: 2px; /* even tighter for desktop */
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(46.75% - 1.5px); /* 10% larger */
-    max-width: calc(46.75% - 1.5px);
+    flex: 1 1 calc(48.5% - 1px); /* 10% larger than previous (final desktop size) */
+    max-width: calc(48.5% - 1px);
   }
 
   .img-container img {
@@ -129,8 +129,8 @@ This statistical approach would help me move beyond basic project metrics and de
     }
 
     .zoom-plus {
-      top: 7px;  /* 10% more than previous mobile offset */
-      right: 7px;
+      top: 9px;  /* 20% more padding from previous */
+      right: 9px;
     }
   }
 </style>
