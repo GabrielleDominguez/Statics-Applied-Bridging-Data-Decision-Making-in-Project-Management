@@ -50,15 +50,15 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-row {
     display: flex;
-    gap: 0;
-    justify-content: flex-start;
+    gap: 1px; /* minimal gap */
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(37.35% - 0px); /* 10% smaller */
-    max-width: calc(37.35% - 0px);
+    flex: 1 1 calc(44% - 1px); /* ~10% smaller than 48.5% */
+    max-width: calc(44% - 1px);
   }
 
   .img-container img {
@@ -76,7 +76,7 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: rgba(0, 200, 255, 0.15); /* sky blue debug for desktop */
+    background: rgba(255, 165, 0, 0.3); /* translucent orange */
     border-radius: 2px;
     padding: 2px;
     user-select: none;
@@ -123,6 +123,7 @@ This statistical approach would help me move beyond basic project metrics and de
     user-select: none;
   }
 
+  /* Mobile styles */
   @media (max-width: 600px) {
     .img-container {
       flex: 1 1 calc(50% - 4px);
@@ -130,9 +131,9 @@ This statistical approach would help me move beyond basic project metrics and de
     }
 
     .zoom-plus {
-      top: 12px !important;
-      right: 12px !important;
-      background: rgba(150, 255, 100, 0.3); /* lime green debug on mobile */
+      top: 2px !important;      /* push further up */
+      right: 2px !important;    /* push further right */
+      background: rgba(255, 165, 0, 0.3) !important; /* translucent orange */
     }
   }
 </style>
