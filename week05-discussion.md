@@ -50,15 +50,15 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-row {
     display: flex;
-    gap: 12px;
+    gap: 8px; /* 1/3 closer horizontally */
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(50% - 6px); /* 2 per row, accounting for 12px gap */
-    max-width: calc(50% - 6px);
+    flex: 1 1 calc(42.5% - 4px); /* 15% smaller */
+    max-width: calc(42.5% - 4px);
   }
 
   .img-container img {
@@ -71,8 +71,8 @@ This statistical approach would help me move beyond basic project metrics and de
 
   .zoom-plus {
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 5px; /* 10% inward */
+    right: 5px; /* 10% inward */
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
@@ -124,8 +124,13 @@ This statistical approach would help me move beyond basic project metrics and de
 
   @media (max-width: 600px) {
     .img-container {
-      flex: 1 1 calc(50% - 6px);
-      max-width: calc(50% - 6px);
+      flex: 1 1 calc(50% - 4px);
+      max-width: calc(50% - 4px);
+    }
+
+    .zoom-plus {
+      top: 6px;  /* 20% more space from top */
+      right: 6px; /* 20% more space from right */
     }
   }
 </style>
@@ -190,7 +195,7 @@ This statistical approach would help me move beyond basic project metrics and de
     }
   });
 </script>
- 
+
 ---
 ## References
 
