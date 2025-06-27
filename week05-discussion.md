@@ -52,7 +52,7 @@ This statistical approach would help me move beyond basic project metrics and de
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 12px;
-    max-width: 765px; /* 900px * 0.85 */
+    max-width: 841.5px; /* 765px + 10% */
     margin: 0 auto;
   }
 
@@ -77,7 +77,7 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: rgba(0, 128, 0, 0.3); /* Green */
+    background: none; /* ✅ Removed green */
     border-radius: 2px;
     padding: 2px 5px;
     user-select: none;
@@ -124,12 +124,12 @@ This statistical approach would help me move beyond basic project metrics and de
     user-select: none;
   }
 
-  /* MOBILE plus pushed 30% closer inward (from -15px to -10.5px) */
+  /* Mobile plus */
   @media (max-width: 600px) {
     .zoom-plus {
       top: -10.5px !important;
       right: -10.5px !important;
-      background: rgba(0, 128, 0, 0.3) !important; /* Green */
+      background: none !important; /* ✅ Removed green */
       color: rgba(0, 0, 0, 0.5) !important;
       pointer-events: none !important;
     }
