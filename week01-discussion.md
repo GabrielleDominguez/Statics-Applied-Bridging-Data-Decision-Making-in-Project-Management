@@ -30,14 +30,16 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 ---
 
-## Graph Visualizations
+## Forecasting Visualizations
 
 <style>
   .image-row {
     display: flex;
+    flex-wrap: nowrap;
     gap: 12px;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .img-container {
@@ -56,8 +58,8 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   .zoom-plus {
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 5px;
+    right: 5px;
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
@@ -106,16 +108,29 @@ From the course content, we learned that statistics helps us *"describe data, ma
     cursor: pointer;
     user-select: none;
   }
+
+  @media (max-width: 600px) {
+    .image-row {
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .zoom-plus {
+      top: -45px;
+      right: -45px;
+      background: rgba(255, 140, 0, 0.3); /* Orange background for mobile only */
+    }
+  }
 </style>
 
 <div class="image-row">
   <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Forecasting Image 1" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 
   <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Forecasting Image 2" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
@@ -158,6 +173,8 @@ From the course content, we learned that statistics helps us *"describe data, ma
     }
   });
 </script>
+
+---
 
 ## References
 
