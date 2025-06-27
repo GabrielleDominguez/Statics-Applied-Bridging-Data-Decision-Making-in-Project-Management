@@ -53,14 +53,18 @@ This statistical approach would help me move beyond basic project metrics and de
     grid-template-columns: repeat(2, 1fr); /* 2 columns desktop and mobile */
     gap: 20px;
     margin-top: 20px;
+    justify-content: center; /* center grid */
   }
 
   .img-wrapper {
     position: relative;
     width: 100%;
+    max-width: 80%; /* shrink by ~20% on desktop */
+    margin: 0 auto; /* center horizontally */
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
+    transition: max-width 0.3s ease;
   }
 
   .img-wrapper img {
@@ -126,7 +130,9 @@ This statistical approach would help me move beyond basic project metrics and de
     }
     
     .img-wrapper {
-      padding: 8px; /* add padding so icon doesn't overlap */
+      padding: 16px; /* doubled from 8px */
+      max-width: 100%; /* full width on mobile */
+      margin: 0; /* reset centering */
     }
     
     .img-wrapper img {
@@ -136,9 +142,9 @@ This statistical approach would help me move beyond basic project metrics and de
     }
     
     .zoom-icon {
-      top: 12px !important;    /* move down a bit */
-      right: 12px !important;  /* move left a bit */
-      font-size: 18px;         /* smaller icon */
+      top: 12px !important;
+      right: 12px !important;
+      font-size: 18px;
       color: rgba(0, 0, 0, 0.4);
     }
   }
