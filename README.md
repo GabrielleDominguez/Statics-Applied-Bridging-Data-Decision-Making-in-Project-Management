@@ -34,7 +34,6 @@ Each discussion contains:
   <!-- Week 1 -->
   <tr>
     <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-      <!-- Paperclip icon for mobile only -->
       <div class="mobile-paperclip" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
@@ -82,19 +81,18 @@ Each discussion contains:
     </td>
   </tr>
 
-<!-- Week 4 & 5 -->
-<tr>
-  <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-    <div class="mobile-paperclip" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
-      </svg>
-    </div>
-    <a href="week04-discussion.html" class="thumbnail-link" style="display: block;">
-      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/6113ac586c97582f93ec91c09987f67df4393e0e/thumbnail%206%2C%20post%20v8.png" alt="Week 5 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
-    </a>
-  </td>
-</tr>
+  <!-- Week 4 & 5 -->
+  <tr>
+    <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+      <div class="mobile-paperclip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
+        </svg>
+      </div>
+      <a href="week04-discussion.html" class="thumbnail-link" style="display: block;">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/6113ac586c97582f93ec91c09987f67df4393e0e/thumbnail%206%2C%20post%20v8.png" alt="Week 4 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+      </a>
+    </td>
 
     <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
       <div class="mobile-paperclip" aria-hidden="true">
@@ -103,7 +101,7 @@ Each discussion contains:
         </svg>
       </div>
       <a href="week05-discussion.html" class="thumbnail-link" style="display: block;">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/d8b3ff2531a08bbf8b79bcd4d01ce67d4890aa4b/thumbnail%206%2C%20post%20v7.png?raw=true" alt="Week 5 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/710465067a9c3c0e285754e70c18d053629774d0/thumbnail%206%2C%20post%20v8.png?raw=true" alt="Week 5 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
       </a>
     </td>
   </tr>
