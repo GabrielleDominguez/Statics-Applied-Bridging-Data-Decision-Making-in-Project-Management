@@ -41,6 +41,93 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 <h3>CLT & Confidence Interval Visualizations</h3>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CLT & Confidence Interval Visualizations</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .img-container {
+      position: relative;
+      flex: 1 1 calc(50% - 6px); /* Two per row */
+      max-width: calc(50% - 6px);
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .zoom-plus {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      font-size: 20px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 36px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h3>CLT & Confidence Interval Visualizations</h3>
+
 <div class="image-row">
   <div class="img-container">
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8c4f724222070eb46f3559983df6db39bf0ab724/thumbnail%205%20sample.png?raw=true" alt="Thumbnail 5 Sample" class="zoomable" />
@@ -71,8 +158,34 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   <img src="" alt="" id="modal-img" />
 </div>
 
-<!-- Reuse existing styles and script -->
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeModal = document.getElementById("modal-close");
 
+  document.querySelectorAll(".zoom-plus").forEach(plusIcon => {
+    plusIcon.addEventListener("click", function (e) {
+      const img = this.previousElementSibling;
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      e.stopPropagation();
+    });
+  });
+
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
 ---
 
 ## References
