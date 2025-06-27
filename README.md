@@ -27,13 +27,19 @@ Each discussion contains:
 | 5    | Hypothesis Testing: Means vs Proportions    | [Week 5 Discussion](week05-discussion.md) |
 
 ---
-
 ## Project-Based Illustrations
 
 <table style="width: 100%; table-layout: fixed;">
     <!-- Week 1 -->
     <tr>
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <!-- Minimal paperclip icon for mobile only -->
+            <div class="mobile-paperclip" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" >
+                <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
+              </svg>
+            </div>
+
             <!-- Chevron icon for mobile only -->
             <a href="week01-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
@@ -51,6 +57,12 @@ Each discussion contains:
         </td>
 
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <div class="mobile-paperclip" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" >
+                <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
+              </svg>
+            </div>
+
             <!-- Chevron icon for mobile only -->
             <a href="week01-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
@@ -71,6 +83,12 @@ Each discussion contains:
     <!-- Week 2 & Week 3 -->
     <tr>
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <div class="mobile-paperclip" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" >
+                <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
+              </svg>
+            </div>
+
             <!-- Chevron icon for mobile only -->
             <a href="week02-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
@@ -88,6 +106,12 @@ Each discussion contains:
         </td>
 
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <div class="mobile-paperclip" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" >
+                <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
+              </svg>
+            </div>
+
             <!-- Chevron icon for mobile only -->
             <a href="week03-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
@@ -108,6 +132,12 @@ Each discussion contains:
     <!-- Week 4 & Week 5 -->
     <tr>
         <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
+            <div class="mobile-paperclip" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" >
+                <path d="M21.44 11.05l-9.19 9.19a4.5 4.5 0 0 1-6.36-6.36l9.19-9.19a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1.5 1.5 0 1 1-2.12-2.12l8.49-8.49" />
+              </svg>
+            </div>
+
             <!-- Chevron icon for mobile only -->
             <a href="week04-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
@@ -116,67 +146,7 @@ Each discussion contains:
             </a>
             <a href="week04-discussion.html" class="thumbnail-link" style="display: block;">
                 <img
-                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%205%2C%20post%20%28final%20v2%29.png"
-                    alt="Week 4 Graphic"
-                    width="100%"
-                    style="max-width: 600px; border-radius: 6px;"
-                />
-            </a>
-        </td>
-
-        <td align="center" style="padding: 15px; background-color: #fff; position: relative;">
-            <!-- Chevron icon for mobile only -->
-            <a href="week05-discussion.html" class="mobile-chevron thumbnail-link" style="position: absolute; top: 12px; right: 12px; text-decoration: none; z-index: 10; display: none;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7;">
-                    <polyline points="9 6 15 12 9 18" />
-                </svg>
-            </a>
-            <a href="week05-discussion.html" class="thumbnail-link" style="display: block;">
-                <img
-                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/d8b3ff2531a08bbf8b79bcd4d01ce67d4890aa4b/thumbnail%206%2C%20post%20v7.png?raw=true"
-                    alt="Week 5 Graphic"
-                    width="100%"
-                    style="max-width: 600px; border-radius: 6px;"
-                />
-            </a>
-        </td>
-    </tr>
-</table>
-
-<style>
-/* Hide chevron on desktop */
-.mobile-chevron {
-  display: none;
-}
-
-/* Show chevron only on mobile (max-width: 768px) */
-@media (max-width: 768px) {
-  .mobile-chevron {
-    display: block;
-  }
-}
-
-/* Desktop hover darkening only on the thumbnail image links */
-@media (hover: hover) and (pointer: fine) {
-  a.thumbnail-link img {
-    transition: all 0.3s ease;
-  }
-
-  a.thumbnail-link:hover img {
-    filter: brightness(0.88);
-  }
-}
-
-/* Base styles for all devices - SVG size */
-svg {
-    width: 14px !important;
-    height: 14px !important;
-    min-width: 14px !important;
-    min-height: 14px !important;
-    stroke: #666;
-    opacity: 0.7;
-}
-</style>
+                    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision
 
 ---
 
