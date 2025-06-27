@@ -77,7 +77,7 @@ Each discussion contains:
         </svg>
       </div>
       <a href="week03-discussion.html" class="thumbnail-link" style="display: block;">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/raw/main/thumbnail%204%2C%20post%20w%20star%20v3.png" alt="Week 3 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/f9d57dae7c8f0bb880eef2a970ef188702eca3f1/thumbnail%204%2C%20post%2C%20updated%20star%20placement.png?raw=true" alt="Week 3 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
       </a>
     </td>
   </tr>
