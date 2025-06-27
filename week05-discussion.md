@@ -50,17 +50,17 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns desktop and mobile */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px; /* 40% closer horizontally */
     margin-top: 20px;
-    justify-content: center; /* center grid */
+    justify-content: center;
   }
 
   .img-wrapper {
     position: relative;
     width: 100%;
-    max-width: 80%; /* shrink by ~20% on desktop */
-    margin: 0 auto; /* center horizontally */
+    max-width: 80%;
+    margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
@@ -77,8 +77,8 @@ This statistical approach would help me move beyond basic project metrics and de
 
   .zoom-icon {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 10px;   /* 20% bigger padding */
+    right: 10px; /* 20% bigger padding */
     color: rgba(0, 0, 0, 0.3);
     font-size: 20px;
     font-weight: 400;
@@ -125,14 +125,14 @@ This statistical approach would help me move beyond basic project metrics and de
 
   @media (max-width: 600px) {
     .image-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
-      gap: 14px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px; /* 40% smaller gap on mobile */
     }
     
     .img-wrapper {
-      padding: 16px; /* doubled from 8px */
-      max-width: 100%; /* full width on mobile */
-      margin: 0; /* reset centering */
+      padding: 16px;
+      max-width: 100%;
+      margin: 0;
     }
     
     .img-wrapper img {
@@ -142,8 +142,8 @@ This statistical approach would help me move beyond basic project metrics and de
     }
     
     .zoom-icon {
-      top: 12px !important;
-      right: 12px !important;
+      top: 14.5px !important;   /* 20% bigger padding from 12px */
+      right: 14.5px !important; /* same */
       font-size: 18px;
       color: rgba(0, 0, 0, 0.4);
     }
@@ -210,7 +210,7 @@ This statistical approach would help me move beyond basic project metrics and de
     }
   });
 </script>
-
+ 
 ---
 ## References
 
