@@ -50,7 +50,7 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
     gap: 20px;
     margin-top: 20px;
   }
@@ -121,7 +121,7 @@ This statistical approach would help me move beyond basic project metrics and de
 
   @media (max-width: 600px) {
     .image-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr; /* 1 column on mobile */
       gap: 14px;
     }
   }
@@ -129,22 +129,22 @@ This statistical approach would help me move beyond basic project metrics and de
 
 <div class="image-grid">
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Article%205%2C%20image%201.png" alt="Forecasting Image 1" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Forecasting Image 1" class="zoomable" />
     <div class="zoom-icon">+</div>
   </div>
 
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Atricle%205%2C%20image%202.png" alt="Forecasting Image 2" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Forecasting Image 2" class="zoomable" />
     <div class="zoom-icon">+</div>
   </div>
 
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Article%205%2C%20image%203.png" alt="Forecasting Image 3" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Forecasting Image 3" class="zoomable" />
     <div class="zoom-icon">+</div>
   </div>
 
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Article%205%2C%20image%204.png" alt="Forecasting Image 4" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Forecasting Image 4" class="zoomable" />
     <div class="zoom-icon">+</div>
   </div>
 </div>
