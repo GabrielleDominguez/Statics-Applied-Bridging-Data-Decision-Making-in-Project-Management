@@ -48,55 +48,54 @@ This statistical approach would help me move beyond basic project metrics and de
 ## Forecasting Visualizations
 
 <style>
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px; /* 40% closer horizontally */
-    margin-top: 20px;
-    justify-content: center;
+  .image-row {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .img-wrapper {
+  .img-container {
     position: relative;
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    transition: max-width 0.3s ease;
+    flex: 1 1 calc(50% - 6px); /* 2 per row, accounting for 12px gap */
+    max-width: calc(50% - 6px);
   }
 
-  .img-wrapper img {
+  .img-container img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 6px;
     cursor: pointer;
+    border-radius: 4px;
   }
 
-  .zoom-icon {
+  .zoom-plus {
     position: absolute;
-    top: 10px;   /* 20% bigger padding */
-    right: 10px; /* 20% bigger padding */
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 20px;
-    font-weight: 400;
+    top: 4px;
+    right: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    background: transparent;
+    padding: 0;
+    user-select: none;
     pointer-events: none;
     transition: color 0.3s ease;
-    user-select: none;
   }
 
-  .img-wrapper:hover .zoom-icon {
-    color: rgba(0, 0, 0, 0.6);
+  .img-container:hover .zoom-plus {
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .modal {
     display: none;
     position: fixed;
-    z-index: 1001;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
   }
@@ -106,10 +105,10 @@ This statistical approach would help me move beyond basic project metrics and de
   }
 
   .modal img {
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
   }
 
   .modal-close {
@@ -117,58 +116,39 @@ This statistical approach would help me move beyond basic project metrics and de
     top: 20px;
     right: 30px;
     color: white;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-    z-index: 1002;
+    user-select: none;
   }
 
   @media (max-width: 600px) {
-    .image-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px; /* 40% smaller gap on mobile */
-    }
-    
-    .img-wrapper {
-      padding: 16px;
-      max-width: 100%;
-      margin: 0;
-    }
-    
-    .img-wrapper img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    
-    .zoom-icon {
-      top: 14.5px !important;   /* 20% bigger padding from 12px */
-      right: 14.5px !important; /* same */
-      font-size: 18px;
-      color: rgba(0, 0, 0, 0.4);
+    .img-container {
+      flex: 1 1 calc(50% - 6px);
+      max-width: calc(50% - 6px);
     }
   }
 </style>
 
-<div class="image-grid">
-  <div class="img-wrapper">
+<div class="image-row">
+  <div class="img-container">
     <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Forecasting Image 1" class="zoomable" />
-    <div class="zoom-icon">+</div>
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 
-  <div class="img-wrapper">
+  <div class="img-container">
     <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Forecasting Image 2" class="zoomable" />
-    <div class="zoom-icon">+</div>
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 
-  <div class="img-wrapper">
+  <div class="img-container">
     <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Forecasting Image 3" class="zoomable" />
-    <div class="zoom-icon">+</div>
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 
-  <div class="img-wrapper">
+  <div class="img-container">
     <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Forecasting Image 4" class="zoomable" />
-    <div class="zoom-icon">+</div>
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
 
@@ -178,12 +158,12 @@ This statistical approach would help me move beyond basic project metrics and de
 </div>
 
 <script>
-  const zoomImgs = document.querySelectorAll('.zoomable');
+  const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
 
-  zoomImgs.forEach(img => {
+  zoomables.forEach(img => {
     img.addEventListener('click', () => {
       modal.classList.add('active');
       modalImg.src = img.src;
@@ -204,7 +184,7 @@ This statistical approach would help me move beyond basic project metrics and de
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape") {
+    if (e.key === "Escape" && modal.classList.contains('active')) {
       modal.classList.remove('active');
       modalImg.src = '';
     }
