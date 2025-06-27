@@ -45,7 +45,7 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ---
 
-## Forecasting Visualizations
+## Hypothesis Testing Visualizations
 
 <style>
   .image-row {
