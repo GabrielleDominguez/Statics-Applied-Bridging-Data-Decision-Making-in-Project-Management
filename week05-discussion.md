@@ -50,7 +50,7 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-row {
     display: flex;
-    gap: 1px; /* half the previous 2px */
+    gap: 1px; /* half of original 2px */
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -129,8 +129,8 @@ This statistical approach would help me move beyond basic project metrics and de
     }
 
     .zoom-plus {
-      top: 12px;   /* 30% more than current mobile 9px */
-      right: 12px;
+      top: 14px;  /* 50% more than 9px */
+      right: 14px;
     }
   }
 </style>
