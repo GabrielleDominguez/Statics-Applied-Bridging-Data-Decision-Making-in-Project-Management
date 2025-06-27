@@ -51,8 +51,9 @@ As a project manager, I use this same framework. Every project has expected outc
 <style>
   .kenny-img-container {
     position: relative;
-    width: 400px;
-    display: inline-block;
+    max-width: 100%; /* Allow container to scale down */
+    width: 400px; /* Default max width for larger screens */
+    margin: 0 auto; /* Center it on the page */
   }
 
   .kenny-img-container img {
@@ -155,6 +156,8 @@ As a project manager, I use this same framework. Every project has expected outc
     }
   });
 </script>
+
+---
 
 ## References
 
