@@ -50,9 +50,9 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 per row on desktop and mobile */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 12px;
-    max-width: 900px;
+    max-width: 765px; /* 900px * 0.85 */
     margin: 0 auto;
   }
 
@@ -69,6 +69,7 @@ This statistical approach would help me move beyond basic project metrics and de
     border-radius: 4px;
   }
 
+  /* Desktop plus */
   .zoom-plus {
     position: absolute;
     top: 5px;
@@ -76,7 +77,7 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: rgba(255, 204, 0, 0.3); /* Yellow */
+    background: rgba(0, 128, 0, 0.3); /* Green */
     border-radius: 2px;
     padding: 2px 5px;
     user-select: none;
@@ -123,12 +124,12 @@ This statistical approach would help me move beyond basic project metrics and de
     user-select: none;
   }
 
-  /* MOBILE: push plus sign 50% closer IN from previous position */
+  /* MOBILE plus pushed 30% closer inward (from -15px to -10.5px) */
   @media (max-width: 600px) {
     .zoom-plus {
-      top: -15px !important;   /* pushed 50% closer than -30px */
-      right: -15px !important; /* pushed 50% closer than -30px */
-      background: rgba(255, 204, 0, 0.3) !important; /* Yellow */
+      top: -10.5px !important;
+      right: -10.5px !important;
+      background: rgba(0, 128, 0, 0.3) !important; /* Green */
       color: rgba(0, 0, 0, 0.5) !important;
       pointer-events: none !important;
     }
