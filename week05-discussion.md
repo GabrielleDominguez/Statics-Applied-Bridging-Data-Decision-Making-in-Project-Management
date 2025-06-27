@@ -50,7 +50,7 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns desktop and mobile */
     gap: 20px;
     margin-top: 20px;
   }
@@ -121,8 +121,13 @@ This statistical approach would help me move beyond basic project metrics and de
 
   @media (max-width: 600px) {
     .image-grid {
-      grid-template-columns: 1fr; /* 1 column on mobile */
+      grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
       gap: 14px;
+    }
+    
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
     }
   }
 </style>
