@@ -45,16 +45,16 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   .image-row {
     display: flex;
-    gap: 6px;              /* smaller gap */
+    gap: 4px;              /* smaller gap */
     justify-content: space-between;
-    flex-wrap: nowrap;     /* no wrapping, always one row */
+    flex-wrap: nowrap;
     margin-bottom: 8px;
     max-width: 100%;
   }
 
   .img-container {
     position: relative;
-    flex: 0 0 calc(50% - 3px); /* exactly half minus half gap */
+    flex: 0 0 calc(50% - 2px); /* half width minus half gap */
     max-width: 100%;
   }
 
