@@ -58,15 +58,17 @@ This statistical approach would help me move beyond basic project metrics and de
   .img-container {
     position: relative;
     flex: 1 1 0;
-    max-width: none;
+    max-width: 100%;
+    text-align: center;
   }
 
   .img-container img {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    max-width: 300px;
     height: auto;
     cursor: pointer;
     border-radius: 4px;
+    transition: transform 0.2s ease;
   }
 
   .zoom-plus {
@@ -125,11 +127,16 @@ This statistical approach would help me move beyond basic project metrics and de
   @media (max-width: 768px) {
     .image-row {
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .img-container {
       flex: 1 1 100%;
       margin-bottom: 12px;
+    }
+
+    .img-container img {
+      max-width: 90%;
     }
   }
 </style>
@@ -199,11 +206,6 @@ This statistical approach would help me move beyond basic project metrics and de
     }
   });
 </script>
-
----
-
-
-
 
 ---
 ## References
