@@ -49,16 +49,16 @@ This statistical approach would help me move beyond basic project metrics and de
 
 <style>
   .image-row {
-    display: flex;
-    gap: 1px; /* minimal gap */
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px 4px; /* 4px gap horizontally and vertically */
+    max-width: 900px; /* optional max width for nicer layout */
+    margin: 0 auto; /* center container */
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(44% - 1px); /* ~10% smaller than 48.5% */
-    max-width: calc(44% - 1px);
+    width: 100%;
   }
 
   .img-container img {
@@ -76,9 +76,9 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: rgba(255, 165, 0, 0.3); /* translucent orange */
+    background: rgba(128, 0, 0, 0.3); /* translucent maroon */
     border-radius: 2px;
-    padding: 2px;
+    padding: 2px 5px;
     user-select: none;
     pointer-events: none;
     transition: color 0.3s ease;
@@ -125,15 +125,14 @@ This statistical approach would help me move beyond basic project metrics and de
 
   /* Mobile styles */
   @media (max-width: 600px) {
-    .img-container {
-      flex: 1 1 calc(50% - 4px);
-      max-width: calc(50% - 4px);
+    .image-row {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3px 3px;
     }
-
     .zoom-plus {
-      top: 2px !important;      /* push further up */
-      right: 2px !important;    /* push further right */
-      background: rgba(255, 165, 0, 0.3) !important; /* translucent orange */
+      top: 1px !important;      /* doubled push out */
+      right: 1px !important;
+      background: rgba(128, 0, 0, 0.3) !important; /* maroon */
     }
   }
 </style>
@@ -169,37 +168,10 @@ This statistical approach would help me move beyond basic project metrics and de
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
-  const modalClose = document.getElementById('modal-close');
-
-  zoomables.forEach(img => {
-    img.addEventListener('click', () => {
-      modal.classList.add('active');
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
-    });
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-    modalImg.src = '';
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-      modalImg.src = '';
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape" && modal.classList.contains('active')) {
-      modal.classList.remove('active');
-      modalImg.src = '';
-    }
-  });
-</script>
+  const modalClose = document.getElementById
 
 ---
+  
 ## References
 
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.  
