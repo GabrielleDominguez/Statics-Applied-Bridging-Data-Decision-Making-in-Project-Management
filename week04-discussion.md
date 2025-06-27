@@ -39,94 +39,84 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > I am glad CLT is making sense to you too! I have a feeling it'll change how many of us approach decision making. I am looking forward to picking up more tools like this throughout the semester alongside you.
 
 ---
-<h3>CLT & Confidence Interval Visualizations</h3>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CLT & Confidence Interval Visualizations</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 20px;
-      background-color: #f9f9f9;
-    }
+## CLT & Confidence Interval Visualizations
 
-    h3 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+<style>
+  .image-row {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .image-row {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+  .img-container {
+    position: relative;
+    flex: 1 1 calc(50% - 6px); /* Two per row */
+    max-width: calc(50% - 6px);
+  }
 
-    .img-container {
-      position: relative;
-      flex: 1 1 calc(50% - 6px); /* Two per row */
-      max-width: calc(50% - 6px);
-      overflow: hidden;
-      border-radius: 8px;
-    }
+  .img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 
-    .img-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-    }
+  .zoom-plus {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    background: transparent;
+    padding: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: color 0.3s ease;
+  }
 
-    .zoom-plus {
-      position: absolute;
-      top: 8px;
-      right: 10px;
-      background-color: rgba(0,0,0,0.6);
-      color: white;
-      font-size: 20px;
-      padding: 4px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      z-index: 1;
-    }
+  .img-container:hover .zoom-plus {
+    color: rgba(0, 0, 0, 0.7);
+  }
 
-    /* Modal styles */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.85);
-      justify-content: center;
-      align-items: center;
-    }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
 
-    .modal img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.6);
-    }
+  .modal.active {
+    display: flex;
+  }
 
-    .modal-close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 36px;
-      color: white;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 8px;
+  }
 
-<h3>CLT & Confidence Interval Visualizations</h3>
+  .modal-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
 
 <div class="image-row">
   <div class="img-container">
@@ -138,9 +128,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%202.png?raw=true" alt="CLT Article 2" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
-</div>
 
-<div class="image-row" style="margin-top: 12px;">
   <div class="img-container">
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/458e09ac013829d4397024b04d0328ed321315f4/CLT%20Article%203.png?raw=true" alt="CLT Article 3" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
@@ -152,40 +140,45 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   </div>
 </div>
 
-<!-- Modal for Zoom -->
 <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
 </div>
 
 <script>
-  const modal = document.getElementById("modal");
-  const modalImg = document.getElementById("modal-img");
-  const closeModal = document.getElementById("modal-close");
+  const zoomables = document.querySelectorAll('.zoomable');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
 
-  document.querySelectorAll(".zoom-plus").forEach(plusIcon => {
-    plusIcon.addEventListener("click", function (e) {
-      const img = this.previousElementSibling;
-      modal.style.display = "flex";
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.classList.add('active');
       modalImg.src = img.src;
       modalImg.alt = img.alt;
-      e.stopPropagation();
     });
   });
 
-  closeModal.addEventListener("click", function () {
-    modal.style.display = "none";
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modalImg.src = '';
   });
 
-  modal.addEventListener("click", function (e) {
+  modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.style.display = "none";
+      modal.classList.remove('active');
+      modalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      modalImg.src = '';
     }
   });
 </script>
 
-</body>
-</html>
 ---
 
 ## References
