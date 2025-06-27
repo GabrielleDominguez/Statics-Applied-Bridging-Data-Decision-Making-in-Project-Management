@@ -44,28 +44,27 @@ This statistical approach would help me move beyond basic project metrics and de
 > Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the semester.
 
 ---
-
 ## Forecasting Visualizations
 
 <style>
   .image-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4px 4px; /* 4px gap horizontally and vertically */
-    max-width: 900px; /* optional max width for nicer layout */
-    margin: 0 auto; /* center container */
+    grid-gap: 4px 4px;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .img-container {
     position: relative;
     width: 100%;
+    cursor: pointer; /* ensure container is clickable */
   }
 
   .img-container img {
     display: block;
     width: 100%;
     height: auto;
-    cursor: pointer;
     border-radius: 4px;
   }
 
@@ -76,11 +75,11 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: rgba(128, 0, 0, 0.3); /* translucent maroon */
+    background: transparent; /* no background on desktop */
     border-radius: 2px;
     padding: 2px 5px;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none; /* allow clicks to pass through */
     transition: color 0.3s ease;
   }
 
@@ -130,9 +129,11 @@ This statistical approach would help me move beyond basic project metrics and de
       grid-gap: 3px 3px;
     }
     .zoom-plus {
-      top: 1px !important;      /* doubled push out */
-      right: 1px !important;
-      background: rgba(128, 0, 0, 0.3) !important; /* maroon */
+      top: 0.5px !important;      /* extra push out */
+      right: 0.5px !important;
+      background: rgba(0, 128, 128, 0.3) !important; /* translucent teal on mobile */
+      color: rgba(0, 0, 0, 0.5) !important;
+      pointer-events: none !important; /* keep clicks through */
     }
   }
 </style>
@@ -168,10 +169,38 @@ This statistical approach would help me move beyond basic project metrics and de
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
-  const modalClose = document.getElementById
+  const modalClose = document.getElementById('modal-close');
 
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.classList.add('active');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modalImg.src = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      modalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      modalImg.src = '';
+    }
+  });
+</script>
+ 
 ---
-  
+ 
 ## References
 
 Triola, M. F. (2022). *Elementary statistics* (13th ed.). Pearson.  
