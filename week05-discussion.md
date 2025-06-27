@@ -45,26 +45,160 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ---
 
-## Z Test & T Test Visualizations
+## Forecasting Visualizations
 
-<div style="text-align: center;">
-  <a href="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" target="_blank" rel="noopener">
-    <img 
-      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/z%20%20test%20final.png?raw=true" 
-      alt="Z Test Visual Final" 
-      width="720" 
-      style="margin-bottom: 40px;" 
-    />
-  </a>
-  <br />
-  <a href="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/c036336eb9f646fa3d1c747a894f8b80e8251d69/t%20test%20final.png" target="_blank" rel="noopener">
-    <img 
-      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/c036336eb9f646fa3d1c747a894f8b80e8251d69/t%20test%20final.png" 
-      alt="T Test Visual Final" 
-      width="720" 
-    />
-  </a>
+<style>
+  .image-row {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .img-container {
+    position: relative;
+    flex: 1 1 0;
+    max-width: none;
+  }
+
+  .img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .zoom-plus {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    background: transparent;
+    padding: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: color 0.3s ease;
+  }
+
+  .img-container:hover .zoom-plus {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal.active {
+    display: flex;
+  }
+
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 8px;
+  }
+
+  .modal-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  @media (max-width: 768px) {
+    .image-row {
+      flex-wrap: wrap;
+    }
+
+    .img-container {
+      flex: 1 1 100%;
+      margin-bottom: 12px;
+    }
+  }
+</style>
+
+<!-- First row -->
+<div class="image-row">
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/30a0e5400cff6163850554963406dff5f28aebf2/Article%205%2C%20image%201.png?raw=true" alt="Forecast Graph 1" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
+
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/30a0e5400cff6163850554963406dff5f28aebf2/Atricle%205%2C%20image%202.png?raw=true" alt="Forecast Graph 2" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
 </div>
+
+<!-- Second row -->
+<div class="image-row" style="margin-top: 12px;">
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/30a0e5400cff6163850554963406dff5f28aebf2/Article%205%2C%20image%203.png?raw=true" alt="Forecast Graph 3" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
+
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/30a0e5400cff6163850554963406dff5f28aebf2/Article%205%2C%20image%204.png?raw=true" alt="Forecast Graph 4" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
+</div>
+
+<!-- Modal Viewer -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
+  <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
+  <img src="" alt="" id="modal-img" />
+</div>
+
+<script>
+  const zoomables = document.querySelectorAll('.zoomable');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
+
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.classList.add('active');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modalImg.src = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      modalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      modalImg.src = '';
+    }
+  });
+</script>
 
 ---
 
