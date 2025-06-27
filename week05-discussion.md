@@ -45,7 +45,7 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ---
 
-## Hypothesis Testing & Visualizations
+## Hypothesis Test Visualizations
 
 <style>
   .image-row {
