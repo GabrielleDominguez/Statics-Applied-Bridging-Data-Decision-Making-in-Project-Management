@@ -50,15 +50,15 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-row {
     display: flex;
-    gap: 0.25px; /* ultra-tight spacing for desktop */
+    gap: 0.1px; /* ultra tight desktop spacing */
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 calc(43.3% - 0.25px); /* slightly smaller to show space closing */
-    max-width: calc(43.3% - 0.25px);
+    flex: 1 1 calc(42.5% - 0.1px); /* visually tighter */
+    max-width: calc(42.5% - 0.1px);
   }
 
   .img-container img {
@@ -75,8 +75,8 @@ This statistical approach would help me move beyond basic project metrics and de
     right: 5px;
     font-weight: normal;
     font-size: 14px;
-    color: rgba(0, 0, 255, 0.6); /* blue plus sign to confirm */
-    background: rgba(255, 0, 0, 0.15); /* light red background stays for now */
+    color: rgba(0, 0, 0, 0.4); /* back to normal gray */
+    background: rgba(0, 255, 0, 0.15); /* ✅ light green debug box */
     border-radius: 2px;
     padding: 2px;
     user-select: none;
@@ -85,7 +85,7 @@ This statistical approach would help me move beyond basic project metrics and de
   }
 
   .img-container:hover .zoom-plus {
-    color: rgba(0, 0, 255, 1); /* darken on hover */
+    color: rgba(0, 0, 0, 0.7); /* darken on hover */
   }
 
   .modal {
@@ -130,10 +130,9 @@ This statistical approach would help me move beyond basic project metrics and de
     }
 
     .zoom-plus {
-      top: 2px;  /* closer to top edge */
-      right: 2px;
-      color: rgba(0, 0, 255, 0.6); /* same blue */
-      background: rgba(255, 0, 0, 0.15); /* red debug stays */
+      top: 3.5px;  /* another 40% push */
+      right: 3.5px;
+      background: rgba(0, 255, 0, 0.15); /* ✅ green debug box mobile too */
     }
   }
 </style>
