@@ -59,7 +59,7 @@ This statistical approach would help me move beyond basic project metrics and de
   .img-container {
     position: relative;
     width: 100%;
-    cursor: pointer; /* ensure container is clickable */
+    cursor: pointer;
   }
 
   .img-container img {
@@ -76,11 +76,11 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: transparent; /* no background on desktop */
+    background: transparent;
     border-radius: 2px;
     padding: 2px 5px;
     user-select: none;
-    pointer-events: none; /* allow clicks to pass through */
+    pointer-events: none;
     transition: color 0.3s ease;
   }
 
@@ -123,16 +123,17 @@ This statistical approach would help me move beyond basic project metrics and de
     user-select: none;
   }
 
-  /* Mobile styles */
+  /* MOBILE: push plus sign far outside top-right corner */
   @media (max-width: 600px) {
     .image-row {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 3px 3px;
     }
+
     .zoom-plus {
-      top: 5px !important;       /* big push */
-      right: 5px !important;
-      background: rgba(128, 0, 128, 0.3) !important; /* translucent purple */
+      top: -30px !important;
+      right: -30px !important;
+      background: rgba(0, 128, 128, 0.3) !important; /* TEAL */
       color: rgba(0, 0, 0, 0.5) !important;
       pointer-events: none !important;
     }
