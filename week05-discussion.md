@@ -125,9 +125,21 @@ This statistical approach would help me move beyond basic project metrics and de
       gap: 14px;
     }
     
+    .img-wrapper {
+      padding: 8px; /* add padding so icon doesn't overlap */
+    }
+    
     .img-wrapper img {
       width: 100%;
       height: auto;
+      display: block;
+    }
+    
+    .zoom-icon {
+      top: 12px !important;    /* move down a bit */
+      right: 12px !important;  /* move left a bit */
+      font-size: 18px;         /* smaller icon */
+      color: rgba(0, 0, 0, 0.4);
     }
   }
 </style>
