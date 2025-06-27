@@ -49,16 +49,18 @@ This statistical approach would help me move beyond basic project metrics and de
 
 <style>
   .image-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4px 4px;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     max-width: 900px;
     margin: 0 auto;
   }
 
   .img-container {
     position: relative;
-    width: 100%;
+    flex: 1 1 0;
+    max-width: none;
     cursor: pointer;
   }
 
@@ -76,7 +78,7 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: transparent;
+    background: rgba(255, 204, 0, 0.3); /* Yellow for testing */
     border-radius: 2px;
     padding: 2px 5px;
     user-select: none;
@@ -123,17 +125,12 @@ This statistical approach would help me move beyond basic project metrics and de
     user-select: none;
   }
 
-  /* MOBILE: push plus sign far outside top-right corner */
+  /* Mobile plus push — strong offset for visibility */
   @media (max-width: 600px) {
-    .image-row {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 3px 3px;
-    }
-
     .zoom-plus {
-      top: -30px !important;
-      right: -30px !important;
-      background: rgba(0, 128, 128, 0.3) !important; /* TEAL */
+      top: -60px !important;
+      right: -60px !important;
+      background: rgba(255, 204, 0, 0.3) !important; /* Yellow */
       color: rgba(0, 0, 0, 0.5) !important;
       pointer-events: none !important;
     }
