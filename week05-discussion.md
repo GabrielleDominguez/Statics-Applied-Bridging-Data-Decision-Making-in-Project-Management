@@ -39,7 +39,7 @@ This statistical approach would help me move beyond basic project metrics and de
 > 
 > Some projects are more nuanced than this, these are when they are opinion-based and there is no clear metric to measure. An example of this would be client satisfaction with a product or service. There is no inherent metric to measure satisfaction because *satisfaction* is their measurement. This is why many companies send surveys to try and put words or metrics to feelings.  
 >  
-> For example, you go to a restaurant and they send you a survey asking about your food, server, and experience. They could gather this data by using a **1–5 rating system** and put data to what was once only a feeling.
+> For example, you go to a restaurant and they send you a survey asking about your food, server, and experience. They could gather this data by using a 1–5 rating system and put data to what was once only a feeling.
 >  
 > Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the semester.
 
