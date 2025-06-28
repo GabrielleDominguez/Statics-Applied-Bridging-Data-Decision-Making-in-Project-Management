@@ -37,7 +37,7 @@ This statistical approach would help me move beyond basic project metrics and de
 >  
 > When managing projects, I go back to the **'why'** behind the project we are working to complete. **What is the goal?** For example, if I am working on migrating an internal database to a new platform, the metric may be how many people are adopting the new system and using it in real time, instead of hesitating because they do not like change. In this case, I would test the **adoption rate** of the platform. I already know the migration was successful, but this gives me a new lens to look through: **how easy is it to use for an early adopter?**
 > 
-> Some projects are more nuanced than this, these are when they are opinion-based and there is no clear metric to measure. An example of this would be client satisfaction with a product or service. There is no inherent metric to measure satisfaction because **satisfaction is their measurement**. This is why many companies send surveys to try and put words or metrics to feelings.  
+> Some projects are more nuanced than this, these are when they are opinion-based and there is no clear metric to measure. An example of this would be client satisfaction with a product or service. There is no inherent metric to measure satisfaction because *satisfaction is their measurement*. This is why many companies send surveys to try and put words or metrics to feelings.  
 >  
 > For example, you go to a restaurant and they send you a survey asking about your food, server, and experience. They could gather this data by using a **1–5 rating system** and put data to what was once only a feeling.
 >  
