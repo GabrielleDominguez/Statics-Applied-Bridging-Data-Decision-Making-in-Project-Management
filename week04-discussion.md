@@ -18,7 +18,7 @@ Here’s how I’d apply this principle to better plan team capacity: Let's say 
 
 - **Standard error** = 1.2 ÷ √40 ≈ 0.19  
 - **Margin of error** = 1.96 × 0.19 ≈ 0.37  
-- **Confidence interval** = 2.8 ± 0.37 → between **2.43 and 3.17 hours**
+- **Confidence interval** = 2.8 ± 0.37 → between 2.43 and 3.17 hours
 
 This tells me that I can be **95% confident** that the true average time for code reviews of similar work will fall within this range - there is no guesswork. I have a statistically backed estimate that will help me plan more realistically and communicate with the team.
 
@@ -32,7 +32,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > **Response from Gabrielle Dominguez:**  
 > This is a great question, Chloe. You're spot on about sample size - if I used 80 or 100 code reviews instead of 40, the confidence interval would actually get tighter.  
 >  
-> With a larger sample, the **standard error decreases** because we're dividing by the square root of a bigger number. This shrinks our margin of error, so instead of that 2.43 to 3.17 hour range, we might get something like 2.55 to 3.05 hours. We'd still be 95% confident, but with **much more precision**. This is exactly why I'm excited about applying this principle to project data.  
+> With a larger sample, the **standard error decreases** because we're dividing by the square root of a bigger number. This shrinks our margin of error, so instead of that 2.43 to 3.17 hour range, we might get something like 2.55 to 3.05 hours. We'd still be 95% confident, but with *much more precision*. This is exactly why I'm excited about applying this principle to project data.  
 >  
 > Ironically, I have been collecting this data for years, but never thought to use it statistically. I'm realizing how much more value I can squeeze out of information I have access to.  
 >  
