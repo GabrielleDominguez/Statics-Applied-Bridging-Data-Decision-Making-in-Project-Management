@@ -15,7 +15,7 @@ For this discussion, I chose a hypothetical dataset that looks at how different 
 The dataset has two main types of data:
 
 **Project Management Tracking Platforms (Nominal data)**  
-The first form of data covers popular project tracking tools like **MS Project, Asana, Jira, and Trello.** It's nominal data because these are distinct categories without any rankings. As our textbook explains, nominal data consists of names or labels and they *can’t* be logically ordered.
+The first form of data observes popular project tracking tools like **MS Project, Asana, Jira, and Trello.** It's nominal data because these are distinct categories without any rankings. As our textbook explains, nominal data consists of names or labels and they *can’t* be logically ordered.
 
 To graph the rate of adoption across tracking platforms, I would use a **bar graph**. This would display the *quantity of projects* monitored on each platform and compare them visually at a glance.
 
