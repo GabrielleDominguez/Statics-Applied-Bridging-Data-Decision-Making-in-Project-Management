@@ -22,7 +22,7 @@ Building off the first, the second data set shows what percentage of project mil
 
 When graphing the rate of adoption across tracking platforms, I would use a **bar graph**. This would display the *quantity of projects* monitored on each platform and compare them visually at a glance.
 
-I would use a **histogram** for the success rates. This graph would display how the distribution of success rates is viewed among projects. Instead of showing individual tools, it groups projects by *success rate ranges* (like 0–20%, 21–40%, etc.)
+I would use a **histogram** for the success rates. This graph would display how the distribution of success rates is viewed among projects. In addition to showing the adoption of individual tools, we can now also group projects by *success rate ranges* (like 0–20%, 21–40%, etc.)
 
 This kind of analysis would help answer whether using a project management platform actually improves on-time task completion and gives insight into which platforms are more widely adopted or easier to implement. This would be valuable information for any business to have access to when deciding what software is *worth* their invest of time and money.
 
