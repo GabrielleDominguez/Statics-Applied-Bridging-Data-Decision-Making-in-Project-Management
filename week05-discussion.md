@@ -11,12 +11,12 @@
 
 In project management, hypothesis testing could provide a structured approach for validating project outcomes and promoting **data-driven decisions.** The process involves five steps: stating your null and alternative hypotheses, selecting a significance level (typically *0.05*), choosing the appropriate test statistic, calculating the P-value, and making a decision based on the results (Triola, 2020).
 
-When selecting what method to use, I need to factor in the type of data I have available to me. If I was measuring success rates, compliance percentages, or other yes/no outcomes, I would use proportion tests with z-statistics. When measuring performance metrics, think response times or processing speeds, I'd use mean tests with t-statistics.
+When selecting what method to use, I need to factor in the type of data I have available to me. If I was measuring success rates, compliance percentages, or other yes/no outcomes, I would use *proportion tests* with z-statistics. When measuring performance metrics, think response times or processing speeds, I'd use *mean tests* with t-statistics.
 
 For a lot of project managers, project success is often measured by completion rates. Hypothesis testing would allow me to *shift the focus* to actual performance improvements with statistical evidence.
 
 **Proportion Example:**  
-Testing if cybersecurity training increases compliance above our 60% baseline.  
+Testing if cybersecurity training increases compliance above a 60% baseline.  
 H₀: p ≤ 0.60 vs H₁: p > 0.60. After training 200 employees, 138 comply (69%). Using z-test, P-value = 0.015. Since 0.015 < 0.05, **I reject H₀**: the data shows that the training initiatives have significantly improved company compliance.
 
 **Mean Example:**  
