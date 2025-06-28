@@ -10,7 +10,7 @@
 
 ---
 
-When analyzing business data sets, examining only measures of center provides an incomplete and potentially misleading picture. As Triola explains in our textbook, *"we need objective measures instead of relying on subjective judgments"* when evaluating variation (Triola, 2022, p. 105). This principle is essential when drawing accurate results because two data sets can have identical means, but *dramatically different* amounts of variation.
+When analyzing business data sets, examining only measures of center provides an incomplete and potentially misleading picture. As Triola explains in our textbook, *"we need objective measures instead of relying on subjective judgments"* when evaluating variation (Triola, 2022, p. 105). This principle is essential when drawing accurate results because two data sets can have identical means, but *dramatically* different amounts of variation.
 
 Drawing from my project management experience, I've created the following scenario: Two software development teams, **Team Alpha** and **Team Beta**, both complete an average of 15 user stories per sprint over their last 10 sprints. (A user-story is a feature or task that needs to be completed, and a sprint is the 1–4 week window given to complete the tasks.) Their performance data shows:
 
