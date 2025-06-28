@@ -24,7 +24,7 @@ This game follows a binomial probability distribution with positive expected val
 
 **Walk away:** When I hit significantly good performance (9+ wins) or reach my predetermined profit target. *Greed kills* more positive-expectation opportunities than bad luck could ever.
 
-As a project manager, I use this same framework. Every project has expected outcomes and normal variance ranges. Success comes from setting clear criteria upfront, not making emotional decisions. The math shows that it is a "fair" game in my favor, but Kenny Rogers makes a good point, you got to know when to *walk away.*
+As a project manager, I use this same framework. Every project has expected outcomes and normal variance ranges. Success comes from setting clear criteria upfront, not making emotional decisions. The math shows that it is a "fair" game in my favor, but Kenny Rogers makes a good point, you got to know when to walk away.
 
 ---
 
