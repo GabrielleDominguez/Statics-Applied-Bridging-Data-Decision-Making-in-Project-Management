@@ -18,11 +18,11 @@ This game follows a binomial probability distribution with positive expected val
 
 **The Kenny Rogers approach:** 
 
-**Hold them:** When I'm within normal variance (1-9 wins in 30 games). The geometric distribution reminds me that waiting several games for my first win is mathematically normal - no reason to panic during early losses.  
+**Hold them:** When I'm within normal variance (1-9 wins in 30 games). The geometric distribution reminds me that waiting several games for my first win is mathematically normal - *no reason to panic* during early losses.  
 
-**Fold them:** When performance becomes significantly poor using the Range Rule of Thumb - fewer than 0.92 wins in 30 games signals something's wrong statistically.  
+**Fold them:** When performance becomes significantly poor using the Range Rule of Thumb - fewer than 0.92 wins in 30 games signals *something's wrong statistically.* 
 
-**Walk away:** When I hit significantly good performance (9+ wins) or reach my predetermined profit target. Greed kills more positive-expectation opportunities than bad luck could ever.
+**Walk away:** When I hit significantly good performance (9+ wins) or reach my predetermined profit target. *Greed kills* more positive-expectation opportunities than bad luck could ever.
 
 As a project manager, I use this same framework. Every project has expected outcomes and normal variance ranges. Success comes from setting clear criteria upfront, not making emotional decisions. The math shows that it is a "fair" game in my favor, but Kenny Rogers makes a good point, you got to know when to *walk away.*
 
