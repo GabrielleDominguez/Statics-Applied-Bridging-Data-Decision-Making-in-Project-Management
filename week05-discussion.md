@@ -33,7 +33,7 @@ This statistical approach would help me move beyond basic project metrics and de
 > I like how you used clear examples for both proportion and mean, like checking if training increases compliance or if upgrades reduce response times. It really shows how statistics can help you prove whether the changes made a difference. I also love how you think beyond just statistics and how the data can show real value and importance. I am wondering, when looking at all these projects, how do you determine which performance metrics are worth testing?
 
 > **Response from Gabrielle Dominguez:**  
-> Thank you, Alexis, for your kind words and great question. **Determining which performance metrics are worth testing** is indeed a crucial consideration.  
+> Thank you, Alexis, for your kind words and great question. Determining which performance metrics are *worth testing* is indeed a crucial consideration.  
 >  
 > When managing projects, I go back to the **'why'** behind the project we are working to complete. **What is the goal?** For example, if I am working on migrating an internal database to a new platform, the metric may be how many people are adopting the new system and using it in real time, instead of hesitating because they do not like change. In this case, I would test the **adoption rate** of the platform. I already know the migration was successful, but this gives me a new lens to look through: **how easy is it to use for an early adopter?**
 > 
