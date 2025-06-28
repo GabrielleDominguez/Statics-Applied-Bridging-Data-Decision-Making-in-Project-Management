@@ -34,7 +34,7 @@ As a project manager, I use this same framework. Every project has expected outc
 > **Response from Gabrielle Dominguez:**  
 > Hi Alexis,  
 >  
-> You raise an excellent question in regards to when the game becomes "unfair." From my vantage point, the answer has **both mathematical and subjective parts.**   
+> You raise an excellent question in regards to when the game becomes *"unfair."* From my vantage point, the answer has **both mathematical and subjective parts.**   
 >  
 > Mathematically, the game remains "fair" to play as long as there's no tampering from the gamemaster. e.g., there are no trick dice in use, they pay out what they promise, and the rules don't change while you're playing. But what you're getting at connects to something economists call **"utility theory"** - the idea that the same outcome affects different people differently.
 >  
