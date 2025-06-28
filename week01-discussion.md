@@ -15,16 +15,16 @@ For this discussion, I chose a hypothetical dataset that looks at how different 
 The dataset has two main types of data:
 
 **Project Management Tracking Platforms (Nominal data)**  
-The first form of data covers popular project tracking tools like MS Project, Asana, Jira, and Trello. It's nominal data because these are distinct categories without any rankings. As our textbook explains, nominal data consists of names or labels and they can’t be logically ordered.
+The first form of data covers popular project tracking tools like *MS Project, Asana, Jira, and Trello.* It's nominal data because these are distinct categories without any rankings. As our textbook explains, nominal data consists of names or labels and *they can’t* be logically ordered.
 
 **Project Success Rate (Ratio data)**  
-This shows what percentage of project milestones teams finished on time (ranging from 0% to 100%). It's ratio data because it has equal intervals and a true zero point—0% means no milestones were completed on time.
+This shows what *percentage* of project milestones teams finished on time (ranging from 0% to 100%). It's ratio data because it has equal intervals and a true zero point—0% means no milestones were completed on time.
 
-When graphing the rate of adoption across tracking platforms, I would use a **_bar graph_**. This would display the quantity of projects monitored on each platform and compare them visually at a glance.
+When graphing the rate of adoption across tracking platforms, I would use a **bar graph**. This would display the *quantity* of projects monitored on each platform and compare them visually at a glance.
 
-I would use a **_histogram_** for the success rates. This graph would display how the distribution of success rates is viewed among projects. Instead of showing individual tools, it groups projects by success rate ranges (like 0–20%, 21–40%, etc.)
+I would use a **histogram** for the success rates. This graph would display how the distribution of success rates is viewed among projects. Instead of showing individual tools, it groups projects by *success rate ranges* (like 0–20%, 21–40%, etc.)
 
-This kind of analysis would help answer whether using a project management platform actually improves on-time task completion and gives insight into which platforms are more widely adopted or easier to implement. This would be valuable information for any business to have access to when deciding what software is worth their invest of time and money.
+This kind of analysis would help answer whether using a project management platform actually improves on-time task completion and gives insight into which platforms are more widely adopted or easier to implement. This would be valuable information for any business to have access to when deciding what software is *worth* their invest of time and money.
 
 From the course content, we learned that statistics helps us *"describe data, make inferences, and support decisions under uncertainty"* (Pearson Education, 2022). This analysis supports that idea well because of the measurement of project outcomes and the use of data to explore which tools may contribute most to team success.
 
