@@ -20,11 +20,11 @@ Each discussion contains:
 
 | Week | Topic                                       | File                                    |
 |------|---------------------------------------------|-----------------------------------------|
-| 1    | Exploring Data Types & Graphs | [Week 1 Discussion](week01-discussion.md) |
-| 2    | Measures of Center & Variation | [Week 2 Discussion](week02-discussion.md) |
-| 3    | Probability & Decision Making | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
-| 4    | Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
-| 5    | Hypothesis Testing & Proportions | [Week 5 Discussion](week05-discussion.md) |
+| 1    | Exploring Data Types and Graphs | [Week 1 Discussion](week01-discussion.md) |
+| 2    | Measures of Center and Variation | [Week 2 Discussion](week02-discussion.md) |
+| 3    | Probability and Decision Making | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
+| 4    | Central Limit Theorem and Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
+| 5    | Hypothesis Testing and Proportions | [Week 5 Discussion](week05-discussion.md) |
 
 ---
 
