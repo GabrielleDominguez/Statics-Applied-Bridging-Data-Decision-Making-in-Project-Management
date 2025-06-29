@@ -1,4 +1,4 @@
-# Week 4 Discussion: How the Central Limit Theorem Supports Confident Decision-Making
+# Week 4 Discussion: Using the Central Limit Theorem to Strengthen Project Forecasting
 
 > *This discussion explores how the Central Limit Theorem allows project managers to use sample data to reliably estimate population parameters, enhancing planning accuracy and leadership confidence.*
 
