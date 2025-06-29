@@ -44,7 +44,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   .image-row {
     display: flex;
-    gap: 0 !important;          /* Force zero gap */
+    gap: 0 !important;
     justify-content: flex-start;
     flex-wrap: nowrap;
     margin-bottom: 8px;
@@ -55,7 +55,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   }
   .img-container {
     position: relative;
-    flex: 1 1 50%;              /* Equal flex grow/shrink */
+    flex: 1 1 50%;
     width: 50% !important;
     max-width: 50% !important;
     min-width: 50% !important;
@@ -65,7 +65,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     border: none !important;
   }
   .img-container:first-child {
-    margin-right: 2px !important; /* Tiny gap only between images */
+    margin-right: 2px !important;
   }
   .img-container:last-child {
     margin-left: 2px !important;
@@ -76,7 +76,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     height: auto !important;
     cursor: pointer;
     border-radius: 4px;
-    object-fit: cover !important; /* Changed to cover for better alignment */
+    object-fit: cover !important;
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
@@ -131,7 +131,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     user-select: none;
   }
 
-  /* Mobile-specific - force same layout */
   @media screen and (max-width: 768px) {
     .image-row {
       gap: 0 !important;
@@ -167,7 +166,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     }
   }
 
-  /* Extra small screens */
   @media screen and (max-width: 480px) {
     .zoom-plus {
       font-size: 10px;
@@ -180,7 +178,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     }
   }
 
-  /* Override any GitHub default styles */
   .image-row * {
     box-sizing: border-box !important;
   }
@@ -188,11 +185,11 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 <div class="image-row">
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/f91447cf7771b307ac7adc452fe9c72f47b2f0de/Article%204%2C%20image%201%2C%20final.png?raw=true" alt="Article 4 - Image 1" class="zoomable" />
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%201%2C%20resized%201600%20x%20800.png?raw=true" alt="Article 4 - Image 1" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/f91447cf7771b307ac7adc452fe9c72f47b2f0de/Article%204%2C%20image%202%2C%20final.png?raw=true" alt="Article 4 - Image 2" class="zoomable" />
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%202%2C%20resized%201600%20x%20800.png?raw=true" alt="Article 4 - Image 2" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
@@ -208,7 +205,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
-  
+
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
       modal.classList.add('active');
@@ -216,19 +213,19 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       modalImg.alt = img.alt;
     });
   });
-  
+
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
     modalImg.src = '';
   });
-  
+
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
       modalImg.src = '';
     }
   });
-  
+
   document.addEventListener('keydown', (e) => {
     if (e.key === "Escape" && modal.classList.contains('active')) {
       modal.classList.remove('active');
