@@ -136,11 +136,11 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 <div class="image-row">
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%201%2C%20resized%201600%20x%20800.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%202%2C%20resized%201600%20x%20800.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
 </div>
