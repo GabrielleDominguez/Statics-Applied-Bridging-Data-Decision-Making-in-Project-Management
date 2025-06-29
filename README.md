@@ -23,7 +23,7 @@ Each discussion contains:
 | 1    | Introducing Data Types & Graphs | [Week 1 Discussion](week01-discussion.md) |
 | 2    | Assessing Measures of Center & Variation | [Week 2 Discussion](week02-discussion.md) |
 | 3    | Using Probability, Risk Assessment & Decision Making | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
-| 4    | Applying the Central Limit Theorem & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
+| 4    | Forecasting CLT & Confidence Intervals | [Week 4 Discussion](week04-discussion.md) |
 | 5    | Analyzing Hypothesis Tests & Proportions | [Week 5 Discussion](week05-discussion.md) |
 
 ---
