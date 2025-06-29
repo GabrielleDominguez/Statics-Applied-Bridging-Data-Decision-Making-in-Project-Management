@@ -1,4 +1,4 @@
-# Week 2 Discussion: Why Measures of Center & Variation Matter
+# Week 2 Discussion: Using Measures of Center & Variation to Evaluate Team Performance
 
 > *This discussion demonstrates how variation can uncover critical performance differences that averages alone may conceal, enhancing analysis of team output and delivery risk.*
 
