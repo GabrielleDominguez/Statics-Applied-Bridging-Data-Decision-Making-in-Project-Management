@@ -45,7 +45,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   .image-row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 4px;
     margin-bottom: 12px;
@@ -53,8 +53,8 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
   .img-container {
     position: relative;
-    width: 50%;
-    flex: 0 0 50%;
+    width: calc(50% - 2px);
+    flex: 0 0 calc(50% - 2px);
   }
 
   .img-container img {
@@ -83,13 +83,12 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
   @media screen and (max-width: 768px) {
     .image-row {
-      flex-direction: row;
       gap: 2px;
     }
 
     .img-container {
-      width: 50% !important;
-      flex: 1 1 50%;
+      width: calc(50% - 1px);
+      flex: 0 0 calc(50% - 1px);
     }
 
     .zoom-plus {
