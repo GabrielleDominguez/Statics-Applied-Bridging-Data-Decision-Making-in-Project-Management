@@ -41,30 +41,46 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
-
 <style>
   .image-row {
     display: flex;
-    gap: 4px;
-    justify-content: space-between;
+    gap: 0 !important;          /* Force zero gap */
+    justify-content: flex-start;
     flex-wrap: nowrap;
     margin-bottom: 8px;
-    max-width: 100%;
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box;
   }
   .img-container {
     position: relative;
-    flex: 0 0 calc(50% - 2px);
-    max-width: calc(50% - 2px);
-    min-width: 0; /* Prevents flex items from overflowing */
+    flex: 1 1 50%;              /* Equal flex grow/shrink */
+    width: 50% !important;
+    max-width: 50% !important;
+    min-width: 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    border: none !important;
+  }
+  .img-container:first-child {
+    margin-right: 2px !important; /* Tiny gap only between images */
+  }
+  .img-container:last-child {
+    margin-left: 2px !important;
   }
   .img-container img {
-    display: block;
-    width: 100%;
-    height: auto;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
     cursor: pointer;
     border-radius: 4px;
-    object-fit: contain; /* Ensures images maintain aspect ratio */
+    object-fit: cover !important; /* Changed to cover for better alignment */
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    vertical-align: top;
   }
   .zoom-plus {
     position: absolute;
@@ -78,6 +94,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     user-select: none;
     pointer-events: none;
     transition: color 0.3s ease;
+    z-index: 10;
   }
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
@@ -114,17 +131,28 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     user-select: none;
   }
 
-  /* Mobile-specific adjustments to ensure consistency */
+  /* Mobile-specific - force same layout */
   @media screen and (max-width: 768px) {
     .image-row {
-      gap: 4px; /* Keep same gap on mobile */
+      gap: 0 !important;
+      flex-direction: row !important;
     }
     .img-container {
-      flex: 0 0 calc(50% - 2px);
-      max-width: calc(50% - 2px);
+      flex: 1 1 50% !important;
+      width: 50% !important;
+      max-width: 50% !important;
+      min-width: 50% !important;
+    }
+    .img-container:first-child {
+      margin-right: 2px !important;
+      margin-left: 0 !important;
+    }
+    .img-container:last-child {
+      margin-left: 2px !important;
+      margin-right: 0 !important;
     }
     .zoom-plus {
-      font-size: 12px; /* Slightly smaller on mobile but still visible */
+      font-size: 12px;
       top: 2px;
       right: 2px;
     }
@@ -144,6 +172,17 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     .zoom-plus {
       font-size: 10px;
     }
+    .img-container:first-child {
+      margin-right: 1px !important;
+    }
+    .img-container:last-child {
+      margin-left: 1px !important;
+    }
+  }
+
+  /* Override any GitHub default styles */
+  .image-row * {
+    box-sizing: border-box !important;
   }
 </style>
 
