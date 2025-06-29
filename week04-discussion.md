@@ -45,27 +45,27 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   .image-row {
     display: flex;
-    gap: 4px;              /* smaller gap */
+    gap: 4px;
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-bottom: 8px;
     max-width: 100%;
+    width: 100%;
   }
-
   .img-container {
     position: relative;
-    flex: 0 0 calc(50% - 2px); /* half width minus half gap */
-    max-width: 100%;
+    flex: 0 0 calc(50% - 2px);
+    max-width: calc(50% - 2px);
+    min-width: 0; /* Prevents flex items from overflowing */
   }
-
   .img-container img {
     display: block;
     width: 100%;
     height: auto;
     cursor: pointer;
     border-radius: 4px;
+    object-fit: contain; /* Ensures images maintain aspect ratio */
   }
-
   .zoom-plus {
     position: absolute;
     top: 4px;
@@ -79,11 +79,9 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     pointer-events: none;
     transition: color 0.3s ease;
   }
-
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
-
   .modal {
     display: none;
     position: fixed;
@@ -96,18 +94,15 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     justify-content: center;
     align-items: center;
   }
-
   .modal.active {
     display: flex;
   }
-
   .modal img {
     max-width: 90%;
     max-height: 90%;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
   }
-
   .modal-close {
     position: fixed;
     top: 20px;
@@ -118,16 +113,47 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     cursor: pointer;
     user-select: none;
   }
+
+  /* Mobile-specific adjustments to ensure consistency */
+  @media screen and (max-width: 768px) {
+    .image-row {
+      gap: 4px; /* Keep same gap on mobile */
+    }
+    .img-container {
+      flex: 0 0 calc(50% - 2px);
+      max-width: calc(50% - 2px);
+    }
+    .zoom-plus {
+      font-size: 12px; /* Slightly smaller on mobile but still visible */
+      top: 2px;
+      right: 2px;
+    }
+    .modal img {
+      max-width: 95%;
+      max-height: 95%;
+    }
+    .modal-close {
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+    }
+  }
+
+  /* Extra small screens */
+  @media screen and (max-width: 480px) {
+    .zoom-plus {
+      font-size: 10px;
+    }
+  }
 </style>
 
 <div class="image-row">
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/1cc095e3bb0ed53c7f412445878e02807fc15b9b/Article%204%2C%20image%201.png?raw=true" alt="Article 4 - Image 1" class="zoomable" />
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/f91447cf7771b307ac7adc452fe9c72f47b2f0de/Article%204%2C%20image%201%2C%20final.png?raw=true" alt="Article 4 - Image 1" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
-
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/1cc095e3bb0ed53c7f412445878e02807fc15b9b/Article%204%2C%20image%202.png?raw=true" alt="Article 4 - Image 2" class="zoomable" />
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/f91447cf7771b307ac7adc452fe9c72f47b2f0de/Article%204%2C%20image%202%2C%20final.png?raw=true" alt="Article 4 - Image 2" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
@@ -143,7 +169,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
-
+  
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
       modal.classList.add('active');
@@ -151,19 +177,19 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       modalImg.alt = img.alt;
     });
   });
-
+  
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
     modalImg.src = '';
   });
-
+  
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
       modalImg.src = '';
     }
   });
-
+  
   document.addEventListener('keydown', (e) => {
     if (e.key === "Escape" && modal.classList.contains('active')) {
       modal.classList.remove('active');
