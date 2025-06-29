@@ -1,4 +1,4 @@
-# Week 3 Discussion: Using Probability to Make Strategic, Data-Backed Decisions
+# Week 3 Discussion: Using Probability to Mitigate Risk and Guide Strategic Decisions
 
 > *This discussion demonstrates how expected value and binomial probability inform smarter, more disciplined decision-making under uncertainty, both in the game of chance and project management.*
 
