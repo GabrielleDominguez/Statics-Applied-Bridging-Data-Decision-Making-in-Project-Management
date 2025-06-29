@@ -20,7 +20,7 @@ Each discussion contains:
 
 | Week | Topic                                       | File                                    |
 |------|---------------------------------------------|-----------------------------------------|
-| 1    | Exploring Data Types & Graphs | [Week 1 Discussion](week01-discussion.md) |
+| 1    | Introducing Data Types & Graphs | [Week 1 Discussion](week01-discussion.md) |
 | 2    | Tracking Center & Variation Metrics | [Week 2 Discussion](week02-discussion.md) |
 | 3    | Applying Probability to Mitigate Risk | [Week 3 Discussion](week03-discussion.md) ← **⭐ Featured discussion** |
 | 4    | Forecasting with CLT & Intervals | [Week 4 Discussion](week04-discussion.md) |
