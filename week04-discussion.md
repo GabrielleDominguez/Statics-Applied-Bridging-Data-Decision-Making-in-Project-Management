@@ -41,64 +41,64 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
+
 <style>
   .image-row {
     display: flex;
-    gap: 0 !important;
-    justify-content: flex-start;
     flex-wrap: nowrap;
-    margin-bottom: 8px;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 !important;
-    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 4px;
+    margin-bottom: 12px;
   }
+
   .img-container {
     position: relative;
-    flex: 1 1 50%;
-    width: 50% !important;
-    max-width: 50% !important;
-    min-width: 50% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-    border: none !important;
+    width: 50%;
+    flex: 0 0 50%;
   }
-  .img-container:first-child {
-    margin-right: 2px !important;
-  }
-  .img-container:last-child {
-    margin-left: 2px !important;
-  }
+
   .img-container img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    cursor: pointer;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
     border-radius: 4px;
-    object-fit: cover !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    vertical-align: top;
+    cursor: pointer;
   }
+
   .zoom-plus {
     position: absolute;
     top: 4px;
     right: 4px;
-    font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: transparent;
-    padding: 0;
     user-select: none;
     pointer-events: none;
-    transition: color 0.3s ease;
     z-index: 10;
   }
+
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
+
+  @media screen and (max-width: 768px) {
+    .image-row {
+      flex-direction: row;
+      gap: 2px;
+    }
+
+    .img-container {
+      width: 50% !important;
+      flex: 1 1 50%;
+    }
+
+    .zoom-plus {
+      font-size: 12px;
+      top: 2px;
+      right: 2px;
+    }
+  }
+
   .modal {
     display: none;
     position: fixed;
@@ -107,19 +107,22 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
   }
+
   .modal.active {
     display: flex;
   }
+
   .modal img {
     max-width: 90%;
     max-height: 90%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
+
   .modal-close {
     position: fixed;
     top: 20px;
@@ -128,74 +131,22 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-    user-select: none;
-  }
-
-  @media screen and (max-width: 768px) {
-    .image-row {
-      gap: 0 !important;
-      flex-direction: row !important;
-    }
-    .img-container {
-      flex: 1 1 50% !important;
-      width: 50% !important;
-      max-width: 50% !important;
-      min-width: 50% !important;
-    }
-    .img-container:first-child {
-      margin-right: 2px !important;
-      margin-left: 0 !important;
-    }
-    .img-container:last-child {
-      margin-left: 2px !important;
-      margin-right: 0 !important;
-    }
-    .zoom-plus {
-      font-size: 12px;
-      top: 2px;
-      right: 2px;
-    }
-    .modal img {
-      max-width: 95%;
-      max-height: 95%;
-    }
-    .modal-close {
-      top: 10px;
-      right: 20px;
-      font-size: 28px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .zoom-plus {
-      font-size: 10px;
-    }
-    .img-container:first-child {
-      margin-right: 1px !important;
-    }
-    .img-container:last-child {
-      margin-left: 1px !important;
-    }
-  }
-
-  .image-row * {
-    box-sizing: border-box !important;
   }
 </style>
 
 <div class="image-row">
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%201%2C%20resized%201600%20x%20800.png?raw=true" alt="Article 4 - Image 1" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%201%2C%20resized%201600%20x%20800.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
+    <div class="zoom-plus">+</div>
   </div>
   <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%202%2C%20resized%201600%20x%20800.png?raw=true" alt="Article 4 - Image 2" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e36bfb5d32a4755b1e687066393b578db2790485/Article%204%2C%20image%202%2C%20resized%201600%20x%20800.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
+    <div class="zoom-plus">+</div>
   </div>
 </div>
 
 <!-- Modal -->
-<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
+<div id="modal" class="modal" role="dialog" aria-modal="true">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
 </div>
@@ -227,7 +178,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape" && modal.classList.contains('active')) {
+    if (e.key === "Escape") {
       modal.classList.remove('active');
       modalImg.src = '';
     }
