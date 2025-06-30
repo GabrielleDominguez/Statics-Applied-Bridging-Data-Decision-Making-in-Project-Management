@@ -41,30 +41,50 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
-
-
 <style>
+  /* Override GitHub Pages default spacing */
+  h2 {
+    margin-bottom: 10px !important;
+  }
+  
+  /* Remove any default margins from surrounding elements */
+  .markdown-body h2 {
+    margin-bottom: 10px !important;
+  }
+  
+  /* Ensure no extra spacing around our container */
+  .forecasting-container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
   .image-row {
     display: flex;
     gap: 12px;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin: 0 !important;  /* Force no margin */
+    padding: 0 !important; /* Force no padding */
   }
-
+  
   .img-container {
     position: relative;
     flex: 1 1 0;
     max-width: none;
+    margin: 0 !important;  /* Force no margin */
+    padding: 0 !important; /* Force no padding */
   }
-
+  
   .img-container img {
     display: block;
     width: 100%;
     height: auto;
     cursor: pointer;
     border-radius: 4px;
+    margin: 0 !important;  /* Force no margin */
+    padding: 0 !important; /* Force no padding */
   }
-
+  
   .zoom-plus {
     position: absolute;
     top: 4px;
@@ -78,11 +98,11 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     pointer-events: none;
     transition: color 0.3s ease;
   }
-
+  
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
-
+  
   .modal {
     display: none;
     position: fixed;
@@ -95,18 +115,18 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     justify-content: center;
     align-items: center;
   }
-
+  
   .modal.active {
     display: flex;
   }
-
+  
   .modal img {
     max-width: 90%;
     max-height: 90%;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
   }
-
+  
   .modal-close {
     position: fixed;
     top: 20px;
@@ -117,27 +137,39 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     cursor: pointer;
     user-select: none;
   }
+
+  @media screen and (max-width: 768px) {
+    .image-row {
+      gap: 8px;
+    }
+  }
 </style>
-<div class="image-row">
-  <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
-  <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
-    <div class="zoom-plus">+</div>
+
+<div class="forecasting-container">
+  <div class="image-row">
+    <div class="img-container">
+      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
+      <div class="zoom-plus">+</div>
+    </div>
+    <div class="img-container">
+      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
+      <div class="zoom-plus">+</div>
+    </div>
   </div>
 </div>
+
 <!-- Modal -->
 <div id="modal" class="modal" role="dialog" aria-modal="true">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
 </div>
+
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
+  
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
       modal.classList.add('active');
@@ -145,16 +177,19 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       modalImg.alt = img.alt;
     });
   });
+  
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
     modalImg.src = '';
   });
+  
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
       modalImg.src = '';
     }
   });
+  
   document.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
       modal.classList.remove('active');
