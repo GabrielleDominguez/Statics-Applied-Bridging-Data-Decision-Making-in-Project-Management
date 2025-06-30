@@ -41,92 +41,84 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
+
 <style>
-  /* Override GitHub Pages default spacing */
-  h2 {
-    margin-bottom: 10px !important;
-  }
-  
-  /* Remove any default margins from surrounding elements */
+  h2,
   .markdown-body h2 {
     margin-bottom: 10px !important;
   }
-  
-  /* Ensure no extra spacing around our container */
+
   .forecasting-container {
     margin: 0 !important;
     padding: 0 !important;
   }
-  
+
   .image-row {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: 0 !important;  /* Force no margin */
-    padding: 0 !important; /* Force no padding */
+    gap: 8px;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  
+
   .img-container {
     position: relative;
-    flex: 1 1 0;
-    max-width: none;
-    margin: 0 !important;  /* Force no margin */
-    padding: 0 !important; /* Force no padding */
+    width: calc(50% - 4px);
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  
+
   .img-container img {
-    display: block;
     width: 100%;
     height: auto;
-    cursor: pointer;
+    display: block;
     border-radius: 4px;
-    margin: 0 !important;  /* Force no margin */
-    padding: 0 !important; /* Force no padding */
+    cursor: pointer;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  
+
   .zoom-plus {
     position: absolute;
     top: 4px;
     right: 4px;
-    font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    background: transparent;
-    padding: 0;
-    user-select: none;
     pointer-events: none;
+    user-select: none;
     transition: color 0.3s ease;
   }
-  
+
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
-  
+
   .modal {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
   }
-  
+
   .modal.active {
     display: flex;
   }
-  
+
   .modal img {
     max-width: 90%;
     max-height: 90%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
-  
+
   .modal-close {
     position: fixed;
     top: 20px;
@@ -136,12 +128,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     font-weight: bold;
     cursor: pointer;
     user-select: none;
-  }
-
-  @media screen and (max-width: 768px) {
-    .image-row {
-      gap: 8px;
-    }
   }
 </style>
 
@@ -169,7 +155,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
-  
+
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
       modal.classList.add('active');
@@ -177,19 +163,19 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       modalImg.alt = img.alt;
     });
   });
-  
+
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
     modalImg.src = '';
   });
-  
+
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
       modalImg.src = '';
     }
   });
-  
+
   document.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
       modal.classList.remove('active');
