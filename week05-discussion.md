@@ -9,9 +9,9 @@
 
 ---
 
-In project management, hypothesis testing could provide a structured approach for validating project outcomes and promoting **data-driven decisions.** The process involves five steps: stating your null and alternative hypotheses, selecting a significance level (typically *0.05*), choosing the appropriate test statistic, calculating the P-value, and making a decision based on the results (Triola, 2020).
+In project management, hypothesis testing could provide a structured approach for validating project outcomes and promoting *data-driven decisions.* The process involves five steps: stating your null and alternative hypotheses, selecting a significance level (typically *0.05*), choosing the appropriate test statistic, calculating the P-value, and making a decision based on the results (Triola, 2020).
 
-When selecting what method to use, I need to factor in the type of data I have available to me. If I was measuring success rates, compliance percentages, or other yes/no outcomes, I would use *proportion tests* with z-statistics. When measuring performance metrics, think response times or processing speeds, I'd use *mean tests* with t-statistics.
+When selecting what method to use, I need to factor in the type of data I have available to me. If I was measuring success rates, compliance percentages, or other yes/no outcomes, I would use **proportion tests** with z-statistics. When measuring performance metrics, think response times or processing speeds, I'd use **mean tests** with t-statistics.
 
 For a lot of project managers, project success is often measured by completion rates. Hypothesis testing would allow me to *shift the focus* to actual performance improvements with statistical evidence.
 
