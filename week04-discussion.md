@@ -41,22 +41,19 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
-
 <style>
   .image-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 4px;
-    margin-bottom: 12px;
+    gap: 8px;
+    margin-bottom: 8px;
   }
-
   .img-container {
     position: relative;
-    width: calc(50% - 2px);
-    flex: 0 0 calc(50% - 2px);
+    width: calc(50% - 4px);
+    flex: 0 0 calc(50% - 4px);
   }
-
   .img-container img {
     width: 100%;
     height: auto;
@@ -65,7 +62,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     border-radius: 4px;
     cursor: pointer;
   }
-
   .zoom-plus {
     position: absolute;
     top: 4px;
@@ -76,28 +72,24 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     pointer-events: none;
     z-index: 10;
   }
-
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
-
   @media screen and (max-width: 768px) {
     .image-row {
-      gap: 2px;
+      gap: 4px;
+      margin-bottom: 4px;
     }
-
     .img-container {
-      width: calc(50% - 1px);
-      flex: 0 0 calc(50% - 1px);
+      width: calc(50% - 2px);
+      flex: 0 0 calc(50% - 2px);
     }
-
     .zoom-plus {
       font-size: 12px;
       top: 2px;
       right: 2px;
     }
   }
-
   .modal {
     display: none;
     position: fixed;
@@ -110,18 +102,15 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     justify-content: center;
     align-items: center;
   }
-
   .modal.active {
     display: flex;
   }
-
   .modal img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
-
   .modal-close {
     position: fixed;
     top: 20px;
@@ -132,7 +121,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     cursor: pointer;
   }
 </style>
-
 <div class="image-row">
   <div class="img-container">
     <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
@@ -143,19 +131,16 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     <div class="zoom-plus">+</div>
   </div>
 </div>
-
 <!-- Modal -->
 <div id="modal" class="modal" role="dialog" aria-modal="true">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
 </div>
-
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
-
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
       modal.classList.add('active');
@@ -163,19 +148,16 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       modalImg.alt = img.alt;
     });
   });
-
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
     modalImg.src = '';
   });
-
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
       modalImg.src = '';
     }
   });
-
   document.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
       modal.classList.remove('active');
