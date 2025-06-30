@@ -41,55 +41,48 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
+
+
 <style>
   .image-row {
     display: flex;
-    flex-wrap: wrap;
+    gap: 12px;
     justify-content: space-between;
-    gap: 8px;
-    margin-bottom: 8px;
+    flex-wrap: nowrap;
   }
+
   .img-container {
     position: relative;
-    width: calc(50% - 4px);
-    flex: 0 0 calc(50% - 4px);
+    flex: 1 1 0;
+    max-width: none;
   }
+
   .img-container img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 4px;
     cursor: pointer;
+    border-radius: 4px;
   }
+
   .zoom-plus {
     position: absolute;
     top: 4px;
     right: 4px;
+    font-weight: normal;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
+    background: transparent;
+    padding: 0;
     user-select: none;
     pointer-events: none;
-    z-index: 10;
+    transition: color 0.3s ease;
   }
+
   .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
-  @media screen and (max-width: 768px) {
-    .image-row {
-      gap: 4px;
-      margin-bottom: 4px;
-    }
-    .img-container {
-      width: calc(50% - 2px);
-      flex: 0 0 calc(50% - 2px);
-    }
-    .zoom-plus {
-      font-size: 12px;
-      top: 2px;
-      right: 2px;
-    }
-  }
+
   .modal {
     display: none;
     position: fixed;
@@ -98,19 +91,22 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
   }
+
   .modal.active {
     display: flex;
   }
+
   .modal img {
     max-width: 90%;
     max-height: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
+
   .modal-close {
     position: fixed;
     top: 20px;
@@ -119,6 +115,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+    user-select: none;
   }
 </style>
 <div class="image-row">
