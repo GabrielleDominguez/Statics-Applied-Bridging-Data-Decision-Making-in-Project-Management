@@ -42,103 +42,36 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ## Forecasting Visualizations
 
-<style>
-  .forecast-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-  }
-
-  .forecast-img {
-    position: relative;
-    flex: 0 0 50%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .forecast-img img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .zoom-plus {
-    position: absolute;
-    top: 6px;
-    right: 6px;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.4);
-    user-select: none;
-    pointer-events: none;
-  }
-
-  .forecast-img:hover .zoom-plus {
-    color: rgba(0, 0, 0, 0.7);
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal.active {
-    display: flex;
-  }
-
-  .modal img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  }
-
-  .modal-close {
-    position: fixed;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  @media (max-width: 768px) {
-    .forecast-img {
-      flex: 0 0 100%;
-    }
-  }
-</style>
-
-<div class="forecast-row">
-  <div class="forecast-img">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
-  <div class="forecast-img">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
+<div align="center">
+  <table style="border-spacing: 0; padding: 0; border-collapse: collapse;">
+    <tr>
+      <td style="padding: 0; margin: 0;">
+        <div style="position: relative; width: 100%;">
+          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" 
+               alt="Forecasting Image 1" class="zoomable" 
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
+        </div>
+      </td>
+      <td style="padding: 0; margin: 0;">
+        <div style="position: relative; width: 100%;">
+          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" 
+               alt="Forecasting Image 2" class="zoomable" 
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
-<!-- Modal -->
-<div id="modal" class="modal" role="dialog" aria-modal="true">
-  <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
-  <img src="" alt="" id="modal-img" />
+<!-- Modal HTML -->
+<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+  <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
 </div>
 
+<!-- Modal Zoom Script -->
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
@@ -147,27 +80,27 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
-      modal.classList.add('active');
+      modal.style.display = 'flex';
       modalImg.src = img.src;
       modalImg.alt = img.alt;
     });
   });
 
   modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
+    modal.style.display = 'none';
     modalImg.src = '';
   });
 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.classList.remove('active');
+      modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape") {
-      modal.classList.remove('active');
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
       modalImg.src = '';
     }
   });
