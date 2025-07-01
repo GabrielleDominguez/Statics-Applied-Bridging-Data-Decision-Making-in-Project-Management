@@ -40,108 +40,237 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-## Forecasting Visualizations
+##Forecasting Visualizations
 
-<div style="display: flex; flex-wrap: nowrap; max-width: 800px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
-  <div style="flex: 1; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
-    <img
-      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
-      alt="Forecasting Image 1"
-      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
-      class="zoomable"
-    />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
-  </div>
-
-  <div style="flex: 1; position: relative; overflow: hidden;">
-    <img
-      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
-      alt="Forecasting Image 2"
-      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
-      class="zoomable"
-    />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
-  </div>
-</div>
-
-<style>
-  /* Force side by side on all screen sizes, with a max width for mobile scaling */
-  div[style*="flex: 1"] {
-    min-width: 40vw; /* Smaller width for mobile so they fit side by side */
-  }
-
-  /* Darker, smoother hover backlight */
-  @media (hover: hover) and (pointer: fine) {
-    div[style*="flex: 1"]:hover {
-      filter: brightness(1.1);
-      box-shadow: 0 0 30px rgba(71, 85, 105, 0.5);
-      z-index: 10;
-      transition: box-shadow 0.3s ease, filter 0.3s ease;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forecasting Visualizations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    div[style*="flex: 1"]:hover img.zoomable {
-      filter: brightness(0.9);
-      transition: filter 0.3s ease;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f9fa;
+      line-height: 1.6;
+      padding: 40px 20px;
     }
-  }
 
-  /* Remove border on the last box */
-  div[style*="flex: 1"]:last-child {
-    border-right: none !important;
-  }
-</style>
+    .main-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2c3e50;
+    }
 
-<script>
-  // Modal Zoom script
-  const zoomables = document.querySelectorAll('.zoomable');
-  const modal = document.createElement('div');
-  modal.id = 'modal';
-  modal.style.cssText = `
-    display:none; 
-    position:fixed; 
-    z-index:1000; 
-    top:0; left:0; 
-    width:100vw; height:100vh; 
-    background:rgba(0,0,0,0.8); 
-    justify-content:center; 
-    align-items:center;
-  `;
-  modal.innerHTML = `
-    <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
-    <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-  `;
-  document.body.appendChild(modal);
+    .forecast-table {
+      border-spacing: 0;
+      border-collapse: separate;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 900px;
+      table-layout: fixed;
+    }
 
-  const modalImg = document.getElementById('modal-img');
-  const modalClose = document.getElementById('modal-close');
+    .forecast-table td {
+      padding: 15px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px 8px 8px 8px; /* square corners */
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      vertical-align: top;
+    }
 
-  zoomables.forEach(img => {
-    img.addEventListener('click', () => {
-      modal.style.display = 'flex';
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
+    .img-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .zoomable {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .plus-sign {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* Hover effect with stronger backlight */
+    @media (hover: hover) and (pointer: fine) {
+      .forecast-table td:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        border-color: #a0aec0;
+        background-color: #f9fafb;
+      }
+
+      .forecast-table td:hover .zoomable {
+        filter: brightness(0.9);
+      }
+    }
+
+    /* Smaller border on mobile */
+    @media (max-width: 480px) {
+      .forecast-table td {
+        border: 1px solid #e2e8f0;
+      }
+    }
+
+    /* Make images side by side on mobile as well */
+    @media (max-width: 600px) {
+      .forecast-table {
+        border-spacing: 0;
+      }
+      .forecast-table tr {
+        display: flex;
+        gap: 0;
+      }
+      .forecast-table td {
+        flex: 1 1 50%;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #e2e8f0;
+        border-bottom: 1px solid #e2e8f0;
+        border-radius: 0;
+        padding: 8px;
+      }
+      .forecast-table td:first-child {
+        border-left: 1px solid #e2e8f0;
+        border-radius: 8px 0 0 8px;
+      }
+      .forecast-table td:last-child {
+        border-right: 1px solid #e2e8f0;
+        border-radius: 0 8px 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2 class="main-title">Forecasting Visualizations</h2>
+
+  <div align="center">
+    <table class="forecast-table" role="presentation">
+      <tr>
+        <td>
+          <div class="img-wrapper">
+            <img
+              src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
+              alt="Forecasting Image 1"
+              class="zoomable"
+            />
+            <div class="plus-sign">+</div>
+          </div>
+        </td>
+        <td>
+          <div class="img-wrapper">
+            <img
+              src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
+              alt="Forecasting Image 2"
+              class="zoomable"
+            />
+            <div class="plus-sign">+</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div
+    id="modal"
+    style="
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <span
+      id="modal-close"
+      style="
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      "
+      >&times;</span
+    >
+    <img
+      id="modal-img"
+      src=""
+      alt=""
+      style="
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      "
+    />
+  </div>
+
+  <script>
+    const zoomables = document.querySelectorAll('.zoomable');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalClose = document.getElementById('modal-close');
+
+    zoomables.forEach((img) => {
+      img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      });
     });
-  });
 
-  modalClose.addEventListener('click', () => {
-    modal.style.display = 'none';
-    modalImg.src = '';
-  });
-
-  modal.addEventListener('click', e => {
-    if (e.target === modal) {
+    modalClose.addEventListener('click', () => {
       modal.style.display = 'none';
       modalImg.src = '';
-    }
-  });
+    });
 
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    }
-  });
-</script>
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        modalImg.src = '';
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        modal.style.display = 'none';
+        modalImg.src = '';
+      }
+    });
+  </script>
+</body>
+</html>
 
 ---
 
