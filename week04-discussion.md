@@ -40,7 +40,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-##Forecasting Visualizations
+## Forecasting Visualizations
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,149 +49,119 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Forecasting Visualizations</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #f8f9fa;
-      line-height: 1.6;
       padding: 40px 20px;
-    }
-
-    .main-title {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      text-align: center;
+      margin: 0;
       color: #2c3e50;
     }
 
-    .forecast-table {
-      border-spacing: 0;
-      border-collapse: separate;
+    h2 {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .forecast-container {
+      display: flex;
+      gap: 0; /* no gap */
+      justify-content: center;
+      max-width: 640px;
       margin: 0 auto;
-      width: 100%;
-      max-width: 900px;
-      table-layout: fixed;
+      flex-wrap: wrap; /* wrap on very narrow */
     }
 
-    .forecast-table td {
-      padding: 15px;
+    .forecast-box {
+      flex: 1 1 50%; /* half width, shrink and grow */
+      max-width: 320px;
       border: 1.5px solid #e2e8f0;
-      border-radius: 8px 8px 8px 8px; /* square corners */
+      border-radius: 8px;
       background-color: #fff;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
       position: relative;
-      vertical-align: top;
-    }
-
-    .img-wrapper {
-      position: relative;
-      width: 100%;
-    }
-
-    .zoomable {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-      display: block;
+      overflow: hidden;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: filter 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .forecast-box img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+      pointer-events: none; /* plus on top, no interference */
+      user-select: none;
+      transition: filter 0.3s ease;
     }
 
     .plus-sign {
       position: absolute;
-      top: 6px;
-      right: 6px;
-      font-size: 16px;
+      top: 8px;
+      right: 8px;
+      font-size: 18px;
       color: rgba(0, 0, 0, 0.4);
       pointer-events: none;
       user-select: none;
+      font-weight: 600;
     }
 
-    /* Hover effect with stronger backlight */
+    /* Hover effect on desktop */
     @media (hover: hover) and (pointer: fine) {
-      .forecast-table td:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+      .forecast-box:hover {
+        filter: brightness(0.82);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         border-color: #a0aec0;
-        background-color: #f9fafb;
       }
 
-      .forecast-table td:hover .zoomable {
-        filter: brightness(0.9);
+      .forecast-box:hover .plus-sign {
+        color: #2c3e50;
+        text-shadow: 0 0 6px rgba(44, 62, 80, 0.8);
       }
     }
 
-    /* Smaller border on mobile */
+    /* On smaller screens - keep side by side but smaller, no hover */
     @media (max-width: 480px) {
-      .forecast-table td {
-        border: 1px solid #e2e8f0;
+      .forecast-box {
+        flex: 1 1 50%;
+        max-width: 50vw;
+        border-radius: 6px;
+      }
+
+      .plus-sign {
+        font-size: 16px;
+        top: 6px;
+        right: 6px;
       }
     }
 
-    /* Make images side by side on mobile as well */
-    @media (max-width: 600px) {
-      .forecast-table {
-        border-spacing: 0;
-      }
-      .forecast-table tr {
-        display: flex;
-        gap: 0;
-      }
-      .forecast-table td {
-        flex: 1 1 50%;
-        border-left: none;
-        border-right: none;
-        border-top: 1px solid #e2e8f0;
-        border-bottom: 1px solid #e2e8f0;
-        border-radius: 0;
-        padding: 8px;
-      }
-      .forecast-table td:first-child {
-        border-left: 1px solid #e2e8f0;
-        border-radius: 8px 0 0 8px;
-      }
-      .forecast-table td:last-child {
-        border-right: 1px solid #e2e8f0;
-        border-radius: 0 8px 8px 0;
+    /* On very narrow phones, stack vertically */
+    @media (max-width: 320px) {
+      .forecast-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        border-radius: 6px;
       }
     }
   </style>
 </head>
 <body>
-  <h2 class="main-title">Forecasting Visualizations</h2>
+  <h2>Forecasting Visualizations</h2>
 
-  <div align="center">
-    <table class="forecast-table" role="presentation">
-      <tr>
-        <td>
-          <div class="img-wrapper">
-            <img
-              src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
-              alt="Forecasting Image 1"
-              class="zoomable"
-            />
-            <div class="plus-sign">+</div>
-          </div>
-        </td>
-        <td>
-          <div class="img-wrapper">
-            <img
-              src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
-              alt="Forecasting Image 2"
-              class="zoomable"
-            />
-            <div class="plus-sign">+</div>
-          </div>
-        </td>
-      </tr>
-    </table>
+  <div class="forecast-container">
+    <div class="forecast-box zoomable">
+      <img
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
+        alt="Forecasting Image 1"
+      />
+      <div class="plus-sign">+</div>
+    </div>
+
+    <div class="forecast-box zoomable">
+      <img
+        src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
+        alt="Forecasting Image 2"
+      />
+      <div class="plus-sign">+</div>
+    </div>
   </div>
 
   <!-- Modal -->
@@ -237,35 +207,35 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   </div>
 
   <script>
-    const zoomables = document.querySelectorAll('.zoomable');
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal-img');
-    const modalClose = document.getElementById('modal-close');
+    const zoomables = document.querySelectorAll(".zoomable img");
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalClose = document.getElementById("modal-close");
 
     zoomables.forEach((img) => {
-      img.addEventListener('click', () => {
-        modal.style.display = 'flex';
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
         modalImg.src = img.src;
         modalImg.alt = img.alt;
       });
     });
 
-    modalClose.addEventListener('click', () => {
-      modal.style.display = 'none';
-      modalImg.src = '';
+    modalClose.addEventListener("click", () => {
+      modal.style.display = "none";
+      modalImg.src = "";
     });
 
-    modal.addEventListener('click', (e) => {
+    modal.addEventListener("click", (e) => {
       if (e.target === modal) {
-        modal.style.display = 'none';
-        modalImg.src = '';
+        modal.style.display = "none";
+        modalImg.src = "";
       }
     });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        modal.style.display = 'none';
-        modalImg.src = '';
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        modal.style.display = "none";
+        modalImg.src = "";
       }
     });
   </script>
