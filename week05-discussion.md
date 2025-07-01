@@ -50,9 +50,9 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
     gap: 16px;
-    max-width: 860px;
+    max-width: 760px; /* adjust width to fit 2 images side by side nicely */
     margin: 0 auto;
   }
 
@@ -74,8 +74,10 @@ This statistical approach would help me move beyond basic project metrics and de
   .img-wrapper img {
     display: block;
     width: 100%;
+    max-width: 360px; /* limit image width so two fit side by side */
     height: auto;
     border-radius: 6px;
+    margin: 0 auto;
   }
 
   .zoom-plus {
@@ -127,6 +129,19 @@ This statistical approach would help me move beyond basic project metrics and de
     font-weight: bold;
     cursor: pointer;
     user-select: none;
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 600px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* single column on small screens */
+      max-width: 100%;
+      padding: 0 10px;
+    }
+
+    .img-wrapper img {
+      max-width: 100%;
+    }
   }
 </style>
 
