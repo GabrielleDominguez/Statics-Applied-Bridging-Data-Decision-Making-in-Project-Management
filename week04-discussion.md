@@ -42,21 +42,21 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ## Forecasting Visualizations
 <div align="center">
-  <table style="border-spacing: 8px; padding: 0; border-collapse: separate;">
+  <table style="border-spacing: 0; padding: 0; border-collapse: collapse;">
     <tr>
-      <td style="padding: 15px; margin: 0; border: 1.5px solid #e2e8f0; border-radius: 12px; background-color: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
-        <div style="position: relative; width: 100%;">
+      <td style="padding: 0; margin: 0; border: 1.5px solid #e2e8f0; border-radius: 12px; background-color: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+        <div style="position: relative; width: 100%; padding: 15px;">
           <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" 
                alt="Forecasting Image 1" class="zoomable" 
-               style="width: 100%; height: auto; border-radius: 8px; display: block; cursor: pointer; transition: all 0.3s ease;" />
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
-      <td style="padding: 15px; margin: 0; border: 1.5px solid #e2e8f0; border-radius: 12px; background-color: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
-        <div style="position: relative; width: 100%;">
+      <td style="padding: 0; margin: 0; border: 1.5px solid #e2e8f0; border-radius: 12px; background-color: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+        <div style="position: relative; width: 100%; padding: 15px;">
           <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" 
                alt="Forecasting Image 2" class="zoomable" 
-               style="width: 100%; height: auto; border-radius: 8px; display: block; cursor: pointer; transition: all 0.3s ease;" />
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
@@ -75,7 +75,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     }
     
     table td:hover .zoomable {
-      filter: brightness(0.95);
+      filter: brightness(0.88);
     }
   }
 </style>
@@ -120,6 +120,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     }
   });
 </script>
+---
 
 ---
 
