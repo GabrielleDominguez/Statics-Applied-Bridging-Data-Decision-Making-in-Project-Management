@@ -41,66 +41,62 @@ This statistical approach would help me move beyond basic project metrics and de
 >  
 > For example, you go to a restaurant and they send you a survey asking about your food, server, and experience. They could gather this data by using a 1–5 star rating system, **putting data to what was once only a feeling.**
 >  
-> Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the semester.
-
+> Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the 
+  
 ---
 
 ## Hypothesis Test Visualizations
 
 <style>
-  .image-grid {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    border-spacing: 12px 12px;
+  .image-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+    max-width: 840px; /* max width for layout */
     margin: 0 auto;
-    max-width: 840px;
   }
 
-  .image-grid-row {
-    display: table-row;
-  }
-
-  .image-grid-cell {
-    display: table-cell;
-    vertical-align: top;
+  .img-container {
     position: relative;
+    width: 100%;
+    cursor: pointer;
+    border: 1.5px solid #ccc; /* subtle light gray border = bracket effect */
+    border-radius: 6px;
+    box-sizing: border-box;
   }
 
-  .image-grid-cell img {
+  .img-container img {
+    display: block;
     width: 100%;
     height: auto;
     border-radius: 4px;
-    display: block;
-    cursor: pointer;
   }
 
+  /* Zoom plus sign styling */
   .zoom-plus {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 14px;
+    top: 6px;
+    right: 6px;
     font-weight: normal;
-    color: rgba(0, 0, 0, 0.4);
-    background: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.35);
     user-select: none;
     pointer-events: none;
     transition: color 0.3s ease;
   }
 
-  .image-grid-cell:hover .zoom-plus {
+  .img-container:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
 
+  /* Modal background and layout */
   .modal {
     display: none;
     position: fixed;
     z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
   }
@@ -112,8 +108,8 @@ This statistical approach would help me move beyond basic project metrics and de
   .modal img {
     max-width: 90%;
     max-height: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
   }
 
   .modal-close {
@@ -127,43 +123,43 @@ This statistical approach would help me move beyond basic project metrics and de
     user-select: none;
   }
 
-  @media (max-width: 768px) {
-    .image-grid {
-      display: block;
+  /* Responsive: On small screens, stack images */
+  @media (max-width: 600px) {
+    .image-row {
+      grid-template-columns: 1fr;
+      max-width: 100%;
     }
 
-    .image-grid-cell {
-      display: block;
-      width: 100%;
-      margin-bottom: 12px;
+    .zoom-plus {
+      top: 4px;
+      right: 4px;
+      font-size: 14px;
     }
   }
 </style>
 
-<div class="image-grid">
-  <div class="image-grid-row">
-    <div class="image-grid-cell">
-      <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Hypothesis Image 1" class="zoomable" />
-      <div class="zoom-plus" aria-hidden="true">+</div>
-    </div>
-    <div class="image-grid-cell">
-      <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Hypothesis Image 2" class="zoomable" />
-      <div class="zoom-plus" aria-hidden="true">+</div>
-    </div>
+<div class="image-row">
+  <div class="img-container">
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Forecasting Image 1" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
-  <div class="image-grid-row">
-    <div class="image-grid-cell">
-      <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Hypothesis Image 3" class="zoomable" />
-      <div class="zoom-plus" aria-hidden="true">+</div>
-    </div>
-    <div class="image-grid-cell">
-      <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Hypothesis Image 4" class="zoomable" />
-      <div class="zoom-plus" aria-hidden="true">+</div>
-    </div>
+
+  <div class="img-container">
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%202%20v2.png" alt="Forecasting Image 2" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
+
+  <div class="img-container">
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Forecasting Image 3" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
+  </div>
+
+  <div class="img-container">
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Forecasting Image 4" class="zoomable" />
+    <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
 
-<!-- Modal for Zoom -->
 <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
