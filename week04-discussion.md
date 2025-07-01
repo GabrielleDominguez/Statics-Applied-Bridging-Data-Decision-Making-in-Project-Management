@@ -41,7 +41,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
-<div style="display: flex; flex-wrap: nowrap; max-width: 600px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
   <div style="flex: 1; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
@@ -64,10 +64,20 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 </div>
 
 <style>
-  /* Desktop: constrain container width, keep images small */
+  /* Desktop: double size from 250px to ~500px */
   @media (min-width: 769px) {
     div[style*="flex: 1"] {
-      min-width: 250px; /* much smaller fixed width */
+      min-width: 500px;
+    }
+    div[style*="flex: 1"]:hover img.zoomable {
+      filter: brightness(0.85);
+      transition: filter 0.3s ease;
+    }
+    div[style*="flex: 1"]:hover {
+      box-shadow: none;
+      filter: none;
+      z-index: 10;
+      transition: none;
     }
   }
 
@@ -75,21 +85,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   @media (max-width: 768px) {
     div[style*="flex: 1"] {
       min-width: 45vw;
-    }
-  }
-
-  /* Subtle hover for desktop, no shifting */
-  @media (hover: hover) and (pointer: fine) {
-    div[style*="flex: 1"]:hover {
-      filter: brightness(1.05);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-      z-index: 10;
-      transition: box-shadow 0.3s ease, filter 0.3s ease;
-    }
-
-    div[style*="flex: 1"]:hover img.zoomable {
-      filter: brightness(0.95);
-      transition: filter 0.3s ease;
     }
   }
 
