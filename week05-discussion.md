@@ -60,11 +60,12 @@ This statistical approach would help me move beyond basic project metrics and de
     position: relative;
     width: 100%;
     cursor: pointer;
+    background: white;
     border: 1px solid #e0e0e0;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.04);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
     border-radius: 6px;
     padding: 6px;
-    background: white;
+    box-sizing: border-box;
   }
 
   .img-container img {
@@ -82,8 +83,10 @@ This statistical approach would help me move beyond basic project metrics and de
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
     background: none;
-    pointer-events: none;
+    border-radius: 2px;
+    padding: 2px 5px;
     user-select: none;
+    pointer-events: none;
     transition: color 0.3s ease;
   }
 
@@ -134,25 +137,29 @@ This statistical approach would help me move beyond basic project metrics and de
     .zoom-plus {
       top: -10.5px !important;
       right: -10.5px !important;
+      color: rgba(0, 0, 0, 0.5) !important;
     }
   }
 </style>
 
 <div class="image-row">
   <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Image 1" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Forecasting Image 1" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
+
   <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Image 2" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Forecasting Image 2" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
+
   <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Image 3" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Forecasting Image 3" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
+
   <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Image 4" class="zoomable" />
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Forecasting Image 4" class="zoomable" />
     <div class="zoom-plus" aria-hidden="true">+</div>
   </div>
 </div>
