@@ -42,59 +42,81 @@ This statistical approach would help me move beyond basic project metrics and de
 > For example, you go to a restaurant and they send you a survey asking about your food, server, and experience. They could gather this data by using a 1–5 star rating system, **putting data to what was once only a feeling.**
 >  
 > Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the semester.
-  
+
 ---
 
 ## Hypothesis Test Visualizations
 
-<div align="center">
-  <table style="border-collapse: collapse; border-spacing: 0; max-width: 780px; width: 100%;">
-    <tr>
-      <td style="padding: 0; border: 1px solid #ddd;">
-        <div style="position: relative; background: white; text-align: center;">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png"
-               alt="Hypothesis Image 1" class="zoomable"
-               style="width: 90%; height: auto; display: inline-block; border-radius: 4px; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
-        </div>
-      </td>
-      <td style="padding: 0; border: 1px solid #ddd;">
-        <div style="position: relative; background: white; text-align: center;">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png"
-               alt="Hypothesis Image 2" class="zoomable"
-               style="width: 100%; height: auto; display: inline-block; border-radius: 4px; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 0; border: 1px solid #ddd;">
-        <div style="position: relative; background: white; text-align: center;">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png"
-               alt="Hypothesis Image 3" class="zoomable"
-               style="width: 90%; height: auto; display: inline-block; border-radius: 4px; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
-        </div>
-      </td>
-      <td style="padding: 0; border: 1px solid #ddd;">
-        <div style="position: relative; background: white; text-align: center;">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png"
-               alt="Hypothesis Image 4" class="zoomable"
-               style="width: 100%; height: auto; display: inline-block; border-radius: 4px; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
-        </div>
-      </td>
-    </tr>
-  </table>
+<div style="max-width: 800px; margin: 0 auto; display: flex; flex-wrap: wrap; border: 1.5px solid #e2e8f0;">
+  <div style="flex: 1 1 50%; border-right: 1.5px solid #e2e8f0; border-bottom: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+    <img
+      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png"
+      alt="Hypothesis Image 1"
+      class="zoomable"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+  </div>
+
+  <div style="flex: 1 1 50%; border-bottom: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+    <img
+      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png"
+      alt="Hypothesis Image 2"
+      class="zoomable"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+  </div>
+
+  <div style="flex: 1 1 50%; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+    <img
+      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png"
+      alt="Hypothesis Image 3"
+      class="zoomable"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+  </div>
+
+  <div style="flex: 1 1 50%; position: relative; overflow: hidden;">
+    <img
+      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png"
+      alt="Hypothesis Image 4"
+      class="zoomable"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+  </div>
 </div>
 
-<!-- Modal HTML -->
+<style>
+  div[style*="flex: 1 1 50%"] {
+    min-width: 40vw;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    div[style*="flex: 1 1 50%"]:hover img.zoomable {
+      filter: brightness(0.9);
+      transition: filter 0.3s ease;
+    }
+  }
+
+  /* Remove border on last column and last row */
+  div[style*="flex: 1 1 50%"]:nth-child(2n) {
+    border-right: none !important;
+  }
+
+  div[style*="flex: 1 1 50%"]:nth-last-child(-n+2) {
+    border-bottom: none !important;
+  }
+</style>
+
+<!-- Modal Zoom (reuse if already present) -->
 <div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
   <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
   <img id="modal-img" src="" alt="Zoomed image" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
 </div>
 
-<!-- Modal Zoom Script -->
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
