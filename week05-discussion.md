@@ -47,117 +47,55 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ## Hypothesis Test Visualizations
 
-<style>
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    max-width: 780px;
-    margin: 0 auto;
-  }
+<div align="center">
+  <table style="border-spacing: 0; padding: 0; border-collapse: collapse; max-width: 780px; width: 100%;">
+    <tr>
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-bottom: none; border-radius: 6px 0 0 6px; overflow: hidden;">
+        <div style="position: relative; width: 100%; background: white;">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" 
+               alt="Hypothesis Image 1" class="zoomable" 
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+        </div>
+      </td>
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-bottom: none; border-radius: 0 6px 6px 0; overflow: hidden;">
+        <div style="position: relative; width: 100%; background: white;">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" 
+               alt="Hypothesis Image 2" class="zoomable" 
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+        </div>
+      </td>
+    </tr>
 
-  .img-wrapper {
-    position: relative;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 4px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
-    background: white;
-    overflow: hidden;
-  }
-
-  .img-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-  }
-
-  .zoom-plus {
-    position: absolute;
-    top: 6px;
-    right: 6px;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.4);
-    user-select: none;
-    pointer-events: none;
-  }
-
-  .img-wrapper:hover .zoom-plus {
-    color: rgba(0, 0, 0, 0.7);
-  }
-
-  @media (max-width: 600px) {
-    .image-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-    }
-
-    .zoom-plus {
-      font-size: 12px;
-      top: 4px;
-      right: 4px;
-    }
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal.active {
-    display: flex;
-  }
-
-  .modal img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-  }
-
-  .modal-close {
-    position: fixed;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-</style>
-
-<div class="image-grid">
-  <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Hypothesis Image 1" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
-  <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Hypothesis Image 2" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
-  <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Hypothesis Image 3" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
-  <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Hypothesis Image 4" class="zoomable" />
-    <div class="zoom-plus">+</div>
-  </div>
+    <tr>
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-top: none; border-radius: 6px 0 0 6px; overflow: hidden;">
+        <div style="position: relative; width: 100%; background: white;">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" 
+               alt="Hypothesis Image 3" class="zoomable" 
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+        </div>
+      </td>
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-top: none; border-radius: 0 6px 6px 0; overflow: hidden;">
+        <div style="position: relative; width: 100%; background: white;">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" 
+               alt="Hypothesis Image 4" class="zoomable" 
+               style="width: 100%; height: auto; border-radius: 4px; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
-<div id="modal" class="modal" role="dialog" aria-modal="true">
-  <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
-  <img id="modal-img" src="" alt="Zoomed image" />
+<!-- Modal HTML -->
+<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+  <img id="modal-img" src="" alt="Zoomed image" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
 </div>
 
+<!-- Modal Zoom Script -->
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
@@ -166,26 +104,27 @@ This statistical approach would help me move beyond basic project metrics and de
 
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
-      modal.classList.add('active');
+      modal.style.display = 'flex';
       modalImg.src = img.src;
+      modalImg.alt = img.alt;
     });
   });
 
   modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
+    modal.style.display = 'none';
     modalImg.src = '';
   });
 
-  modal.addEventListener('click', e => {
+  modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.classList.remove('active');
+      modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
-  document.addEventListener('keydown', e => {
+  document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      modal.classList.remove('active');
+      modal.style.display = 'none';
       modalImg.src = '';
     }
   });
