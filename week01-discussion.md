@@ -58,58 +58,49 @@ From the course content, we learned that statistics helps us *"describe data, ma
     height: auto;
   }
 
-  /* Corner markers */
+  /* Small corner brackets */
   table.graph-table td .img-wrapper::before,
   table.graph-table td .img-wrapper::after,
   table.graph-table td .img-wrapper > div.corner-top-right,
-  table.graph-table td .img-wrapper > div.corner-bottom-left {
+  table.graph-table td .img-wrapper > div.corner-bottom-right {
     content: "";
     position: absolute;
-    background-color: #ccc;
+    width: 6px;
+    height: 6px;
     box-sizing: border-box;
   }
 
-  /* Top-left corner */
+  /* Top-left corner bracket */
   table.graph-table td .img-wrapper::before {
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
+    top: 2px;
+    left: 2px;
     border-top: 1.5px solid #999;
     border-left: 1.5px solid #999;
   }
 
-  /* Bottom-left corner */
+  /* Bottom-left corner bracket */
   table.graph-table td .img-wrapper::after {
-    bottom: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
+    bottom: 2px;
+    left: 2px;
     border-bottom: 1.5px solid #999;
     border-left: 1.5px solid #999;
   }
 
-  /* Top-right corner marker */
+  /* Top-right corner bracket */
   table.graph-table td .img-wrapper > div.corner-top-right {
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
+    top: 2px;
+    right: 2px;
     border-top: 1.5px solid #999;
     border-right: 1.5px solid #999;
   }
 
-  /* Bottom-right corner marker */
+  /* Bottom-right corner bracket */
   table.graph-table td .img-wrapper > div.corner-bottom-right {
-    bottom: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
+    bottom: 2px;
+    right: 2px;
     border-bottom: 1.5px solid #999;
     border-right: 1.5px solid #999;
   }
-
-  /* We'll add the bottom-right corner marker dynamically with JS (see below) */
 
   /* Plus sign in top right */
   table.graph-table td .zoom-plus {
@@ -125,7 +116,6 @@ From the course content, we learned that statistics helps us *"describe data, ma
   table.graph-table td:hover .zoom-plus {
     color: rgba(0,0,0,0.7);
   }
-
 </style>
 
 <div align="center">
@@ -151,13 +141,12 @@ From the course content, we learned that statistics helps us *"describe data, ma
   </table>
 </div>
 
-<!-- Modal HTML -->
+<!-- Modal HTML and script unchanged -->
 <div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
   <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
   <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
 </div>
 
-<!-- Modal Zoom Script -->
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
