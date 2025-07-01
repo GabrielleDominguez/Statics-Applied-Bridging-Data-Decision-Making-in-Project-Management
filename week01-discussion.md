@@ -34,25 +34,32 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 <style>
   table.graph-table {
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 24px 24px;
     margin: 0 auto;
   }
 
   table.graph-table td {
-    position: relative;
-    border: 1px solid #999;
-    padding: 0;
     width: 50%;
+    padding: 0;
     vertical-align: top;
   }
 
   .img-wrapper {
     position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
     border: 1px solid #999;
-    box-sizing: border-box;
+    border-radius: 0;
+    overflow: hidden;
+    clip-path: polygon(
+      8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px),
+      calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px
+    );
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .img-wrapper:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   }
 
   .img-wrapper img {
@@ -61,74 +68,10 @@ From the course content, we learned that statistics helps us *"describe data, ma
     height: auto;
   }
 
-  .corner {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    z-index: 2;
-  }
-
-  .corner:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-
-  .corner-tl {
-    top: -1px;
-    left: -1px;
-  }
-
-  .corner-tl:before {
-    border-width: 0 1px 1px 0;
-    border-color: transparent #999 #999 transparent;
-    top: 0;
-    left: 0;
-  }
-
-  .corner-tr {
-    top: -1px;
-    right: -1px;
-  }
-
-  .corner-tr:before {
-    border-width: 0 0 1px 1px;
-    border-color: transparent transparent #999 #999;
-    top: 0;
-    right: 0;
-  }
-
-  .corner-bl {
-    bottom: -1px;
-    left: -1px;
-  }
-
-  .corner-bl:before {
-    border-width: 1px 1px 0 0;
-    border-color: #999 #999 transparent transparent;
-    bottom: 0;
-    left: 0;
-  }
-
-  .corner-br {
-    bottom: -1px;
-    right: -1px;
-  }
-
-  .corner-br:before {
-    border-width: 1px 0 0 1px;
-    border-color: #999 transparent transparent #999;
-    bottom: 0;
-    right: 0;
-  }
-
   .zoom-plus {
     position: absolute;
-    top: 6px;
-    right: 6px;
+    top: 8px;
+    right: 8px;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
@@ -147,20 +90,12 @@ From the course content, we learned that statistics helps us *"describe data, ma
         <div class="img-wrapper">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
           <div class="zoom-plus">+</div>
-          <div class="corner corner-tl"></div>
-          <div class="corner corner-tr"></div>
-          <div class="corner corner-bl"></div>
-          <div class="corner corner-br"></div>
         </div>
       </td>
       <td>
         <div class="img-wrapper">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
           <div class="zoom-plus">+</div>
-          <div class="corner corner-tl"></div>
-          <div class="corner corner-tr"></div>
-          <div class="corner corner-bl"></div>
-          <div class="corner corner-br"></div>
         </div>
       </td>
     </tr>
