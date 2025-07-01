@@ -51,6 +51,8 @@ From the course content, we learned that statistics helps us *"describe data, ma
     width: 100%;
     height: 100%;
     cursor: pointer;
+    border: 1px solid #999;
+    box-sizing: border-box;
   }
 
   .img-wrapper img {
@@ -61,37 +63,66 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   .corner {
     position: absolute;
-    width: 7px;
-    height: 7px;
-    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    z-index: 2;
+  }
+
+  .corner:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
   }
 
   .corner-tl {
+    top: -1px;
+    left: -1px;
+  }
+
+  .corner-tl:before {
+    border-width: 0 1px 1px 0;
+    border-color: transparent #999 #999 transparent;
     top: 0;
     left: 0;
-    border-top: 1px solid #999;
-    border-left: 1px solid #999;
   }
 
   .corner-tr {
+    top: -1px;
+    right: -1px;
+  }
+
+  .corner-tr:before {
+    border-width: 0 0 1px 1px;
+    border-color: transparent transparent #999 #999;
     top: 0;
     right: 0;
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
   }
 
   .corner-bl {
+    bottom: -1px;
+    left: -1px;
+  }
+
+  .corner-bl:before {
+    border-width: 1px 1px 0 0;
+    border-color: #999 #999 transparent transparent;
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
   }
 
   .corner-br {
+    bottom: -1px;
+    right: -1px;
+  }
+
+  .corner-br:before {
+    border-width: 1px 0 0 1px;
+    border-color: #999 transparent transparent #999;
     bottom: 0;
     right: 0;
-    border-bottom: 1px solid #999;
-    border-right: 1px solid #999;
   }
 
   .zoom-plus {
@@ -135,47 +166,6 @@ From the course content, we learned that statistics helps us *"describe data, ma
     </tr>
   </table>
 </div>
-
-<!-- Modal HTML -->
-<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
-  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
-  <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-</div>
-
-<!-- Modal Zoom Script -->
-<script>
-  const zoomables = document.querySelectorAll('.zoomable');
-  const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modal-img');
-  const modalClose = document.getElementById('modal-close');
-
-  zoomables.forEach(img => {
-    img.addEventListener('click', () => {
-      modal.style.display = 'flex';
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
-    });
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.style.display = 'none';
-    modalImg.src = '';
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    }
-  });
-</script>
 
 ---
 
