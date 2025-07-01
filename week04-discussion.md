@@ -40,54 +40,41 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-## Forecasting Visualizations
+<h2>Forecasting Visualizations</h2>
 
 <style>
-  h2,
-  .markdown-body h2 {
-    margin-bottom: 10px !important;
-  }
-
-  .forecasting-container {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
   .image-row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     gap: 0;
-    margin: 0 !important;
-    padding: 0 !important;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 50%;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
+    flex: 1 1 0;
+    margin: 0;
+    padding: 0;
   }
 
   .img-container img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
     cursor: pointer;
+    border-radius: 4px;
   }
 
   .zoom-plus {
     position: absolute;
-    top: 6px;
-    right: 6px;
-    font-size: 16px;
+    top: 4px;
+    right: 4px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    pointer-events: none;
     user-select: none;
+    pointer-events: none;
     transition: color 0.3s ease;
   }
 
@@ -129,29 +116,19 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     cursor: pointer;
     user-select: none;
   }
-
-  /* Responsive fallback for stacked layout */
-  @media (max-width: 768px) {
-    .img-container {
-      flex: 1 1 100%;
-    }
-  }
 </style>
 
-<div class="forecasting-container">
-  <div class="image-row">
-    <div class="img-container">
-      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
-      <div class="zoom-plus">+</div>
-    </div>
-    <div class="img-container">
-      <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
-      <div class="zoom-plus">+</div>
-    </div>
+<div class="image-row">
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
+    <div class="zoom-plus">+</div>
+  </div>
+  <div class="img-container">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
+    <div class="zoom-plus">+</div>
   </div>
 </div>
 
-<!-- Modal -->
 <div id="modal" class="modal" role="dialog" aria-modal="true">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
