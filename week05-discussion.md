@@ -50,9 +50,9 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
-    gap: 12px;
-    max-width: 820px; /* container max width */
+    grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+    gap: 8px;
+    max-width: 700px; /* smaller container width */
     margin: 0 auto;
   }
 
@@ -64,7 +64,7 @@ This statistical approach would help me move beyond basic project metrics and de
     background: #fff;
     cursor: pointer;
     overflow: hidden;
-    max-width: 400px; /* limit each image container width */
+    max-width: 320px; /* stricter max width */
     margin: 0 auto;
   }
 
@@ -76,7 +76,7 @@ This statistical approach would help me move beyond basic project metrics and de
     display: block;
     width: 100%;
     height: auto;
-    max-height: 250px; /* optional max height to prevent super tall images */
+    max-height: 180px; /* smaller max height */
     border-radius: 6px;
     object-fit: contain;
   }
@@ -133,13 +133,17 @@ This statistical approach would help me move beyond basic project metrics and de
 
   @media (max-width: 600px) {
     .image-grid {
-      grid-template-columns: 1fr; /* Stack 1 column on mobile */
+      grid-template-columns: 1fr; /* stack single column on mobile */
       max-width: 90vw;
     }
 
     .img-wrapper {
       max-width: 100%;
       margin: 0;
+    }
+
+    .img-wrapper img {
+      max-height: 160px; /* slightly smaller on mobile */
     }
   }
 </style>
