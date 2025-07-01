@@ -33,80 +33,149 @@ From the course content, we learned that statistics helps us *"describe data, ma
 ## Graph Visualizations
 
 <style>
-  table.frame-table {
+  table.graph-table {
     border-collapse: collapse;
     margin: 0 auto;
-    border: none;
   }
-  table.frame-table td {
+
+  table.graph-table td {
     position: relative;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
     padding: 0;
     width: 50%;
+    vertical-align: top;
   }
-  table.frame-table td .wrapper {
+
+  .img-wrapper {
     position: relative;
     width: 100%;
+    height: 100%;
     cursor: pointer;
   }
-  table.frame-table td img {
+
+  .img-wrapper img {
     display: block;
     width: 100%;
     height: auto;
   }
-  /* Reproduce your exact brackets */
-  .wrapper .corner {
+
+  .corner {
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
   }
-  .corner.tl { top: -1px; left: -1px; border-bottom: none; border-right: none; }
-  .corner.tr { top: -1px; right: -1px; border-bottom: none; border-left: none; }
-  .corner.bl { bottom: -1px; left: -1px; border-top: none; border-right: none; }
-  .corner.br { bottom: -1px; right: -1px; border-top: none; border-left: none; }
+
+  .corner-tl {
+    top: 0;
+    left: 0;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+  }
+
+  .corner-tr {
+    top: 0;
+    right: 0;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+  }
+
+  .corner-bl {
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+  }
+
+  .corner-br {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+  }
+
   .zoom-plus {
     position: absolute;
     top: 6px;
     right: 6px;
     font-size: 16px;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
+    user-select: none;
   }
-  .wrapper:hover .zoom-plus {
-    color: rgba(0,0,0,0.7);
+
+  .img-wrapper:hover .zoom-plus {
+    color: rgba(0, 0, 0, 0.7);
   }
 </style>
 
 <div align="center">
-  <table class="frame-table">
+  <table class="graph-table">
     <tr>
       <td>
-        <div class="wrapper">
-          <img src="…Screenshot 1.png" alt="Graph 1" class="zoomable">
+        <div class="img-wrapper">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
           <div class="zoom-plus">+</div>
-          <div class="corner tl"></div>
-          <div class="corner tr"></div>
-          <div class="corner bl"></div>
-          <div class="corner br"></div>
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
         </div>
       </td>
       <td>
-        <div class="wrapper">
-          <img src="…Screenshot 2.png" alt="Graph 2" class="zoomable">
+        <div class="img-wrapper">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
           <div class="zoom-plus">+</div>
-          <div class="corner tl"></div>
-          <div class="corner tr"></div>
-          <div class="corner bl"></div>
-          <div class="corner br"></div>
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
         </div>
       </td>
     </tr>
   </table>
 </div>
 
-<!-- Modal and script remain unchanged -->
+<!-- Modal HTML -->
+<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+  <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
+</div>
+
+<!-- Modal Zoom Script -->
+<script>
+  const zoomables = document.querySelectorAll('.zoomable');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
+
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+</script>
 
 ---
 
