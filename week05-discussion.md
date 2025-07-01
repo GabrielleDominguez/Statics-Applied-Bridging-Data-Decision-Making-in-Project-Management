@@ -52,40 +52,38 @@ This statistical approach would help me move beyond basic project metrics and de
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-    max-width: 860px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
   .img-wrapper {
     position: relative;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
     background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
     overflow: hidden;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
-    transition: box-shadow 0.3s ease;
-  }
-
-  .img-wrapper:hover {
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
   }
 
   .img-wrapper img {
     width: 100%;
     height: auto;
     display: block;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 0 auto;
   }
 
   .zoom-plus {
     position: absolute;
     top: 6px;
     right: 6px;
-    font-size: 16px;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.4);
-    user-select: none;
+    font-size: 14px;
+    color: rgba(0,0,0,0.4);
     pointer-events: none;
-    transition: color 0.3s ease;
+    user-select: none;
   }
 
   .img-wrapper:hover .zoom-plus {
@@ -97,10 +95,12 @@ This statistical approach would help me move beyond basic project metrics and de
       grid-template-columns: 1fr;
     }
 
+    .img-wrapper img {
+      max-height: 160px;
+    }
+
     .zoom-plus {
-      font-size: 14px;
-      top: 4px;
-      right: 4px;
+      font-size: 12px;
     }
   }
 
@@ -125,7 +125,6 @@ This statistical approach would help me move beyond basic project metrics and de
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
   }
 
   .modal-close {
@@ -136,35 +135,31 @@ This statistical approach would help me move beyond basic project metrics and de
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-    user-select: none;
   }
 </style>
 
 <div class="image-grid">
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Forecasting Image 1" class="zoomable" />
+    <img src="IMAGE_URL_1" alt="Description 1" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
-
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Forecasting Image 2" class="zoomable" />
+    <img src="IMAGE_URL_2" alt="Description 2" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
-
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Forecasting Image 3" class="zoomable" />
+    <img src="IMAGE_URL_3" alt="Description 3" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
-
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Forecasting Image 4" class="zoomable" />
+    <img src="IMAGE_URL_4" alt="Description 4" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
 </div>
 
-<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
-  <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
-  <img src="" alt="" id="modal-img" />
+<div id="modal" class="modal" role="dialog">
+  <span id="modal-close" class="modal-close">&times;</span>
+  <img id="modal-img" src="" alt="zoomed" />
 </div>
 
 <script>
@@ -177,7 +172,6 @@ This statistical approach would help me move beyond basic project metrics and de
     img.addEventListener('click', () => {
       modal.classList.add('active');
       modalImg.src = img.src;
-      modalImg.alt = img.alt;
     });
   });
 
@@ -186,15 +180,15 @@ This statistical approach would help me move beyond basic project metrics and de
     modalImg.src = '';
   });
 
-  modal.addEventListener('click', (e) => {
+  modal.addEventListener('click', e => {
     if (e.target === modal) {
       modal.classList.remove('active');
       modalImg.src = '';
     }
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape" && modal.classList.contains('active')) {
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
       modal.classList.remove('active');
       modalImg.src = '';
     }
