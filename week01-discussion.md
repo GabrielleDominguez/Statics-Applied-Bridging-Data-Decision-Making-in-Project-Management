@@ -32,100 +32,36 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 ## Graph Visualizations
 
-<style>
-  .image-row {
-    display: flex;
-    gap: 12px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-
-  .img-container {
-    position: relative;
-    flex: 1 1 0;
-    max-width: none;
-  }
-
-  .img-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid #ccc; /* Matching border style */
-  }
-
-  .zoom-plus {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.4);
-    background: transparent;
-    padding: 0;
-    user-select: none;
-    pointer-events: none;
-    transition: color 0.3s ease;
-  }
-
-  .img-container:hover .zoom-plus {
-    color: rgba(0, 0, 0, 0.7);
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal.active {
-    display: flex;
-  }
-
-  .modal img {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    border-radius: 8px;
-  }
-
-  .modal-close {
-    position: fixed;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
-  }
-</style>
-
-<div class="image-row">
-  <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
-  </div>
-
-  <div class="img-container">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
-  </div>
+<div align="center">
+  <table style="border-spacing: 0; padding: 0; border-collapse: collapse;">
+    <tr>
+      <td style="padding: 0; margin: 0;">
+        <div style="position: relative; width: 100%;">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" 
+               alt="Graph 1" class="zoomable" 
+               style="width: 100%; height: auto; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
+        </div>
+      </td>
+      <td style="padding: 0; margin: 0;">
+        <div style="position: relative; width: 100%;">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" 
+               alt="Graph 2" class="zoomable" 
+               style="width: 100%; height: auto; display: block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
-<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label">
-  <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
-  <img src="" alt="" id="modal-img" />
+<!-- Modal HTML -->
+<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+  <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
 </div>
 
+<!-- Modal Zoom Script -->
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
@@ -134,27 +70,27 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   zoomables.forEach(img => {
     img.addEventListener('click', () => {
-      modal.classList.add('active');
+      modal.style.display = 'flex';
       modalImg.src = img.src;
       modalImg.alt = img.alt;
     });
   });
 
   modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
+    modal.style.display = 'none';
     modalImg.src = '';
   });
 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.classList.remove('active');
+      modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape" && modal.classList.contains('active')) {
-      modal.classList.remove('active');
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
       modalImg.src = '';
     }
   });
