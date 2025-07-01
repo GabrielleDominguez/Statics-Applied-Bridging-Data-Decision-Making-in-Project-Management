@@ -40,54 +40,57 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-<h2>Forecasting Visualizations</h2>
+## Forecasting Visualizations
 
 <style>
-  .image-row {
+  .forecast-row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
     margin: 0;
     padding: 0;
-    width: 100%;
   }
 
-  .img-container {
+  .forecast-img {
     position: relative;
-    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
-  .img-container img {
+  .forecast-img img {
     display: block;
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
-    border-radius: 4px;
+    border: none;
+    border-radius: 0;
     cursor: pointer;
   }
 
   .zoom-plus {
     position: absolute;
-    top: 4px;
-    right: 4px;
-    font-size: 14px;
+    top: 6px;
+    right: 6px;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.4);
     user-select: none;
     pointer-events: none;
-    transition: color 0.3s ease;
   }
 
-  .img-container:hover .zoom-plus {
+  .forecast-img:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
   }
 
+  /* Modal */
   .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 9999;
     top: 0;
     left: 0;
     width: 100vw;
@@ -105,7 +108,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
 
   .modal-close {
@@ -118,15 +121,22 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     cursor: pointer;
     user-select: none;
   }
+
+  @media (max-width: 768px) {
+    .forecast-img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
 </style>
 
-<div class="image-row">
-  <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
+<div class="forecast-row">
+  <div class="forecast-img">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 1" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
-  <div class="img-container">
-    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
+  <div class="forecast-img">
+    <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true" alt="Forecasting Image 2" class="zoomable" />
     <div class="zoom-plus">+</div>
   </div>
 </div>
