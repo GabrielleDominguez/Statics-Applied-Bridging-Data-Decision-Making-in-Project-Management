@@ -41,61 +41,47 @@ This statistical approach would help me move beyond basic project metrics and de
 >  
 > For example, you go to a restaurant and they send you a survey asking about your food, server, and experience. They could gather this data by using a 1–5 star rating system, **putting data to what was once only a feeling.**
 >  
-> Great question again, and I am looking forward to continuing to learn alongside you for the remainder of 
+> Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the semester.
   
 ---
-
+    
 ## Hypothesis Test Visualizations
 
 <div align="center">
   <table style="border-spacing: 0; padding: 0; border-collapse: collapse; max-width: 780px; width: 100%;">
     <tr>
-      <!-- Image 1: slightly smaller width, plus adjusted -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-bottom: none; border-radius: 6px 0 0 6px; overflow: hidden; background: white;">
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-bottom: none; border-radius: 6px 0 0 0; overflow: hidden;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" 
                alt="Hypothesis Image 1" class="zoomable" 
-               style="width: 90%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
-          <!-- plus positioned higher and further right -->
-          <div style="position: absolute; top: 2px; right: 2px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+               style="width: 90%; height: auto; border-radius: 0; display: inline-block; cursor: pointer;" />
+          <div style="position: absolute; top: 2px; right: 2px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
-
-      <!-- Image 2: full width -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-bottom: none; border-radius: 0 6px 6px 0; overflow: hidden; background: white;">
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-bottom: none; border-radius: 0 6px 0 0; overflow: hidden;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" 
                alt="Hypothesis Image 2" class="zoomable" 
-               style="width: 100%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+               style="width: 100%; height: auto; border-radius: 0; display: inline-block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
     </tr>
-
-    <!-- Horizontal divider line between rows -->
-    <tr style="height: 1px; background: #ddd;">
-      <td colspan="2" style="padding: 0; margin: 0;"></td>
-    </tr>
-
     <tr>
-      <!-- Image 3: slightly smaller width, plus adjusted -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-top: none; border-radius: 6px 0 0 6px; overflow: hidden; background: white;">
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-top: none; border-radius: 0 0 0 6px; overflow: hidden;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" 
                alt="Hypothesis Image 3" class="zoomable" 
-               style="width: 90%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
-          <!-- plus positioned higher and further right -->
-          <div style="position: absolute; top: 2px; right: 2px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+               style="width: 90%; height: auto; border-radius: 0; display: inline-block; cursor: pointer;" />
+          <div style="position: absolute; top: 2px; right: 2px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
-
-      <!-- Image 4: full width -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-top: none; border-radius: 0 6px 6px 0; overflow: hidden; background: white;">
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-top: none; border-radius: 0 0 6px 0; overflow: hidden;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" 
                alt="Hypothesis Image 4" class="zoomable" 
-               style="width: 100%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+               style="width: 100%; height: auto; border-radius: 0; display: inline-block; cursor: pointer;" />
+          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
     </tr>
@@ -108,7 +94,7 @@ This statistical approach would help me move beyond basic project metrics and de
   <img id="modal-img" src="" alt="Zoomed image" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
 </div>
 
-<!-- Modal Zoom Script -->
+<!-- Modal Script -->
 <script>
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.getElementById('modal');
@@ -128,14 +114,14 @@ This statistical approach would help me move beyond basic project metrics and de
     modalImg.src = '';
   });
 
-  modal.addEventListener('click', (e) => {
+  modal.addEventListener('click', e => {
     if (e.target === modal) {
       modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       modal.style.display = 'none';
       modalImg.src = '';
