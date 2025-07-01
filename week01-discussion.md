@@ -32,22 +32,120 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 ## Graph Visualizations
 
+<style>
+  table.graph-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  table.graph-table td {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 0;
+    width: 50%;
+    vertical-align: top;
+  }
+
+  table.graph-table td .img-wrapper {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  table.graph-table td img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Corner markers */
+  table.graph-table td .img-wrapper::before,
+  table.graph-table td .img-wrapper::after,
+  table.graph-table td .img-wrapper > div.corner-top-right,
+  table.graph-table td .img-wrapper > div.corner-bottom-left {
+    content: "";
+    position: absolute;
+    background-color: #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Top-left corner */
+  table.graph-table td .img-wrapper::before {
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #999;
+    border-left: 1.5px solid #999;
+  }
+
+  /* Bottom-left corner */
+  table.graph-table td .img-wrapper::after {
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1.5px solid #999;
+    border-left: 1.5px solid #999;
+  }
+
+  /* Top-right corner marker */
+  table.graph-table td .img-wrapper > div.corner-top-right {
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #999;
+    border-right: 1.5px solid #999;
+  }
+
+  /* Bottom-right corner marker */
+  table.graph-table td .img-wrapper > div.corner-bottom-right {
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1.5px solid #999;
+    border-right: 1.5px solid #999;
+  }
+
+  /* We'll add the bottom-right corner marker dynamically with JS (see below) */
+
+  /* Plus sign in top right */
+  table.graph-table td .zoom-plus {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.4);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  table.graph-table td:hover .zoom-plus {
+    color: rgba(0,0,0,0.7);
+  }
+
+</style>
+
 <div align="center">
-  <table style="border-collapse: collapse; border: 1px solid #ccc; margin: 0; padding: 0;">
+  <table class="graph-table" style="border-collapse: collapse;">
     <tr>
-      <td style="border: 1px solid #ccc; padding: 0; margin: 0; width: 50%; position: relative;">
-        <img 
-          src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" 
-          alt="Graph 1" class="zoomable" 
-          style="width: 100%; height: auto; display: block; cursor: pointer;"/>
-        <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+      <td>
+        <div class="img-wrapper">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
+          <div class="zoom-plus" aria-hidden="true">+</div>
+          <div class="corner-top-right"></div>
+          <div class="corner-bottom-right"></div>
+        </div>
       </td>
-      <td style="border: 1px solid #ccc; padding: 0; margin: 0; width: 50%; position: relative;">
-        <img 
-          src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" 
-          alt="Graph 2" class="zoomable" 
-          style="width: 100%; height: auto; display: block; cursor: pointer;"/>
-        <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+      <td>
+        <div class="img-wrapper">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
+          <div class="zoom-plus" aria-hidden="true">+</div>
+          <div class="corner-top-right"></div>
+          <div class="corner-bottom-right"></div>
+        </div>
       </td>
     </tr>
   </table>
