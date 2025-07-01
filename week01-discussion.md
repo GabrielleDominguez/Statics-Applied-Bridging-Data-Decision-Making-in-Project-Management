@@ -47,15 +47,37 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   .img-wrapper {
     position: relative;
-    border: 3px solid #ddd; /* Lighter and thicker border */
+    border: 1.25px solid #ddd;
     background-color: white;
-    clip-path: polygon(
-      12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px),
-      calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px
-    );
     overflow: hidden;
-    transition: box-shadow 0.2s ease-in-out;
+    box-sizing: border-box;
     cursor: pointer;
+  }
+
+  .img-wrapper::before,
+  .img-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    z-index: 2;
+  }
+
+  .img-wrapper::before {
+    top: 0;
+    left: 0;
+    border-top: 1.25px solid #ddd;
+    border-left: 1.25px solid #ddd;
+    transform: translate(-50%, -50%);
+  }
+
+  .img-wrapper::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1.25px solid #ddd;
+    border-right: 1.25px solid #ddd;
+    transform: translate(50%, 50%);
   }
 
   .img-wrapper img {
@@ -68,15 +90,14 @@ From the course content, we learned that statistics helps us *"describe data, ma
     position: absolute;
     top: 8px;
     right: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
     pointer-events: none;
     user-select: none;
   }
 
   .img-wrapper:hover .zoom-plus {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.6);
   }
 </style>
 
