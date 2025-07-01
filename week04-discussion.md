@@ -39,7 +39,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > I am glad CLT is making sense to you too! I have a feeling it'll change how many of us approach decision making. I am looking forward to picking up more tools like this throughout the semester alongside you.
 
 ---
-
+[
 ##Forecasting Visualizations
 
 <!DOCTYPE html>
@@ -309,7 +309,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   </script>
 </body>
 </html>
-
+](https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/week04-discussion.html)
 ---
 
 ## References
