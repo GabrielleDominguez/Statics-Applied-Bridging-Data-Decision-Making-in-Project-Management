@@ -59,69 +59,43 @@ This statistical approach would help me move beyond basic project metrics and de
     position: relative;
     padding: 0;
     margin: 0;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
   }
 
-  /* Only outer edges */
   table.hypothesis-grid tr:first-child td {
-    border-top: 1px solid #ddd;
+    border-top: none;
+  }
+
+  table.hypothesis-grid tr:last-child td {
+    border-bottom: none;
   }
 
   table.hypothesis-grid td:first-child {
-    border-left: 1px solid #ddd;
+    border-left: none;
   }
 
-  /* Anchors: subtle, round, consistent */
-  table.hypothesis-grid td::before,
-  table.hypothesis-grid td::after,
-  table.hypothesis-grid td > span.corner-bottom-left,
-  table.hypothesis-grid td > span.corner-bottom-right {
-    content: "";
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: #ddd;
-    z-index: 2;
-  }
-
-  table.hypothesis-grid td::before {
-    top: -1px;
-    left: -1px;
-    border-radius: 2px 0 0 0;
-  }
-
-  table.hypothesis-grid td::after {
-    top: -1px;
-    right: -1px;
-    border-radius: 0 2px 0 0;
-  }
-
-  table.hypothesis-grid td > span.corner-bottom-left {
-    bottom: -1px;
-    left: -1px;
-    border-radius: 0 0 0 2px;
-  }
-
-  table.hypothesis-grid td > span.corner-bottom-right {
-    bottom: -1px;
-    right: -1px;
-    border-radius: 0 0 2px 0;
+  table.hypothesis-grid td:last-child {
+    border-right: none;
   }
 
   .img-container {
     position: relative;
     width: 100%;
     background: white;
-    text-align: center;
   }
 
   .img-container img {
+    width: 90%;
     max-width: 100%;
     height: auto;
-    border-radius: 0;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
     cursor: pointer;
+  }
+
+  .img-container.right img {
+    width: 100%;
   }
 
   .zoom-plus {
@@ -131,7 +105,23 @@ This statistical approach would help me move beyond basic project metrics and de
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
+    user-select: none;
   }
+
+  /* Corner anchors (scaled down + translated for crisp positioning) */
+  .anchor-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    z-index: 2;
+  }
+
+  .top-left { top: 0; left: 0; transform: translate(-50%, -50%); }
+  .top-right { top: 0; right: 0; transform: translate(50%, -50%); }
+  .bottom-left { bottom: 0; left: 0; transform: translate(-50%, 50%); }
+  .bottom-right { bottom: 0; right: 0; transform: translate(50%, 50%); }
 </style>
 
 <div align="center">
@@ -139,37 +129,45 @@ This statistical approach would help me move beyond basic project metrics and de
     <tr>
       <td>
         <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" style="width: 90%;" alt="Hypothesis Image 1" class="zoomable" />
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Hypothesis Image 1" class="zoomable" />
           <div class="zoom-plus">+</div>
+          <span class="anchor-dot top-left"></span>
+          <span class="anchor-dot top-right"></span>
+          <span class="anchor-dot bottom-left"></span>
+          <span class="anchor-dot bottom-right"></span>
         </div>
-        <span class="corner-bottom-left"></span>
-        <span class="corner-bottom-right"></span>
       </td>
       <td>
-        <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" style="width: 100%;" alt="Hypothesis Image 2" class="zoomable" />
+        <div class="img-container right">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Hypothesis Image 2" class="zoomable" />
           <div class="zoom-plus">+</div>
+          <span class="anchor-dot top-left"></span>
+          <span class="anchor-dot top-right"></span>
+          <span class="anchor-dot bottom-left"></span>
+          <span class="anchor-dot bottom-right"></span>
         </div>
-        <span class="corner-bottom-left"></span>
-        <span class="corner-bottom-right"></span>
       </td>
     </tr>
     <tr>
       <td>
         <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" style="width: 90%;" alt="Hypothesis Image 3" class="zoomable" />
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Hypothesis Image 3" class="zoomable" />
           <div class="zoom-plus">+</div>
+          <span class="anchor-dot top-left"></span>
+          <span class="anchor-dot top-right"></span>
+          <span class="anchor-dot bottom-left"></span>
+          <span class="anchor-dot bottom-right"></span>
         </div>
-        <span class="corner-bottom-left"></span>
-        <span class="corner-bottom-right"></span>
       </td>
       <td>
-        <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" style="width: 100%;" alt="Hypothesis Image 4" class="zoomable" />
+        <div class="img-container right">
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Hypothesis Image 4" class="zoomable" />
           <div class="zoom-plus">+</div>
+          <span class="anchor-dot top-left"></span>
+          <span class="anchor-dot top-right"></span>
+          <span class="anchor-dot bottom-left"></span>
+          <span class="anchor-dot bottom-right"></span>
         </div>
-        <span class="corner-bottom-left"></span>
-        <span class="corner-bottom-right"></span>
       </td>
     </tr>
   </table>
@@ -201,14 +199,14 @@ This statistical approach would help me move beyond basic project metrics and de
     modalImg.src = '';
   });
 
-  modal.addEventListener('click', (e) => {
+  modal.addEventListener('click', e => {
     if (e.target === modal) {
       modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       modal.style.display = 'none';
       modalImg.src = '';
