@@ -50,18 +50,19 @@ This statistical approach would help me move beyond basic project metrics and de
 <div align="center">
   <table style="border-spacing: 0; padding: 0; border-collapse: collapse; max-width: 780px; width: 100%;">
     <tr>
-      <!-- Image 1: slightly smaller width -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-bottom: none; border-radius: 6px 0 0 6px; overflow: hidden;">
+      <!-- Image 1: slightly smaller width, plus adjusted -->
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-bottom: none; border-radius: 6px 0 0 6px; overflow: hidden; background: white;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" 
                alt="Hypothesis Image 1" class="zoomable" 
                style="width: 90%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+          <!-- plus positioned higher and further right -->
+          <div style="position: absolute; top: 2px; right: 2px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
         </div>
       </td>
 
       <!-- Image 2: full width -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-bottom: none; border-radius: 0 6px 6px 0; overflow: hidden;">
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-bottom: none; border-radius: 0 6px 6px 0; overflow: hidden; background: white;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" 
                alt="Hypothesis Image 2" class="zoomable" 
@@ -71,19 +72,25 @@ This statistical approach would help me move beyond basic project metrics and de
       </td>
     </tr>
 
+    <!-- Horizontal divider line between rows -->
+    <tr style="height: 1px; background: #ddd;">
+      <td colspan="2" style="padding: 0; margin: 0;"></td>
+    </tr>
+
     <tr>
-      <!-- Image 3: slightly smaller width -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-top: none; border-radius: 6px 0 0 6px; overflow: hidden;">
+      <!-- Image 3: slightly smaller width, plus adjusted -->
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-top: none; border-radius: 6px 0 0 6px; overflow: hidden; background: white;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" 
                alt="Hypothesis Image 3" class="zoomable" 
                style="width: 90%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
+          <!-- plus positioned higher and further right -->
+          <div style="position: absolute; top: 2px; right: 2px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none; user-select:none;">+</div>
         </div>
       </td>
 
       <!-- Image 4: full width -->
-      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-top: none; border-radius: 0 6px 6px 0; overflow: hidden;">
+      <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-top: none; border-radius: 0 6px 6px 0; overflow: hidden; background: white;">
         <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" 
                alt="Hypothesis Image 4" class="zoomable" 
