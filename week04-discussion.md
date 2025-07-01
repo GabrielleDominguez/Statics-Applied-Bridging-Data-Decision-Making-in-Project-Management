@@ -70,38 +70,34 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       color: #2c3e50;
     }
 
-    .forecast-table {
-      border-spacing: 0;
-      border-collapse: collapse;
-      margin: 0 auto;
-      width: 100%;
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
     }
 
-    .forecast-table td {
+    .image-box {
+      flex: 1 1 50%;
+      max-width: 50%;
       padding: 0;
-      vertical-align: top;
-    }
-
-    .inner-box {
-      padding: 15px;
+      margin: 0;
       border: 1.5px solid #e2e8f0;
-      border-radius: 8px;
       background-color: #fff;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
       position: relative;
-      height: 100%;
+      transition: all 0.3s ease;
+      border-radius: 0;
     }
 
     .img-wrapper {
       position: relative;
       width: 100%;
+      height: 100%;
     }
 
     .zoomable {
       width: 100%;
       height: auto;
-      border-radius: 4px;
       display: block;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -116,28 +112,24 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       pointer-events: none;
     }
 
+    /* Hover effect for desktop */
     @media (hover: hover) and (pointer: fine) {
-      .inner-box:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        border-color: #cbd5e1;
+      .image-box:hover {
+        box-shadow: 0 0 10px rgba(71, 85, 105, 0.3);
         background-color: #fefefe;
+        z-index: 1;
       }
 
-      .inner-box:hover .zoomable {
+      .image-box:hover .zoomable {
         filter: brightness(0.95);
       }
     }
 
+    /* Full width on mobile but no gap */
     @media (max-width: 768px) {
-      .forecast-table tr {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .forecast-table td {
-        width: 100%;
-        display: block;
+      .image-box {
+        flex: 1 1 100%;
+        max-width: 100%;
       }
     }
   </style>
@@ -145,29 +137,21 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <body>
   <h1 class="main-title">Forecasting Visualizations</h1>
 
-  <div align="center">
-    <table class="forecast-table">
-      <tr>
-        <td>
-          <div class="inner-box">
-            <div class="img-wrapper">
-              <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
-                   alt="Forecasting Image 1" class="zoomable" />
-              <div class="plus-sign">+</div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="inner-box">
-            <div class="img-wrapper">
-              <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
-                   alt="Forecasting Image 2" class="zoomable" />
-              <div class="plus-sign">+</div>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </table>
+  <div class="image-grid">
+    <div class="image-box">
+      <div class="img-wrapper">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
+             alt="Forecasting Image 1" class="zoomable" />
+        <div class="plus-sign">+</div>
+      </div>
+    </div>
+    <div class="image-box">
+      <div class="img-wrapper">
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
+             alt="Forecasting Image 2" class="zoomable" />
+        <div class="plus-sign">+</div>
+      </div>
+    </div>
   </div>
 
   <!-- Modal Zoom -->
