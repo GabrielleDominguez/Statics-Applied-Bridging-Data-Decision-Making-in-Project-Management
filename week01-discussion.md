@@ -32,128 +32,93 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
 ## Graph Visualizations
 
+<div style="display: flex; flex-wrap: wrap; max-width: 800px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
+  <div style="flex: 1 1 50%; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+    <img
+      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png"
+      alt="Graph 1"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+  </div>
+
+  <div style="flex: 1 1 50%; position: relative; overflow: hidden;">
+    <img
+      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png"
+      alt="Graph 2"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+  </div>
+</div>
+
 <style>
-  table.graph-table {
-    border-collapse: separate;
-    border-spacing: 24px;
-    margin: 0 auto;
+  div[style*="flex: 1 1 50%"] {
+    min-width: 40vw;
   }
 
-  table.graph-table td {
-    width: 50%;
-    padding: 0;
-    vertical-align: top;
-  }
-
-  .img-wrapper {
-    position: relative;
-    border: 1px solid #ddd; /* subtle, light gray */
-    background-color: white;
-    overflow: hidden;
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-
-  /* Clean corner details */
-  .img-wrapper::before,
-  .img-wrapper::after,
-  .img-wrapper .corner-t,
-  .img-wrapper .corner-b {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    z-index: 2;
-  }
-
-  /* Top left and right "cut" corners */
-  .img-wrapper::before {
-    top: 0;
-    left: 0;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-  }
-
-  .img-wrapper::after {
-    top: 0;
-    right: 0;
-    border-top: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-
-  /* Bottom left and right "cut" corners */
-  .img-wrapper .corner-t {
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-  }
-
-  .img-wrapper .corner-b {
-    bottom: 0;
-    right: 0;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-
-  .img-wrapper img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .zoom-plus {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.3);
-    pointer-events: none;
-    user-select: none;
-  }
-
-  .img-wrapper:hover .zoom-plus {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  /* Mobile stacking */
-  @media (max-width: 700px) {
-    table.graph-table,
-    table.graph-table tr,
-    table.graph-table td {
-      display: block;
-      width: 100%;
+  @media (hover: hover) and (pointer: fine) {
+    div[style*="flex: 1 1 50%"]:hover img.zoomable {
+      filter: brightness(0.9);
+      transition: filter 0.3s ease;
     }
+  }
 
-    table.graph-table td {
-      margin-bottom: 24px;
-    }
+  div[style*="flex: 1 1 50%"]:last-child {
+    border-right: none !important;
   }
 </style>
 
-<div align="center">
-  <table class="graph-table">
-    <tr>
-      <td>
-        <div class="img-wrapper">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
-          <div class="zoom-plus">+</div>
-          <div class="corner-t"></div>
-          <div class="corner-b"></div>
-        </div>
-      </td>
-      <td>
-        <div class="img-wrapper">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
-          <div class="zoom-plus">+</div>
-          <div class="corner-t"></div>
-          <div class="corner-b"></div>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+<script>
+  const zoomables = document.querySelectorAll('.zoomable');
+  const modal = document.getElementById('modal') || (() => {
+    const m = document.createElement('div');
+    m.id = 'modal';
+    m.style.cssText = `
+      display: none; position: fixed; z-index: 1000;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.8); justify-content: center; align-items: center;
+    `;
+    m.innerHTML = `
+      <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+      <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
+    `;
+    document.body.appendChild(m);
+    return m;
+  })();
+
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
+
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+</script>
 
 ---
 
