@@ -64,27 +64,27 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 </div>
 
 <style>
-  /* Force side by side on all screen sizes, with a max width for mobile scaling */
+  /* Ensure side-by-side and smaller on mobile */
   div[style*="flex: 1"] {
-    min-width: 40vw; /* Smaller width for mobile so they fit side by side */
+    min-width: 45vw; /* responsive smaller widths */
   }
 
-  /* Darker, smoother hover backlight */
+  /* Darker, smooth hover backlight */
   @media (hover: hover) and (pointer: fine) {
     div[style*="flex: 1"]:hover {
       filter: brightness(1.1);
-      box-shadow: 0 0 30px rgba(71, 85, 105, 0.5);
+      box-shadow: 0 0 40px rgba(71, 85, 105, 0.7);
       z-index: 10;
       transition: box-shadow 0.3s ease, filter 0.3s ease;
     }
 
     div[style*="flex: 1"]:hover img.zoomable {
-      filter: brightness(0.9);
+      filter: brightness(0.85);
       transition: filter 0.3s ease;
     }
   }
 
-  /* Remove border on the last box */
+  /* Remove right border on last box */
   div[style*="flex: 1"]:last-child {
     border-right: none !important;
   }
