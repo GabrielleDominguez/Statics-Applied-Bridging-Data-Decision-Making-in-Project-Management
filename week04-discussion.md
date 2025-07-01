@@ -52,7 +52,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     <div class="plus">+</div>
   </div>
 
-  <div class="imageBorder" >
+  <div class="imageBorder borderLeft" >
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
       alt="Forecasting Image 2"
