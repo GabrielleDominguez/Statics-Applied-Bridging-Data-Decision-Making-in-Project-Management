@@ -48,39 +48,38 @@ This statistical approach would help me move beyond basic project metrics and de
 ## Hypothesis Test Visualizations
 
 <div align="center">
-  <table style="border-spacing: 0; border-collapse: collapse; max-width: 780px; width: 100%; border: 1px solid #ddd;">
+  <table style="border-collapse: collapse; border-spacing: 0; width: 100%; max-width: 780px; border: 1px solid #ddd;">
     <tr>
-      <td style="padding: 0; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;">
-        <div style="position: relative; background: white;">
+      <td style="padding: 0; background: white; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;">
+        <div style="position: relative;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" 
-               alt="Hypothesis Image 1" class="zoomable" 
+               alt="Hypothesis Image 1" class="zoomable"
                style="width: 90%; height: auto; display: block; margin: 0 auto; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
-      <td style="padding: 0; border-bottom: 1px solid #ddd;">
-        <div style="position: relative; background: white;">
+      <td style="padding: 0; background: white; border-bottom: 1px solid #ddd;">
+        <div style="position: relative;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" 
-               alt="Hypothesis Image 2" class="zoomable" 
+               alt="Hypothesis Image 2" class="zoomable"
                style="width: 100%; height: auto; display: block; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
     </tr>
-
     <tr>
-      <td style="padding: 0; border-right: 1px solid #ddd;">
-        <div style="position: relative; background: white;">
+      <td style="padding: 0; background: white; border-right: 1px solid #ddd;">
+        <div style="position: relative;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" 
-               alt="Hypothesis Image 3" class="zoomable" 
+               alt="Hypothesis Image 3" class="zoomable"
                style="width: 90%; height: auto; display: block; margin: 0 auto; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
-      <td style="padding: 0;">
-        <div style="position: relative; background: white;">
+      <td style="padding: 0; background: white;">
+        <div style="position: relative;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" 
-               alt="Hypothesis Image 4" class="zoomable" 
+               alt="Hypothesis Image 4" class="zoomable"
                style="width: 100%; height: auto; display: block; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
@@ -115,14 +114,14 @@ This statistical approach would help me move beyond basic project metrics and de
     modalImg.src = '';
   });
 
-  modal.addEventListener('click', e => {
+  modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
-  document.addEventListener('keydown', e => {
+  document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       modal.style.display = 'none';
       modalImg.src = '';
