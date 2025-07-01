@@ -47,37 +47,54 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   .img-wrapper {
     position: relative;
-    border: 1.25px solid #ddd;
+    border: 1px solid #ddd; /* subtle, light gray */
     background-color: white;
     overflow: hidden;
     box-sizing: border-box;
     cursor: pointer;
   }
 
+  /* Clean corner details */
   .img-wrapper::before,
-  .img-wrapper::after {
+  .img-wrapper::after,
+  .img-wrapper .corner-t,
+  .img-wrapper .corner-b {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color: white;
     z-index: 2;
   }
 
+  /* Top left and right "cut" corners */
   .img-wrapper::before {
     top: 0;
     left: 0;
-    border-top: 1.25px solid #ddd;
-    border-left: 1.25px solid #ddd;
-    transform: translate(-50%, -50%);
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
   }
 
   .img-wrapper::after {
+    top: 0;
+    right: 0;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+  /* Bottom left and right "cut" corners */
+  .img-wrapper .corner-t {
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+  }
+
+  .img-wrapper .corner-b {
     bottom: 0;
     right: 0;
-    border-bottom: 1.25px solid #ddd;
-    border-right: 1.25px solid #ddd;
-    transform: translate(50%, 50%);
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
   }
 
   .img-wrapper img {
@@ -99,6 +116,20 @@ From the course content, we learned that statistics helps us *"describe data, ma
   .img-wrapper:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.6);
   }
+
+  /* Mobile stacking */
+  @media (max-width: 700px) {
+    table.graph-table,
+    table.graph-table tr,
+    table.graph-table td {
+      display: block;
+      width: 100%;
+    }
+
+    table.graph-table td {
+      margin-bottom: 24px;
+    }
+  }
 </style>
 
 <div align="center">
@@ -108,12 +139,16 @@ From the course content, we learned that statistics helps us *"describe data, ma
         <div class="img-wrapper">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" alt="Graph 1" class="zoomable" />
           <div class="zoom-plus">+</div>
+          <div class="corner-t"></div>
+          <div class="corner-b"></div>
         </div>
       </td>
       <td>
         <div class="img-wrapper">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" alt="Graph 2" class="zoomable" />
           <div class="zoom-plus">+</div>
+          <div class="corner-t"></div>
+          <div class="corner-b"></div>
         </div>
       </td>
     </tr>
