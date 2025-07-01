@@ -42,159 +42,107 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ## Forecasting Visualizations
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forecasting Visualizations</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f8f9fa;
-      line-height: 1.6;
-      padding: 40px 20px;
-    }
-
-    .main-title {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      text-align: center;
-      color: #2c3e50;
-    }
-
-    .image-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0;
-    }
-
-    .image-box {
-      flex: 1 1 50%;
-      max-width: 50%;
-      padding: 0;
-      margin: 0;
-      border: 1.5px solid #e2e8f0;
-      background-color: #fff;
-      position: relative;
-      transition: all 0.3s ease;
-      border-radius: 0;
-    }
-
-    .img-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-
-    .zoomable {
-      width: 100%;
-      height: auto;
-      display: block;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .plus-sign {
-      position: absolute;
-      top: 6px;
-      right: 6px;
-      font-size: 16px;
-      color: rgba(0, 0, 0, 0.4);
-      pointer-events: none;
-    }
-
-    /* Hover effect for desktop */
-    @media (hover: hover) and (pointer: fine) {
-      .image-box:hover {
-        box-shadow: 0 0 10px rgba(71, 85, 105, 0.3);
-        background-color: #fefefe;
-        z-index: 1;
-      }
-
-      .image-box:hover .zoomable {
-        filter: brightness(0.95);
-      }
-    }
-
-    /* Full width on mobile but no gap */
-    @media (max-width: 768px) {
-      .image-box {
-        flex: 1 1 100%;
-        max-width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <h1 class="main-title">Forecasting Visualizations</h1>
-
-  <div class="image-grid">
-    <div class="image-box">
-      <div class="img-wrapper">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
-             alt="Forecasting Image 1" class="zoomable" />
-        <div class="plus-sign">+</div>
-      </div>
-    </div>
-    <div class="image-box">
-      <div class="img-wrapper">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
-             alt="Forecasting Image 2" class="zoomable" />
-        <div class="plus-sign">+</div>
-      </div>
-    </div>
+<div style="display: flex; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
+  <div style="flex: 0 0 50%; border-right: 1.5px solid #e2e8f0; border-bottom: 1.5px solid #e2e8f0; position: relative;">
+    <img
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
+      alt="Forecasting Image 1"
+      style="width: 100%; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
   </div>
 
-  <!-- Modal Zoom -->
-  <div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <div style="flex: 0 0 50%; border-bottom: 1.5px solid #e2e8f0; position: relative;">
+    <img
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
+      alt="Forecasting Image 2"
+      style="width: 100%; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
+  </div>
+</div>
+
+<style>
+  /* Hover effect with backlight */
+  @media (hover: hover) and (pointer: fine) {
+    div[style*="flex: 0 0 50%"]:hover {
+      filter: brightness(1.05);
+      box-shadow: 0 0 15px rgba(71, 85, 105, 0.3);
+      z-index: 10;
+    }
+
+    div[style*="flex: 0 0 50%"]:hover img.zoomable {
+      filter: brightness(0.95);
+    }
+  }
+
+  /* Responsive stacking */
+  @media (max-width: 600px) {
+    div[style*="flex: 0 0 50%"] {
+      flex: 0 0 100% !important;
+      border-right: none !important;
+      border-bottom: 1.5px solid #e2e8f0 !important;
+    }
+
+    div[style*="flex: 0 0 50%"]:last-child {
+      border-bottom: none !important;
+    }
+  }
+</style>
+
+<script>
+  // Modal Zoom script
+  const zoomables = document.querySelectorAll('.zoomable');
+  const modal = document.createElement('div');
+  modal.id = 'modal';
+  modal.style.cssText = `
+    display:none; 
+    position:fixed; 
+    z-index:1000; 
+    top:0; left:0; 
+    width:100vw; height:100vh; 
+    background:rgba(0,0,0,0.8); 
+    justify-content:center; 
+    align-items:center;
+  `;
+  modal.innerHTML = `
     <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
     <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-  </div>
+  `;
+  document.body.appendChild(modal);
 
-  <script>
-    const zoomables = document.querySelectorAll('.zoomable');
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal-img');
-    const modalClose = document.getElementById('modal-close');
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
 
-    zoomables.forEach(img => {
-      img.addEventListener('click', () => {
-        modal.style.display = 'flex';
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-      });
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
     });
+  });
 
-    modalClose.addEventListener('click', () => {
+  modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+  });
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
       modal.style.display = 'none';
       modalImg.src = '';
-    });
+    }
+  });
 
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-        modalImg.src = '';
-      }
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        modal.style.display = 'none';
-        modalImg.src = '';
-      }
-    });
-  </script>
-</body>
-</html>
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+</script>
 
 ---
 
