@@ -45,10 +45,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   .forecast-row {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0;
     margin: 0;
     padding: 0;
   }
@@ -56,9 +53,8 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   .forecast-img {
     position: relative;
     flex: 0 0 50%;
-    max-width: 50%;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   .forecast-img img {
@@ -67,8 +63,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     height: auto;
     margin: 0;
     padding: 0;
-    border: none;
-    border-radius: 0;
+    border-radius: 4px;
     cursor: pointer;
   }
 
@@ -86,7 +81,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     color: rgba(0, 0, 0, 0.7);
   }
 
-  /* Modal */
   .modal {
     display: none;
     position: fixed;
@@ -119,13 +113,11 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-    user-select: none;
   }
 
   @media (max-width: 768px) {
     .forecast-img {
       flex: 0 0 100%;
-      max-width: 100%;
     }
   }
 </style>
