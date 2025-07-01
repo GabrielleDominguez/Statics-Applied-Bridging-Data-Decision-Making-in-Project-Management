@@ -48,10 +48,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
         <div class="img-wrapper">
           <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
                alt="Forecasting Image 1" class="zoomable" />
-          <div class="corner top-left"></div>
-          <div class="corner top-right"></div>
-          <div class="corner bottom-left"></div>
-          <div class="corner bottom-right"></div>
           <div class="plus-sign">+</div>
         </div>
       </td>
@@ -59,10 +55,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
         <div class="img-wrapper">
           <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
                alt="Forecasting Image 2" class="zoomable" />
-          <div class="corner top-left"></div>
-          <div class="corner top-right"></div>
-          <div class="corner bottom-left"></div>
-          <div class="corner bottom-right"></div>
           <div class="plus-sign">+</div>
         </div>
       </td>
@@ -70,6 +62,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   </table>
 </div>
 
+<!-- CSS Styling -->
 <style>
   .forecast-table {
     border-spacing: 0;
@@ -82,19 +75,20 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     border: 1.5px solid #e2e8f0;
     border-radius: 12px;
     background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
-    vertical-align: top;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
 
   .img-wrapper {
     position: relative;
+    width: 100%;
     padding: 15px;
     border-radius: 12px;
-    overflow: visible; /* show corners outside */
   }
 
-  .img-wrapper img.zoomable {
+  .zoomable {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -103,103 +97,106 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     transition: filter 0.3s ease, transform 0.3s ease;
   }
 
-  /* Corner flair pieces */
-  .corner {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: #cbd5e1;
-    border-radius: 3px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
-    opacity: 0.6;
-    transition: opacity 0.3s ease, background-color 0.3s ease;
-    pointer-events: none;
-  }
-
-  .top-left {
-    top: 6px;
-    left: 6px;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-  }
-
-  .top-right {
-    top: 6px;
-    right: 6px;
-    clip-path: polygon(100% 0, 100% 100%, 0 0);
-  }
-
-  .bottom-left {
-    bottom: 6px;
-    left: 6px;
-    clip-path: polygon(0 100%, 100% 100%, 0 0);
-  }
-
-  .bottom-right {
-    bottom: 6px;
-    right: 6px;
-    clip-path: polygon(100% 100%, 100% 0, 0 100%);
-  }
-
   .plus-sign {
     position: absolute;
-    bottom: 10px;
+    bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
     color: rgba(0, 0, 0, 0.4);
-    font-weight: normal;
+    pointer-events: none;
     user-select: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease, font-weight 0.3s ease;
+    transition: color 0.3s ease, font-weight 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  /* Optional: sleek corner outline effect */
+  .forecast-table td::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 0 rgba(0,0,0,0);
+    transition: box-shadow 0.3s ease;
     pointer-events: none;
   }
 
-  /* Desktop hover styles */
+  /* Desktop Hover Styles */
   @media (hover: hover) and (pointer: fine) {
     .forecast-table td:hover {
-      border-color: #cbd5e1;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      border-color: #cbd5e1;
+      background-color: #fefefe;
+    }
+
+    .forecast-table td:hover::after {
+      box-shadow: inset 0 0 0 1.5px rgba(71, 85, 105, 0.4);
     }
 
     .forecast-table td:hover .zoomable {
-      filter: brightness(0.88);
-      transform: scale(1.05);
-    }
-
-    .forecast-table td:hover .corner {
-      background-color: #94a3b8;
-      opacity: 1;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      filter: brightness(0.93);
+      transform: scale(1.03);
     }
 
     .forecast-table td:hover .plus-sign {
       color: #475569;
-      text-shadow: 0 0 6px rgba(71, 85, 105, 0.8);
-      font-weight: 700;
+      font-weight: bold;
+      text-shadow: 0 0 4px rgba(71,85,105,0.6);
     }
   }
 
-  /* Mobile flare - always show corner flair and subtle shadow */
+  /* Mobile Styles (No hover) */
   @media (hover: none) and (pointer: coarse) {
     .forecast-table td {
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    }
-
-    .corner {
-      opacity: 1;
-      background-color: #cbd5e1;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     .plus-sign {
       color: rgba(0, 0, 0, 0.5);
       font-weight: 600;
     }
-
-    .zoomable {
-      transition: none;
-    }
   }
 </style>
+
+<!-- Modal HTML -->
+<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+  <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
+</div>
+
+<!-- Modal Zoom Script -->
+<script>
+  const zoomables = document.querySelectorAll('.zoomable');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
+
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+</script>
 
 ---
 
