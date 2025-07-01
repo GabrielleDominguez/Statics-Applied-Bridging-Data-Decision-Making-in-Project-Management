@@ -51,9 +51,11 @@ As a project manager, I use this same framework. Every project has expected outc
 <style>
   .kenny-img-container {
     position: relative;
-    max-width: 100%; /* Allow container to scale down */
-    width: 400px; /* Default max width for larger screens */
-    margin: 0 auto; /* Center it on the page */
+    max-width: 100%;
+    width: 400px;
+    margin: 0 auto;
+    border: 1.5px solid #e2e8f0; /* Added border */
+    overflow: hidden; /* Ensure hover effect stays clean */
   }
 
   .kenny-img-container img {
@@ -61,7 +63,8 @@ As a project manager, I use this same framework. Every project has expected outc
     width: 100%;
     height: auto;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 0;
+    transition: filter 0.3s ease;
   }
 
   .kenny-plus {
@@ -78,6 +81,12 @@ As a project manager, I use this same framework. Every project has expected outc
 
   .kenny-img-container:hover .kenny-plus {
     color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .kenny-img-container:hover img {
+      filter: brightness(0.9);
+    }
   }
 
   .kenny-modal {
