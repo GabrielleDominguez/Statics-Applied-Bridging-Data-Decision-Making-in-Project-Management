@@ -66,7 +66,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   
 .imageBorder {
-flex: 1; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;
+flex: 1; border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;
 }
 
 .plus {
