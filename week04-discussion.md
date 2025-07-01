@@ -39,6 +39,13 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 > I am glad CLT is making sense to you too! I have a feeling it'll change how many of us approach decision making. I am looking forward to picking up more tools like this throughout the semester alongside you.
 
 ---
+.imageBorder {
+style="flex: 1; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;"
+}
+
+.plus {
+style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;"
+}
 
 ## Forecasting Visualizations
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
@@ -64,13 +71,6 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 </div>
 
 <style>
-.imageBorder {
-style="flex: 1; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;"
-}
-
-.plus {
-style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;"
-}
   
   
   /* Desktop: double size from 250px to ~500px */
