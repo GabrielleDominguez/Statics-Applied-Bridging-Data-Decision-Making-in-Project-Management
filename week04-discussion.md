@@ -42,22 +42,22 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ## Forecasting Visualizations
 
-<div style="display: flex; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
-  <div style="flex: 0 0 50%; border-right: 1.5px solid #e2e8f0; border-bottom: 1.5px solid #e2e8f0; position: relative;">
+<div style="display: flex; flex-wrap: nowrap; max-width: 800px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
+  <div style="flex: 1; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
       alt="Forecasting Image 1"
-      style="width: 100%; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
     <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
   </div>
 
-  <div style="flex: 0 0 50%; border-bottom: 1.5px solid #e2e8f0; position: relative;">
+  <div style="flex: 1; position: relative; overflow: hidden;">
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
       alt="Forecasting Image 2"
-      style="width: 100%; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
     <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
@@ -65,30 +65,29 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 </div>
 
 <style>
-  /* Hover effect with backlight */
+  /* Force side by side on all screen sizes, with a max width for mobile scaling */
+  div[style*="flex: 1"] {
+    min-width: 40vw; /* Smaller width for mobile so they fit side by side */
+  }
+
+  /* Darker, smoother hover backlight */
   @media (hover: hover) and (pointer: fine) {
-    div[style*="flex: 0 0 50%"]:hover {
-      filter: brightness(1.05);
-      box-shadow: 0 0 15px rgba(71, 85, 105, 0.3);
+    div[style*="flex: 1"]:hover {
+      filter: brightness(1.1);
+      box-shadow: 0 0 30px rgba(71, 85, 105, 0.5);
       z-index: 10;
+      transition: box-shadow 0.3s ease, filter 0.3s ease;
     }
 
-    div[style*="flex: 0 0 50%"]:hover img.zoomable {
-      filter: brightness(0.95);
+    div[style*="flex: 1"]:hover img.zoomable {
+      filter: brightness(0.9);
+      transition: filter 0.3s ease;
     }
   }
 
-  /* Responsive stacking */
-  @media (max-width: 600px) {
-    div[style*="flex: 0 0 50%"] {
-      flex: 0 0 100% !important;
-      border-right: none !important;
-      border-bottom: 1.5px solid #e2e8f0 !important;
-    }
-
-    div[style*="flex: 0 0 50%"]:last-child {
-      border-bottom: none !important;
-    }
+  /* Remove border on the last box */
+  div[style*="flex: 1"]:last-child {
+    border-right: none !important;
   }
 </style>
 
