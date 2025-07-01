@@ -57,34 +57,34 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 8px;
+    gap: 0;
     margin: 0 !important;
     padding: 0 !important;
   }
 
   .img-container {
     position: relative;
-    width: calc(50% - 4px);
-    box-sizing: border-box;
+    flex: 1 1 50%;
     margin: 0 !important;
     padding: 0 !important;
+    box-sizing: border-box;
   }
 
   .img-container img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
     cursor: pointer;
-    margin: 0 !important;
-    padding: 0 !important;
   }
 
   .zoom-plus {
     position: absolute;
-    top: 4px;
-    right: 4px;
-    font-size: 14px;
+    top: 6px;
+    right: 6px;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
     user-select: none;
@@ -128,6 +128,13 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
     font-weight: bold;
     cursor: pointer;
     user-select: none;
+  }
+
+  /* Responsive fallback for stacked layout */
+  @media (max-width: 768px) {
+    .img-container {
+      flex: 1 1 100%;
+    }
   }
 </style>
 
