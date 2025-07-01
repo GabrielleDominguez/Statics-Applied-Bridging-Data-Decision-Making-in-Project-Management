@@ -45,26 +45,28 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 <style>
   .image-row {
     display: flex;
-    gap: 0;
-    justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   .img-container {
     position: relative;
-    flex: 1 1 0;
+    width: 50%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   .img-container img {
     display: block;
     width: 100%;
     height: auto;
-    cursor: pointer;
+    margin: 0;
+    padding: 0;
     border-radius: 4px;
+    cursor: pointer;
   }
 
   .zoom-plus {
@@ -129,6 +131,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   </div>
 </div>
 
+<!-- Modal -->
 <div id="modal" class="modal" role="dialog" aria-modal="true">
   <span id="modal-close" class="modal-close" aria-label="Close modal">&times;</span>
   <img src="" alt="" id="modal-img" />
