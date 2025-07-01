@@ -54,7 +54,7 @@ This statistical approach would help me move beyond basic project metrics and de
         <div style="position: relative; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png"
                alt="Hypothesis Image 1" class="zoomable"
-               style="width: 90%; height: auto; display: block; border-radius: 4px; margin: 0 auto; cursor: pointer;" />
+               style="width: 90%; height: auto; border-radius: 4px; display: block; margin: 0 auto; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
         </div>
       </td>
@@ -62,7 +62,7 @@ This statistical approach would help me move beyond basic project metrics and de
         <div style="position: relative; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png"
                alt="Hypothesis Image 2" class="zoomable"
-               style="width: 100%; height: auto; display: block; border-radius: 4px; margin: 0 auto; cursor: pointer;" />
+               style="width: 100%; height: auto; border-radius: 4px; display: block; margin: 0 auto; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
         </div>
       </td>
@@ -72,7 +72,7 @@ This statistical approach would help me move beyond basic project metrics and de
         <div style="position: relative; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png"
                alt="Hypothesis Image 3" class="zoomable"
-               style="width: 90%; height: auto; display: block; border-radius: 4px; margin: 0 auto; cursor: pointer;" />
+               style="width: 90%; height: auto; border-radius: 4px; display: block; margin: 0 auto; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
         </div>
       </td>
@@ -80,7 +80,7 @@ This statistical approach would help me move beyond basic project metrics and de
         <div style="position: relative; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png"
                alt="Hypothesis Image 4" class="zoomable"
-               style="width: 100%; height: auto; display: block; border-radius: 4px; margin: 0 auto; cursor: pointer;" />
+               style="width: 100%; height: auto; border-radius: 4px; display: block; margin: 0 auto; cursor: pointer;" />
           <div style="position: absolute; top: 6px; right: 6px; font-size: 14px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
         </div>
       </td>
