@@ -41,7 +41,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 ---
 
 ## Forecasting Visualizations
-<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
   <div class="imageBorder" >
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
@@ -67,6 +67,10 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
   
 .imageBorder {
 flex: 1; border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;
+}
+
+.borderLeft {
+border-left: none;
 }
 
 .plus {
