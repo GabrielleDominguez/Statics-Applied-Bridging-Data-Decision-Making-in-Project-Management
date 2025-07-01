@@ -40,163 +40,275 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-## Forecasting Visualizations
-<div align="center">
-  <table class="forecast-table">
-    <tr>
-      <td>
-        <div class="img-wrapper">
-          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true"
-               alt="Forecasting Image 1" class="zoomable" />
-          <div class="plus-sign">+</div>
-        </div>
-      </td>
-      <td>
-        <div class="img-wrapper">
-          <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%202%2C%20resize%20v2.png?raw=true"
-               alt="Forecasting Image 2" class="zoomable" />
-          <div class="plus-sign">+</div>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+##Forecasting Visualizations
 
-<!-- CSS Styling -->
-<style>
-  .forecast-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-  }
-
-  .forecast-table td {
-    padding: 0;
-    margin: 0;
-    border: 1.5px solid #e2e8f0;
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .img-wrapper {
-    position: relative;
-    width: 100%;
-    padding: 15px;
-    border-radius: 12px;
-  }
-
-  .zoomable {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    display: block;
-    cursor: pointer;
-    transition: filter 0.3s ease, transform 0.3s ease;
-  }
-
-  .plus-sign {
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.4);
-    pointer-events: none;
-    user-select: none;
-    transition: color 0.3s ease, font-weight 0.3s ease, text-shadow 0.3s ease;
-  }
-
-  /* Optional: sleek corner outline effect */
-  .forecast-table td::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-    box-shadow: inset 0 0 0 0 rgba(0,0,0,0);
-    transition: box-shadow 0.3s ease;
-    pointer-events: none;
-  }
-
-  /* Desktop Hover Styles */
-  @media (hover: hover) and (pointer: fine) {
-    .forecast-table td:hover {
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-      border-color: #cbd5e1;
-      background-color: #fefefe;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Visualizations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .forecast-table td:hover::after {
-      box-shadow: inset 0 0 0 1.5px rgba(71, 85, 105, 0.4);
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f9fa;
+      line-height: 1.6;
+      padding: 40px 20px;
     }
 
-    .forecast-table td:hover .zoomable {
-      filter: brightness(0.93);
-      transform: scale(1.03);
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+      border-radius: 8px;
+      overflow: hidden;
     }
 
-    .forecast-table td:hover .plus-sign {
-      color: #475569;
-      font-weight: bold;
-      text-shadow: 0 0 4px rgba(71,85,105,0.6);
-    }
-  }
-
-  /* Mobile Styles (No hover) */
-  @media (hover: none) and (pointer: coarse) {
-    .forecast-table td {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-
-    .plus-sign {
-      color: rgba(0, 0, 0, 0.5);
+    .main-title {
+      padding: 30px 40px 20px;
+      font-size: 2rem;
       font-weight: 600;
+      color: #2c3e50;
+      border-bottom: 1px solid #e9ecef;
+      background: white;
     }
-  }
-</style>
 
-<!-- Modal HTML -->
-<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
-  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
-  <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-</div>
+    .visualization-grid {
+      display: grid;
+      grid-template-columns: 1fr 2px 1fr;
+      height: 600px;
+    }
 
-<!-- Modal Zoom Script -->
-<script>
-  const zoomables = document.querySelectorAll('.zoomable');
-  const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modal-img');
-  const modalClose = document.getElementById('modal-close');
+    .viz-section {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      position: relative;
+      transition: background 0.3s ease;
+    }
 
-  zoomables.forEach(img => {
-    img.addEventListener('click', () => {
-      modal.style.display = 'flex';
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin: 0;
+      line-height: 1.3;
+      transition: color 0.3s ease;
+    }
+
+    .expand-button {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #bdc3c7;
+      background: white;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #7f8c8d;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      margin-left: 20px;
+    }
+
+    .expand-button:hover {
+      border-color: #3498db;
+      color: #3498db;
+      background: #f8f9fa;
+    }
+
+    .data-type {
+      font-size: 0.85rem;
+      color: #3498db;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .chart-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .chart-placeholder {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .bar-chart {
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    }
+
+    .histogram-chart {
+      background: linear-gradient(135deg, #16a085 0%, #27ae60 100%);
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .vertical-divider {
+      background: #95a5a6;
+      width: 2px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .visualization-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1px auto;
+        height: auto;
+      }
+
+      .vertical-divider {
+        width: 100%;
+        height: 1px;
+        background: #e9ecef;
+      }
+
+      .viz-section {
+        padding: 30px;
+        border-radius: 6px;
+      }
+
+      .main-title {
+        padding: 25px 30px 15px;
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      .viz-section {
+        padding: 25px 20px;
+        border-radius: 4px;
+      }
+
+      .main-title {
+        padding: 20px;
+        font-size: 1.6rem;
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+      }
+
+      .chart-container {
+        margin-bottom: 25px;
+      }
+
+      .chart-placeholder {
+        height: 250px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .expand-button {
+        align-self: flex-end;
+        margin-left: 0;
+      }
+
+      .chart-placeholder {
+        height: 200px;
+        font-size: 0.9rem;
+      }
+
+      .viz-section {
+        border-radius: 2px;
+      }
+    }
+
+    /* Hover Effects */
+    .viz-section:hover {
+      background: radial-gradient(circle at top left, #f0f8ff 0%, #ffffff 100%);
+    }
+
+    .viz-section:hover .section-title {
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title">Graph Visualizations</h1>
+    <div class="visualization-grid">
+      <div class="viz-section">
+        <div class="section-header">
+          <h2 class="section-title">Project Management Platform Adoption</h2>
+          <button class="expand-button">+</button>
+        </div>
+        <div class="data-type">Nominal Data: Distinct categories without ranking</div>
+        <div class="chart-container">
+          <div class="chart-placeholder bar-chart">📊 Bar Chart Visualization</div>
+        </div>
+        <p class="description">The bar graph shows adoption rates for project management tools, helping stakeholders quickly see which platforms are most popular for smarter software investment decisions.</p>
+      </div>
+      <div class="vertical-divider"></div>
+      <div class="viz-section">
+        <div class="section-header">
+          <h2 class="section-title">Project Milestone Completion Distribution</h2>
+          <button class="expand-button">+</button>
+        </div>
+        <div class="data-type">Ratio Data: Projects grouped by milestone completion percentage</div>
+        <div class="chart-container">
+          <div class="chart-placeholder histogram-chart">📈 Histogram Visualization</div>
+        </div>
+        <p class="description">The histogram shows how consistently teams meet milestones, revealing patterns in performance that highlight risks to project timelines.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.expand-button').forEach(button => {
+      button.addEventListener('click', function() {
+        this.textContent = this.textContent === '+' ? '−' : '+';
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 100);
+      });
     });
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.style.display = 'none';
-    modalImg.src = '';
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    }
-  });
-</script>
+  </script>
+</body>
+</html>
 
 ---
 
