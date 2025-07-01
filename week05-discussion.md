@@ -59,26 +59,23 @@ This statistical approach would help me move beyond basic project metrics and de
     position: relative;
     padding: 0;
     margin: 0;
-    border: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
   }
 
-  /* Remove double borders between cells by hiding right border on left cells and bottom border on top cells */
-  table.hypothesis-grid tr:first-child td {
-    border-top: none;
-  }
   table.hypothesis-grid tr:last-child td {
     border-bottom: none;
   }
-  table.hypothesis-grid td:first-child {
-    border-left: none;
-  }
+
   table.hypothesis-grid td:last-child {
     border-right: none;
   }
 
   /* Corner anchors */
   table.hypothesis-grid td::before,
-  table.hypothesis-grid td::after {
+  table.hypothesis-grid td::after,
+  table.hypothesis-grid td > span.corner-bottom-left,
+  table.hypothesis-grid td > span.corner-bottom-right {
     content: "";
     position: absolute;
     width: 6px;
@@ -87,44 +84,35 @@ This statistical approach would help me move beyond basic project metrics and de
     z-index: 2;
   }
 
-  /* Top-left anchor */
   table.hypothesis-grid td::before {
     top: -1px;
     left: -1px;
     border-radius: 3px 0 0 0;
   }
-  /* Top-right anchor */
+
   table.hypothesis-grid td::after {
     top: -1px;
     right: -1px;
     border-radius: 0 3px 0 0;
   }
 
-  /* Add extra anchors to bottom corners with a nested span */
-  table.hypothesis-grid td > span.corner-bottom-left,
-  table.hypothesis-grid td > span.corner-bottom-right {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: #ddd;
-    z-index: 2;
-  }
   table.hypothesis-grid td > span.corner-bottom-left {
     bottom: -1px;
     left: -1px;
     border-radius: 0 0 0 3px;
   }
+
   table.hypothesis-grid td > span.corner-bottom-right {
     bottom: -1px;
     right: -1px;
     border-radius: 0 0 3px 0;
   }
 
-  /* Image container */
   .img-container {
     position: relative;
     width: 100%;
     background: white;
+    text-align: center;
   }
 
   .img-container img {
@@ -132,8 +120,7 @@ This statistical approach would help me move beyond basic project metrics and de
     max-width: 100%;
     height: auto;
     border-radius: 4px;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     cursor: pointer;
   }
 
