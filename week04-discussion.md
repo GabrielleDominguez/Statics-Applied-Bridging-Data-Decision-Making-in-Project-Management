@@ -49,7 +49,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
+    <div class="plus">+</div>
   </div>
 
   <div class="imageBorder" >
@@ -67,6 +67,11 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 .imageBorder {
 style="flex: 1; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;"
 }
+
+.plus {
+style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;"
+}
+  
   
   /* Desktop: double size from 250px to ~500px */
   @media (min-width: 769px) {
