@@ -45,27 +45,25 @@ This statistical approach would help me move beyond basic project metrics and de
   
 ---
 
-## Hypothesis Test Visualizations
-
 <div align="center">
   <table style="border-spacing: 0; padding: 0; border-collapse: collapse; max-width: 780px; width: 100%;">
     <tr>
       <!-- Image 1 -->
       <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-bottom: none; border-radius: 6px 0 0 6px; background: white; vertical-align: top;">
-        <div style="position: relative; width: 100%; padding: 15% 0; background: white; text-align: center;">
+        <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" 
                alt="Hypothesis Image 1" class="zoomable" 
-               style="width: 80%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
+               style="width: 75%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
           <div style="position: absolute; top: 10px; right: 10px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
 
       <!-- Image 2 -->
       <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-bottom: none; border-radius: 0 6px 6px 0; background: white; vertical-align: top;">
-        <div style="position: relative; width: 100%; padding: 15% 0; background: white; text-align: center;">
+        <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" 
                alt="Hypothesis Image 2" class="zoomable" 
-               style="width: 80%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
+               style="width: 75%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
           <div style="position: absolute; top: 10px; right: 10px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
@@ -74,67 +72,26 @@ This statistical approach would help me move beyond basic project metrics and de
     <tr>
       <!-- Image 3 -->
       <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-right: none; border-top: none; border-radius: 6px 0 0 6px; background: white; vertical-align: top;">
-        <div style="position: relative; width: 100%; padding: 15% 0; background: white; text-align: center;">
+        <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" 
                alt="Hypothesis Image 3" class="zoomable" 
-               style="width: 80%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
+               style="width: 75%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
           <div style="position: absolute; top: 10px; right: 10px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
 
       <!-- Image 4 -->
       <td style="padding: 0; margin: 0; border: 1px solid #ddd; border-left: none; border-top: none; border-radius: 0 6px 6px 0; background: white; vertical-align: top;">
-        <div style="position: relative; width: 100%; padding: 15% 0; background: white; text-align: center;">
+        <div style="position: relative; width: 100%; background: white; text-align: center;">
           <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" 
                alt="Hypothesis Image 4" class="zoomable" 
-               style="width: 80%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
+               style="width: 75%; height: auto; border-radius: 4px; display: inline-block; cursor: pointer;" />
           <div style="position: absolute; top: 10px; right: 10px; font-size: 14px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
         </div>
       </td>
     </tr>
   </table>
 </div>
-
-<!-- Modal HTML -->
-<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
-  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
-  <img id="modal-img" src="" alt="Zoomed image" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-</div>
-
-<!-- Modal Zoom Script -->
-<script>
-  const zoomables = document.querySelectorAll('.zoomable');
-  const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modal-img');
-  const modalClose = document.getElementById('modal-close');
-
-  zoomables.forEach(img => {
-    img.addEventListener('click', () => {
-      modal.style.display = 'flex';
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
-    });
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.style.display = 'none';
-    modalImg.src = '';
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    }
-  });
-</script>
 
 ---
  
