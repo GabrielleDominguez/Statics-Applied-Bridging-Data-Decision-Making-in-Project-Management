@@ -33,23 +33,21 @@ From the course content, we learned that statistics helps us *"describe data, ma
 ## Graph Visualizations
 
 <div align="center">
-  <table style="border-spacing: 0; padding: 0; border-collapse: collapse;">
+  <table style="border-collapse: collapse; border: 1px solid #ccc; margin: 0; padding: 0;">
     <tr>
-      <td style="padding: 0; margin: 0;">
-        <div style="position: relative; width: 100%;">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" 
-               alt="Graph 1" class="zoomable" 
-               style="width: 100%; height: auto; display: block; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
-        </div>
+      <td style="border: 1px solid #ccc; padding: 0; margin: 0; width: 50%; position: relative;">
+        <img 
+          src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png" 
+          alt="Graph 1" class="zoomable" 
+          style="width: 100%; height: auto; display: block; cursor: pointer;"/>
+        <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
       </td>
-      <td style="padding: 0; margin: 0;">
-        <div style="position: relative; width: 100%;">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" 
-               alt="Graph 2" class="zoomable" 
-               style="width: 100%; height: auto; display: block; cursor: pointer;" />
-          <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0, 0, 0, 0.4); pointer-events: none;">+</div>
-        </div>
+      <td style="border: 1px solid #ccc; padding: 0; margin: 0; width: 50%; position: relative;">
+        <img 
+          src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png" 
+          alt="Graph 2" class="zoomable" 
+          style="width: 100%; height: auto; display: block; cursor: pointer;"/>
+        <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
       </td>
     </tr>
   </table>
