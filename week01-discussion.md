@@ -52,6 +52,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
     height: auto;
     cursor: pointer;
     border-radius: 4px;
+    border: 1px solid #ccc; /* Matching border style */
   }
 
   .zoom-plus {
