@@ -35,7 +35,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
 <style>
   table.graph-table {
     border-collapse: separate;
-    border-spacing: 24px 24px;
+    border-spacing: 24px;
     margin: 0 auto;
   }
 
@@ -47,19 +47,15 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   .img-wrapper {
     position: relative;
-    border: 1px solid #999;
-    border-radius: 0;
-    overflow: hidden;
+    border: 3px solid #ddd; /* Lighter and thicker border */
+    background-color: white;
     clip-path: polygon(
-      8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px),
-      calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px
+      12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px),
+      calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px
     );
+    overflow: hidden;
     transition: box-shadow 0.2s ease-in-out;
     cursor: pointer;
-  }
-
-  .img-wrapper:hover {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   }
 
   .img-wrapper img {
@@ -72,14 +68,15 @@ From the course content, we learned that statistics helps us *"describe data, ma
     position: absolute;
     top: 8px;
     right: 8px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
     user-select: none;
   }
 
   .img-wrapper:hover .zoom-plus {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.75);
   }
 </style>
 
