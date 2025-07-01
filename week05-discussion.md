@@ -45,7 +45,7 @@ This statistical approach would help me move beyond basic project metrics and de
   
 ---
     
-## Hypothesis Test Visualizations
+  ## Hypothesis Test Visualizations
 
 <style>
   table.hypothesis-grid {
@@ -63,23 +63,24 @@ This statistical approach would help me move beyond basic project metrics and de
     border-bottom: 1px solid #ddd;
   }
 
-  table.hypothesis-grid tr:last-child td {
-    border-bottom: none;
+  /* Only outer edges */
+  table.hypothesis-grid tr:first-child td {
+    border-top: 1px solid #ddd;
   }
 
-  table.hypothesis-grid td:last-child {
-    border-right: none;
+  table.hypothesis-grid td:first-child {
+    border-left: 1px solid #ddd;
   }
 
-  /* Corner anchors */
+  /* Anchors: subtle, round, consistent */
   table.hypothesis-grid td::before,
   table.hypothesis-grid td::after,
   table.hypothesis-grid td > span.corner-bottom-left,
   table.hypothesis-grid td > span.corner-bottom-right {
     content: "";
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     background: #ddd;
     z-index: 2;
   }
@@ -87,25 +88,25 @@ This statistical approach would help me move beyond basic project metrics and de
   table.hypothesis-grid td::before {
     top: -1px;
     left: -1px;
-    border-radius: 3px 0 0 0;
+    border-radius: 2px 0 0 0;
   }
 
   table.hypothesis-grid td::after {
     top: -1px;
     right: -1px;
-    border-radius: 0 3px 0 0;
+    border-radius: 0 2px 0 0;
   }
 
   table.hypothesis-grid td > span.corner-bottom-left {
     bottom: -1px;
     left: -1px;
-    border-radius: 0 0 0 3px;
+    border-radius: 0 0 0 2px;
   }
 
   table.hypothesis-grid td > span.corner-bottom-right {
     bottom: -1px;
     right: -1px;
-    border-radius: 0 0 3px 0;
+    border-radius: 0 0 2px 0;
   }
 
   .img-container {
@@ -116,10 +117,9 @@ This statistical approach would help me move beyond basic project metrics and de
   }
 
   .img-container img {
-    width: 90%;
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 0;
     display: inline-block;
     cursor: pointer;
   }
@@ -131,7 +131,6 @@ This statistical approach would help me move beyond basic project metrics and de
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
-    user-select: none;
   }
 </style>
 
@@ -140,7 +139,7 @@ This statistical approach would help me move beyond basic project metrics and de
     <tr>
       <td>
         <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Hypothesis Image 1" class="zoomable" />
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" style="width: 90%;" alt="Hypothesis Image 1" class="zoomable" />
           <div class="zoom-plus">+</div>
         </div>
         <span class="corner-bottom-left"></span>
@@ -148,7 +147,7 @@ This statistical approach would help me move beyond basic project metrics and de
       </td>
       <td>
         <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Hypothesis Image 2" class="zoomable" />
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" style="width: 100%;" alt="Hypothesis Image 2" class="zoomable" />
           <div class="zoom-plus">+</div>
         </div>
         <span class="corner-bottom-left"></span>
@@ -158,7 +157,7 @@ This statistical approach would help me move beyond basic project metrics and de
     <tr>
       <td>
         <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Hypothesis Image 3" class="zoomable" />
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" style="width: 90%;" alt="Hypothesis Image 3" class="zoomable" />
           <div class="zoom-plus">+</div>
         </div>
         <span class="corner-bottom-left"></span>
@@ -166,7 +165,7 @@ This statistical approach would help me move beyond basic project metrics and de
       </td>
       <td>
         <div class="img-container">
-          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Hypothesis Image 4" class="zoomable" />
+          <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" style="width: 100%;" alt="Hypothesis Image 4" class="zoomable" />
           <div class="zoom-plus">+</div>
         </div>
         <span class="corner-bottom-left"></span>
