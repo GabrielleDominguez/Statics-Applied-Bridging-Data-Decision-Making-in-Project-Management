@@ -50,42 +50,38 @@ This statistical approach would help me move beyond basic project metrics and de
 <style>
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
-    gap: 8px;
-    max-width: 700px; /* smaller container width */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 860px;
     margin: 0 auto;
   }
 
   .img-wrapper {
     position: relative;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 6px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
     background: #fff;
-    cursor: pointer;
     overflow: hidden;
-    max-width: 320px; /* stricter max width */
-    margin: 0 auto;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
+    transition: box-shadow 0.3s ease;
   }
 
   .img-wrapper:hover {
-    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
   }
 
   .img-wrapper img {
-    display: block;
     width: 100%;
     height: auto;
-    max-height: 180px; /* smaller max height */
-    border-radius: 6px;
-    object-fit: contain;
+    display: block;
   }
 
   .zoom-plus {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    font-size: 18px;
+    top: 6px;
+    right: 6px;
+    font-size: 16px;
+    font-weight: normal;
     color: rgba(0, 0, 0, 0.4);
     user-select: none;
     pointer-events: none;
@@ -94,6 +90,18 @@ This statistical approach would help me move beyond basic project metrics and de
 
   .img-wrapper:hover .zoom-plus {
     color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (max-width: 600px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .zoom-plus {
+      font-size: 14px;
+      top: 4px;
+      right: 4px;
+    }
   }
 
   .modal {
@@ -116,8 +124,8 @@ This statistical approach would help me move beyond basic project metrics and de
   .modal img {
     max-width: 90%;
     max-height: 90%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
   }
 
   .modal-close {
@@ -130,43 +138,27 @@ This statistical approach would help me move beyond basic project metrics and de
     cursor: pointer;
     user-select: none;
   }
-
-  @media (max-width: 600px) {
-    .image-grid {
-      grid-template-columns: 1fr; /* stack single column on mobile */
-      max-width: 90vw;
-    }
-
-    .img-wrapper {
-      max-width: 100%;
-      margin: 0;
-    }
-
-    .img-wrapper img {
-      max-height: 160px; /* slightly smaller on mobile */
-    }
-  }
 </style>
 
 <div class="image-grid">
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Hypothesis Test Image 1" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png" alt="Forecasting Image 1" class="zoomable" />
+    <div class="zoom-plus">+</div>
   </div>
 
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Hypothesis Test Image 2" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png" alt="Forecasting Image 2" class="zoomable" />
+    <div class="zoom-plus">+</div>
   </div>
 
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Hypothesis Test Image 3" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png" alt="Forecasting Image 3" class="zoomable" />
+    <div class="zoom-plus">+</div>
   </div>
 
   <div class="img-wrapper">
-    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Hypothesis Test Image 4" class="zoomable" />
-    <div class="zoom-plus" aria-hidden="true">+</div>
+    <img src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png" alt="Forecasting Image 4" class="zoomable" />
+    <div class="zoom-plus">+</div>
   </div>
 </div>
 
