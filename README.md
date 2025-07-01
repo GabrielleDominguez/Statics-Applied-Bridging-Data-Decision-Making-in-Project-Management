@@ -65,7 +65,7 @@ Each discussion contains:
         </svg>
       </div>
       <a href="week02-discussion.html" class="thumbnail-link" style="display: block;">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/edd15e76512db98e71e252c4b5e732a970804a84/thumbnail%203%2C%20updated%20title.png?raw=true" alt="Week 2 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/5f8dbb99ed99c2668880302ef22cbc60b2a3d351/thumbnail%203%2C%20updated%20graph.png?raw=true" alt="Week 2 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
       </a>
     </td>
 
@@ -90,7 +90,7 @@ Each discussion contains:
         </svg>
       </div>
       <a href="week04-discussion.html" class="thumbnail-link" style="display: block;">
-        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/edd15e76512db98e71e252c4b5e732a970804a84/thumbnail%205%2C%20updated%20title.png?raw=true" alt="Week 4 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
+        <img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/5f8dbb99ed99c2668880302ef22cbc60b2a3d351/thumbnail%205%2C%20updated%20title%20v2.png?raw=true" alt="Week 4 Graphic" width="100%" style="max-width: 600px; border-radius: 6px;" />
       </a>
     </td>
 
@@ -109,7 +109,6 @@ Each discussion contains:
 
 <!-- Styles -->
 <style>
-  /* Paperclip style for mobile only */
   .mobile-paperclip {
     position: absolute;
     top: 8px;
@@ -131,7 +130,6 @@ Each discussion contains:
     opacity: 0.4;
   }
 
-  /* Hover darkening for desktop */
   @media (hover: hover) and (pointer: fine) {
     a.thumbnail-link img {
       transition: all 0.3s ease;
