@@ -32,7 +32,7 @@ The **boxplot** shows that while both teams are centered on the same mean, one t
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
   <div class="imageBorder" >
     <img
-      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/bf2982f33e1169a15803b1c593f398b000d33234/Article%202%2C%20image%201%20v4.png?raw=true"
+    src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/4a74e50303f921a564c35dad7ae6df8e7c4d7fcc/Article%202%2C%20image%201%20v5.png?raw=true"
       alt="Boxplot Image 1"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
@@ -42,7 +42,7 @@ The **boxplot** shows that while both teams are centered on the same mean, one t
 
   <div class="imageBorder borderLeft" >
     <img
-      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/f5de6e18b4da4bb79ce5691ac48dd953b46de408/Article%202%2C%20image%202%20v3.png?raw=true"
+   src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/4a74e50303f921a564c35dad7ae6df8e7c4d7fcc/Article%202%2C%20image%202%20v5.png?raw=true"
       alt="Boxplot Image 2"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
