@@ -47,79 +47,118 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ## Hypothesis Test Visualizations
 
-<div style="max-width: 800px; margin: 0 auto; display: flex; flex-wrap: wrap; border: 1.5px solid #e2e8f0;">
-  <div style="flex: 1 1 50%; border-right: 1.5px solid #e2e8f0; border-bottom: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
+  <!-- First row -->
+  <div class="imageBorder" >
     <img
-      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png"
+    src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%201%20v2.png"
       alt="Hypothesis Image 1"
-      class="zoomable"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+    <div class="plus">+</div>
   </div>
 
-  <div style="flex: 1 1 50%; border-bottom: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+  <div class="imageBorder borderLeft" >
     <img
-      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png"
+    src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Atricle%205%2C%20image%202%20v2.png"
       alt="Hypothesis Image 2"
-      class="zoomable"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
   </div>
+</div>
 
-  <div style="flex: 1 1 50%; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 20px auto 0;">
+  <!-- Second row -->
+  <div class="imageBorder borderLeft" >
     <img
-      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png"
+    src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%203%20v2.png"
       alt="Hypothesis Image 3"
-      class="zoomable"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
   </div>
+</div>
 
-  <div style="flex: 1 1 50%; position: relative; overflow: hidden;">
+  <div class="imageBorder borderLeft" >
     <img
-      src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png"
+    src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/a1827491001287a4ade1414fe0dd9599b4c9a86f/Article%205%2C%20image%204%20v2.png"
       alt="Hypothesis Image 4"
-      class="zoomable"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
   </div>
 </div>
 
 <style>
-  div[style*="flex: 1 1 50%"] {
-    min-width: 40vw;
-  }
+  
+.imageBorder {
+flex: 1; border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;
+}
 
-  @media (hover: hover) and (pointer: fine) {
-    div[style*="flex: 1 1 50%"]:hover img.zoomable {
-      filter: brightness(0.9);
+.borderLeft {
+border-left: none;
+}
+
+.plus {
+position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;
+}
+  
+  /* Desktop: double size from 250px to ~500px */
+  @media (min-width: 769px) {
+    div[style*="flex: 1"] {
+      min-width: 500px;
+    }
+    div[style*="flex: 1"]:hover img.zoomable {
+      filter: brightness(0.85);
       transition: filter 0.3s ease;
+    }
+    div[style*="flex: 1"]:hover {
+      box-shadow: none;
+      filter: none;
+      z-index: 10;
+      transition: none;
     }
   }
 
-  /* Remove border on last column and last row */
-  div[style*="flex: 1 1 50%"]:nth-child(2n) {
-    border-right: none !important;
+  /* Mobile: keep exactly as is, side by side */
+  @media (max-width: 768px) {
+    div[style*="flex: 1"] {
+      min-width: 45vw;
+    }
   }
 
-  div[style*="flex: 1 1 50%"]:nth-last-child(-n+2) {
-    border-bottom: none !important;
+  /* Remove right border on last box */
+  div[style*="flex: 1"]:last-child {
+    border-right: none !important;
   }
 </style>
 
-<!-- Modal Zoom (reuse if already present) -->
-<div id="modal" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
-  <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
-  <img id="modal-img" src="" alt="Zoomed image" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-</div>
-
 <script>
+  // Modal Zoom script unchanged
   const zoomables = document.querySelectorAll('.zoomable');
-  const modal = document.getElementById('modal');
+  const modal = document.createElement('div');
+  modal.id = 'modal';
+  modal.style.cssText = `
+    display:none; 
+    position:fixed; 
+    z-index:1000; 
+    top:0; left:0; 
+    width:100vw; height:100vh; 
+    background:rgba(0,0,0,0.8); 
+    justify-content:center; 
+    align-items:center;
+  `;
+  modal.innerHTML = `
+    <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+    <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
+  `;
+  document.body.appendChild(modal);
+
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
 
@@ -136,14 +175,14 @@ This statistical approach would help me move beyond basic project metrics and de
     modalImg.src = '';
   });
 
-  modal.addEventListener('click', (e) => {
+  modal.addEventListener('click', e => {
     if (e.target === modal) {
       modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       modal.style.display = 'none';
       modalImg.src = '';
