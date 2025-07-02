@@ -103,7 +103,7 @@ position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4
   const zoomables = document.querySelectorAll('.zoomable');
   const modal = document.createElement('div');
   modal.id = 'modal';
-  modal.style.cssText = 
+  modal.style.cssText = `
     display:none; 
     position:fixed; 
     z-index:1000; 
@@ -112,11 +112,11 @@ position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4
     background:rgba(0,0,0,0.8); 
     justify-content:center; 
     align-items:center;
-  ;
-  modal.innerHTML = 
+  `;
+  modal.innerHTML = `
     <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
     <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-  ;
+  `;
   document.body.appendChild(modal);
 
   const modalImg = document.getElementById('modal-img');
