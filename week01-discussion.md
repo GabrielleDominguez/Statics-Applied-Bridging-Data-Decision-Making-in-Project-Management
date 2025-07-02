@@ -31,63 +31,92 @@ From the course content, we learned that statistics helps us *"describe data, ma
 ---
 
 ## Graph Visualizations
-
-<div style="display: flex; flex-wrap: wrap; max-width: 800px; margin: 0 auto; border: 1.5px solid #e2e8f0;">
-  <div style="flex: 1 1 50%; border-right: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
+  <div class="imageBorder" >
     <img
       src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png"
-      alt="Graph 1"
+      alt="Graph Visualization 1"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+    <div class="plus">+</div>
   </div>
 
-  <div style="flex: 1 1 50%; position: relative; overflow: hidden;">
+  <div class="imageBorder borderLeft" >
     <img
       src="https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104113.png"
-      alt="Graph 2"
+       alt="Graph Visualization 2"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events: none;">+</div>
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
   </div>
 </div>
 
 <style>
-  div[style*="flex: 1 1 50%"] {
-    min-width: 40vw;
-  }
+  
+.imageBorder {
+flex: 1; border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;
+}
 
-  @media (hover: hover) and (pointer: fine) {
-    div[style*="flex: 1 1 50%"]:hover img.zoomable {
-      filter: brightness(0.9);
+.borderLeft {
+border-left: none;
+}
+
+.plus {
+position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;
+}
+  
+  /* Desktop: double size from 250px to ~500px */
+  @media (min-width: 769px) {
+    div[style*="flex: 1"] {
+      min-width: 500px;
+    }
+    div[style*="flex: 1"]:hover img.zoomable {
+      filter: brightness(0.85);
       transition: filter 0.3s ease;
+    }
+    div[style*="flex: 1"]:hover {
+      box-shadow: none;
+      filter: none;
+      z-index: 10;
+      transition: none;
     }
   }
 
-  div[style*="flex: 1 1 50%"]:last-child {
+  /* Mobile: keep exactly as is, side by side */
+  @media (max-width: 768px) {
+    div[style*="flex: 1"] {
+      min-width: 45vw;
+    }
+  }
+
+  /* Remove right border on last box */
+  div[style*="flex: 1"]:last-child {
     border-right: none !important;
   }
 </style>
 
 <script>
+  // Modal Zoom script unchanged
   const zoomables = document.querySelectorAll('.zoomable');
-  const modal = document.getElementById('modal') || (() => {
-    const m = document.createElement('div');
-    m.id = 'modal';
-    m.style.cssText = `
-      display: none; position: fixed; z-index: 1000;
-      top: 0; left: 0; width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.8); justify-content: center; align-items: center;
-    `;
-    m.innerHTML = `
-      <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
-      <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
-    `;
-    document.body.appendChild(m);
-    return m;
-  })();
+  const modal = document.createElement('div');
+  modal.id = 'modal';
+  modal.style.cssText = `
+    display:none; 
+    position:fixed; 
+    z-index:1000; 
+    top:0; left:0; 
+    width:100vw; height:100vh; 
+    background:rgba(0,0,0,0.8); 
+    justify-content:center; 
+    align-items:center;
+  `;
+  modal.innerHTML = `
+    <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+    <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
+  `;
+  document.body.appendChild(modal);
 
   const modalImg = document.getElementById('modal-img');
   const modalClose = document.getElementById('modal-close');
@@ -105,14 +134,14 @@ From the course content, we learned that statistics helps us *"describe data, ma
     modalImg.src = '';
   });
 
-  modal.addEventListener('click', (e) => {
+  modal.addEventListener('click', e => {
     if (e.target === modal) {
       modal.style.display = 'none';
       modalImg.src = '';
     }
   });
 
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       modal.style.display = 'none';
       modalImg.src = '';
