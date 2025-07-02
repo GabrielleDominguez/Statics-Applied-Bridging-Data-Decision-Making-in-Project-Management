@@ -32,7 +32,123 @@ The **boxplot** shows that while both teams are centered on the same mean, one t
 ---
 ## Boxplot Visualization
 
-[<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Software%20Development%20Team%20Performance%20Analysis.png?raw=true" alt="Software Development Team Performance Analysis" width="400" />](https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decisions-in-Project-Management/blob/main/Software%20Development%20Team%20Performance%20Analysis.png?raw=true)
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
+  <div class="imageBorder" >
+    <img
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/7d08bfaa9184448e8e9e700a7997f08ebcab9333/Article%202%2C%20image%201%20v2.png?raw=true"
+      alt="Boxplot Image 1"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
+    />
+    <div class="plus">+</div>
+  </div>
+
+  <div class="imageBorder borderLeft" >
+    <img
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/7d08bfaa9184448e8e9e700a7997f08ebcab9333/Article%202%2C%20image%202%20v2.png?raw=true"
+      alt="Boxplot Image 2"
+      style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
+      class="zoomable"
+    />
+    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
+  </div>
+</div>
+
+<style>
+  
+.imageBorder {
+flex: 1; border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;
+}
+
+.borderLeft {
+border-left: none;
+}
+
+.plus {
+position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;
+}
+  
+  /* Desktop: double size from 250px to ~500px */
+  @media (min-width: 769px) {
+    div[style*="flex: 1"] {
+      min-width: 500px;
+    }
+    div[style*="flex: 1"]:hover img.zoomable {
+      filter: brightness(0.85);
+      transition: filter 0.3s ease;
+    }
+    div[style*="flex: 1"]:hover {
+      box-shadow: none;
+      filter: none;
+      z-index: 10;
+      transition: none;
+    }
+  }
+
+  /* Mobile: keep exactly as is, side by side */
+  @media (max-width: 768px) {
+    div[style*="flex: 1"] {
+      min-width: 45vw;
+    }
+  }
+
+  /* Remove right border on last box */
+  div[style*="flex: 1"]:last-child {
+    border-right: none !important;
+  }
+</style>
+
+<script>
+  // Modal Zoom script unchanged
+  const zoomables = document.querySelectorAll('.zoomable');
+  const modal = document.createElement('div');
+  modal.id = 'modal';
+  modal.style.cssText = 
+    display:none; 
+    position:fixed; 
+    z-index:1000; 
+    top:0; left:0; 
+    width:100vw; height:100vh; 
+    background:rgba(0,0,0,0.8); 
+    justify-content:center; 
+    align-items:center;
+  ;
+  modal.innerHTML = 
+    <span id="modal-close" style="position: fixed; top: 20px; right: 30px; color: white; font-size: 30px; font-weight: bold; cursor: pointer;">&times;</span>
+    <img id="modal-img" src="" alt="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5);" />
+  ;
+  document.body.appendChild(modal);
+
+  const modalImg = document.getElementById('modal-img');
+  const modalClose = document.getElementById('modal-close');
+
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+  });
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  });
+</script>
 
 ---
 
