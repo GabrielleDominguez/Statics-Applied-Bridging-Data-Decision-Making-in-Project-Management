@@ -43,7 +43,8 @@ This statistical approach would help me move beyond basic project metrics and de
 >  
 > Great question again, and I am looking forward to continuing to learn alongside you for the remainder of the semester.
 
----## Hypothesis Test Visualizations
+---
+## Hypothesis Test Visualizations
 
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
   <div class="imageBorder">
