@@ -25,11 +25,8 @@ This difference in variation has *critical business consequences.* A development
 
 The **boxplot** shows that while both teams are centered on the same mean, one team has a much greater range of results. This contrast makes it easy for stakeholders to spot the difference in their project performance.
 
-<!-- Lightbox2 CSS and JS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
 ---
+
 ## Boxplot Visualization
 
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
