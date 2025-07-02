@@ -72,7 +72,7 @@ This statistical approach would help me move beyond basic project metrics and de
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 20px auto 0; background: white; padding: 20px;">
   <div class="imageBorder">
     <img
-      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/9ce83097a8ab9d8bd2c6303e6217a27a8b673ffb/Article%205%2C%20image%203%20v3.png?raw=true"
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/65156eaf56ca57c55cff72637c17429d4c073f7c/Article%205%2C%20image%203%20v4.png?raw=true"
       alt="Hypothesis Image 3"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
@@ -82,7 +82,7 @@ This statistical approach would help me move beyond basic project metrics and de
 
   <div class="imageBorder borderLeft">
     <img
-      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/9ce83097a8ab9d8bd2c6303e6217a27a8b673ffb/Article%205%2C%20image%204%20v3.png?raw=true"
+      src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/65156eaf56ca57c55cff72637c17429d4c073f7c/Article%205%2C%20image%204%20v4.png?raw=true"
       alt="Hypothesis Image 4"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
