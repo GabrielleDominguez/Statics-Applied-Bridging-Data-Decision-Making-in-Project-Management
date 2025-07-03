@@ -1,5 +1,7 @@
 # Week 5 Discussion: Using Hypothesis Testing to Make Smarter Project Decisions
 
+<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8ae61b643462fd795d5f333720f8b35436170685/Article%205%2C%20image%201%20v3.png?raw=true" alt="Week 5 Hypothesis Testing Cover" style="display:none;" />
+
 > *This discussion shows how hypothesis testing helps validate project outcomes with data, improving decision-making and proving real business impact.*
 
 ---
