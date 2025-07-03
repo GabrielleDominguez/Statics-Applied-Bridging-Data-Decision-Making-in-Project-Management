@@ -1,12 +1,11 @@
 <!-- Open Graph meta tags for social preview -->
 <meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8ae61b643462fd795d5f333720f8b35436170685/Article%205%2C%20image%201%20v3.png?raw=true">
-<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8ae61b643462fd795d5f333720f8b35436170685/Article%205%2C%20image%201%20v3.png?raw=true">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Week 5 Discussion: Using Hypothesis Testing to Make Smarter Project Decisions">
-<meta property="og:description" content="How hypothesis testing validates project outcomes and enhances data-driven decisions.">
+<meta property="og:description" content="This discussion shows how hypothesis testing helps validate project outcomes with data, improving decision-making and proving real business impact.">
 
 <!-- Article header image (visual only) -->
-<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8ae61b643462fd795d5f333720f8b35436170685/Article%205%2C%20image%201%20v3.png?raw=true" alt="Graph Visual Preview" style="width: 100%; border: 1.5px solid #e2e8f0; margin-bottom: 1rem;" />
+<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/8ae61b643462fd795d5f333720f8b35436170685/Article%205%2C%20image%201%20v3.png?raw=true" alt="Hypothesis Test Visual Preview" style="width: 100%; border: 1.5px solid #e2e8f0; margin-bottom: 1rem;" />
 
 # Week 5 Discussion: Using Hypothesis Testing to Make Smarter Project Decisions
 
