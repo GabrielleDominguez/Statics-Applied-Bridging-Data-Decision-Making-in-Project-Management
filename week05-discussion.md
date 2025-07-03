@@ -70,8 +70,8 @@ This statistical approach would help me move beyond basic project metrics and de
   </div>
 </div>
 
-<!-- Second Row -->
-<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
+<!-- Second Row with spacing added -->
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 12px auto 0 auto;">
   <div class="imageBorder">
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/65156eaf56ca57c55cff72637c17429d4c073f7c/Article%205%2C%20image%203%20v4.png?raw=true"
