@@ -69,7 +69,7 @@ This statistical approach would help me move beyond basic project metrics and de
   </div>
 </div>
 
-<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 20px auto 0; background: white; padding: 20px;">
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
   <div class="imageBorder">
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/65156eaf56ca57c55cff72637c17429d4c073f7c/Article%205%2C%20image%203%20v4.png?raw=true"
@@ -77,19 +77,19 @@ This statistical approach would help me move beyond basic project metrics and de
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
+    <div class="plus">+</div>
   </div>
 
-  <div class="imageBorder borderLeft">
+<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
+  <div class="imageBorder">
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/65156eaf56ca57c55cff72637c17429d4c073f7c/Article%205%2C%20image%204%20v4.png?raw=true"
       alt="Hypothesis Image 4"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
+    <div class="plus">+</div>
   </div>
-</div>
 
 <style>
   
