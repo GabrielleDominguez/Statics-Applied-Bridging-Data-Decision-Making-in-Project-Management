@@ -47,6 +47,7 @@ This statistical approach would help me move beyond basic project metrics and de
 
 ## Hypothesis Test Visualizations
 
+<!-- First Row -->
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
   <div class="imageBorder">
     <img
@@ -65,10 +66,11 @@ This statistical approach would help me move beyond basic project metrics and de
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
     />
-    <div style="position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4); pointer-events:none;">+</div>
+    <div class="plus">+</div>
   </div>
 </div>
 
+<!-- Second Row -->
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
   <div class="imageBorder">
     <img
@@ -80,8 +82,7 @@ This statistical approach would help me move beyond basic project metrics and de
     <div class="plus">+</div>
   </div>
 
-<div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
-  <div class="imageBorder">
+  <div class="imageBorder borderLeft">
     <img
       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/65156eaf56ca57c55cff72637c17429d4c073f7c/Article%205%2C%20image%204%20v4.png?raw=true"
       alt="Hypothesis Image 4"
@@ -90,6 +91,7 @@ This statistical approach would help me move beyond basic project metrics and de
     />
     <div class="plus">+</div>
   </div>
+</div>
 
 <style>
   
