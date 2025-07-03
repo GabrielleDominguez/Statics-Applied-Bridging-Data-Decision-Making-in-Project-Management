@@ -1,11 +1,7 @@
-<!-- Open Graph meta tags for social preview -->
-<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/Article%201%2C%20image%201.png?raw=true">
+<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e9bfec267e13ca9bd2a7fd51882c703d766e1d63/Article%201%2C%20image%201.png?raw=true">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Week 1 Discussion: Using Data Types & Graphs to Uncover Meaningful Project Insights">
 <meta property="og:description" content="Exploring nominal and ratio data with visual analysis in project management.">
-
-<!-- Article header image (visual only) -->
-<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/main/Article%201%2C%20image%201.png?raw=true" alt="Graph Visual Preview" style="width: 100%; border: 1.5px solid #e2e8f0; margin-bottom: 1rem;" />
 
 # Week 1 Discussion: Using Data Types & Graphs to Uncover Meaningful Project Insights
 
