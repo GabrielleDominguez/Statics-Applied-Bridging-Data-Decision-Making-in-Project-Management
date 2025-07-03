@@ -1,3 +1,15 @@
+---
+title: "Week 1 Discussion: Using Data Types & Graphs"
+description: "This discussion explores how different types of data can be used to analyze project management tools and their impact on project success."
+image: "https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png"
+layout: default
+permalink: /week1-discussion/
+---
+
+# Week 1 Discussion: Using Data Types & Graphs to Uncover Meaningful Project Insights
+
+> *This discussion explores how different types of data can be used...*
+
 # Week 1 Discussion: Using Data Types & Graphs to Uncover Meaningful Project Insights
 
 > *This discussion explores how different types of data can be used to analyze project management tools and their impact on project success, demonstrating the use of nominal and ratio data with appropriate graphical methods.*
