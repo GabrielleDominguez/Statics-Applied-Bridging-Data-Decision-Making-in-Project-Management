@@ -105,6 +105,18 @@ position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4
   div[style*="flex: 1"]:last-child {
     border-right: none !important;
   }
+  
+  @media (hover: hover) and (pointer: fine) {
+  .imageBorder:hover img.zoomable {
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+  }
+
+  .imageBorder:hover .plus {
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+  }
+}
 </style>
 
 <script>
