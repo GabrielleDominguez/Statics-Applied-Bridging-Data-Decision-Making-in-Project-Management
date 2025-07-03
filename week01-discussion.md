@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Discussion: Using Data Types & Graphs"
-description: "This discussion explores how different types of data can be used to analyze project management tools and their impact on project success."
+description: "This discussion explores how data types impact project tracking tools."
 image: "https://raw.githubusercontent.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/Screenshot%202025-06-23%20104128.png"
 layout: default
 permalink: /week1-discussion/
