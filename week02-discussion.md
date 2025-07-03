@@ -32,7 +32,7 @@ The **boxplot** shows that while both teams are centered on the same mean, one t
 
 ---
 
-## Boxplot Visualization
+## Boxplot Visualizations
 
 <div style="display: flex; flex-wrap: nowrap; max-width: 1100px; margin: 0 auto;">
   <div class="imageBorder" >
