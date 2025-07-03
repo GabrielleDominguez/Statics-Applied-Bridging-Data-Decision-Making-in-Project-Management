@@ -1,5 +1,7 @@
 # Week 2 Discussion: Using Measures of Center & Variation to Evaluate Team Performance
 
+<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/0ace3bb0847c61018f2c28df93381757fd91469c/Article%202%2C%20image%201%20v8.png?raw=true" alt="Week 2 Boxplot Cover" style="display:none;" />
+
 > *This discussion demonstrates how variation can uncover critical performance differences that averages alone may conceal, enhancing analysis of team output and delivery risk.*
 
 ---
