@@ -1,6 +1,10 @@
-# Week 4 Discussion: Using the Central Limit Theorem to Strengthen Project Forecasting
+<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Week 4 Discussion: Using the Central Limit Theorem to Strengthen Project Forecasting">
+<meta property="og:description" content="How project managers use the Central Limit Theorem to improve accuracy and leadership confidence.">
+<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" />
 
-<img src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" alt="Week 4 Forecasting Cover" style="display:none;" />
+# Week 4 Discussion: Using the Central Limit Theorem to Strengthen Project Forecasting
 
 > *This discussion explores how the Central Limit Theorem allows project managers to use sample data to reliably estimate population parameters, enhancing planning accuracy and leadership confidence.*
 
