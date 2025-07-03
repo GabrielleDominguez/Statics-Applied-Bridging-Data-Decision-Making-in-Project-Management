@@ -44,7 +44,7 @@ From the course content, we learned that statistics helps us *"describe data, ma
 
   <div class="imageBorder borderLeft" >
     <img
-       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/504cd2f96269c967b31e9bfb130c4312c2588908/Article%201%2C%20image%202%20v3.png?raw=true"
+       src="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/1046eefd9ab0fbdc3824b81cc75d087d719dcec8/Article%201%2C%20image%202%20v4.png?raw=true"
        alt="Graph Visualization 2"
       style="width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0; transition: filter 0.3s ease;"
       class="zoomable"
