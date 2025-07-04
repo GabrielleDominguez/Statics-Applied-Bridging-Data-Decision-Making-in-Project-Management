@@ -1,9 +1,3 @@
-<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Week 4 Discussion: Using the Central Limit Theorem to Strengthen Project Forecasting">
-<meta property="og:description" content="How project managers use the Central Limit Theorem to improve accuracy and leadership confidence.">
-<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/93f32c8b2ecd9146c1ce521b00630e13e77c3d53/Article%204%2C%20image%201%2C%20resize%20v2.png?raw=true" />
-
 # Week 4 Discussion: Using the Central Limit Theorem to Strengthen Project Forecasting
 
 > *This discussion explores how the Central Limit Theorem allows project managers to use sample data to reliably estimate population parameters, enhancing planning accuracy and leadership confidence.*
@@ -174,6 +168,59 @@ position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4
       modal.style.display = 'none';
       modalImg.src = '';
     }
+  });
+
+function generateOpenGraphTags() {
+    const currentURL = window.location.href;
+    
+    const titleElement = document.querySelector('h1');
+    const title = titleElement ? titleElement.textContent.trim() : '';
+    
+    const imageElement = document.querySelector('img');
+    let imageURL = '';
+    if (imageElement) {
+      imageURL = imageElement.src;
+      if (imageURL.startsWith('/')) {
+        imageURL = window.location.origin + imageURL;
+      }
+    }
+    
+    const paragraphs = document.querySelectorAll('p');
+    let description = '';
+    for (let p of paragraphs) {
+      if (p.textContent.trim() && p.textContent.trim().length > 20) {
+        description = p.textContent.trim();
+        if (description.length > 160) {
+          description = description.substring(0, 157) + '...';
+        }
+        break;
+      }
+    }
+    
+    function updateMetaTag(property, content, attribute = 'property') {
+      if (!content) return;
+      let metaTag = document.querySelector(`meta[${attribute}="${property}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute(attribute, property);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.setAttribute('content', content);
+    }
+    
+    updateMetaTag('og:title', title);
+    updateMetaTag('og:description', description);
+    updateMetaTag('og:image', imageURL);
+    updateMetaTag('og:url', currentURL);
+    updateMetaTag('twitter:title', title);
+    updateMetaTag('twitter:description', description);
+    updateMetaTag('twitter:image', imageURL);
+    
+    if (title) document.title = title;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(generateOpenGraphTags, 100);
   });
 </script>
 
