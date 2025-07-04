@@ -26,7 +26,7 @@ Earlier in my career, I felt pressure to know all the answers or be the most tec
 
 ---
 
-> **Reply from Chloe Lanham:**  
+> **Reply from Classmate:**  
 > Hey Gabrielle, your response was clear to read and helped me understand CLT even more. I wonder what would happen if the random sample were even more than 40? Would we still feel 95% confident that the reviews would fall in the range? I agree that CLT can help us make smarter, more confident decisions.
 
 > **Response from Gabrielle Dominguez:**  
