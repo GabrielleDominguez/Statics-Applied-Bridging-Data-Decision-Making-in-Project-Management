@@ -233,5 +233,5 @@ Pearson Education. (2022). *Elementary statistics* course materials.
 
 ---
 
-[← Back to Home](https://gabrielledominguez.github.io/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/)
+[← Back to Home](https://gabrielledominguez.github.io/Statistics-Applied-Bridging-Data-Decision-Making-in-Project-Management/)
 
