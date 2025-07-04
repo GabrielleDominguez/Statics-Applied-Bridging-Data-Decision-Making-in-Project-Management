@@ -1,4 +1,4 @@
-# Statics Applied: Bridging Data & Decision Making in Project Management
+# Statistics Applied: Bridging Data & Decision Making in Project Management
 
 Welcome to my portfolio showcasing key insights and practical applications from Elementary Statistics coursework at **Florida Southern College**.
 
