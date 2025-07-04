@@ -32,7 +32,7 @@ As a project manager, I use this same framework. Every project has expected outc
 > Hi Gabrielle, I like that you are the only one who has said yes so far to this question. I loved how you used such a strong example; it helped me understand why you would choose to play the game, but also helped me understand that you can play games of this sort, but be mindful, like gambling. I also think it's cool that you use this strategy in your everyday life; it shows that probability influences several decisions and plans. Are there ways you think this game would become "unfair" to play? Or do you approach every situation with both statistical and family wisdom?
 
 > **Response from Gabrielle Dominguez:**  
-> Hi *Classmate*,  
+> Hi Classmate,  
 >  
 > You raise an excellent question in regards to when the game becomes *"unfair."* From my vantage point, the answer has **both mathematical and subjective parts.**   
 >  
