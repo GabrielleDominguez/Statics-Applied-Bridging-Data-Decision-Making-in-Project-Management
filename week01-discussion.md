@@ -1,8 +1,3 @@
-<meta property="og:image" content="https://github.com/GabrielleDominguez/Statics-Applied-Bridging-Data-Decision-Making-in-Project-Management/blob/e9bfec267e13ca9bd2a7fd51882c703d766e1d63/Article%201%2C%20image%201.png?raw=true">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Week 1 Discussion: Using Data Types & Graphs">
-<meta property="og:description" content="Exploring nominal and ratio data with visual analysis in project management.">
-
 # Week 1 Discussion: Using Data Types & Graphs to Uncover Meaningful Project Insights
 
 > *This discussion explores how different types of data can be used to analyze project management tools and their impact on project success, demonstrating the use of nominal and ratio data with appropriate graphical methods.*
@@ -195,6 +190,59 @@ position: absolute; top: 6px; right: 6px; font-size: 16px; color: rgba(0,0,0,0.4
       modal.style.display = 'none';
       modalImg.src = '';
     }
+  });
+  
+    function generateOpenGraphTags() {
+    const currentURL = window.location.href;
+    
+    const titleElement = document.querySelector('h1');
+    const title = titleElement ? titleElement.textContent.trim() : '';
+    
+    const imageElement = document.querySelector('img');
+    let imageURL = '';
+    if (imageElement) {
+      imageURL = imageElement.src;
+      if (imageURL.startsWith('/')) {
+        imageURL = window.location.origin + imageURL;
+      }
+    }
+    
+    const paragraphs = document.querySelectorAll('p');
+    let description = '';
+    for (let p of paragraphs) {
+      if (p.textContent.trim() && p.textContent.trim().length > 20) {
+        description = p.textContent.trim();
+        if (description.length > 160) {
+          description = description.substring(0, 157) + '...';
+        }
+        break;
+      }
+    }
+    
+    function updateMetaTag(property, content, attribute = 'property') {
+      if (!content) return;
+      let metaTag = document.querySelector(`meta[${attribute}="${property}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute(attribute, property);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.setAttribute('content', content);
+    }
+    
+    updateMetaTag('og:title', title);
+    updateMetaTag('og:description', description);
+    updateMetaTag('og:image', imageURL);
+    updateMetaTag('og:url', currentURL);
+    updateMetaTag('twitter:title', title);
+    updateMetaTag('twitter:description', description);
+    updateMetaTag('twitter:image', imageURL);
+    
+    if (title) document.title = title;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(generateOpenGraphTags, 100);
   });
 </script>
 
