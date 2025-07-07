@@ -1,7 +1,3 @@
----
-image: https://raw.githubusercontent.com/GabrielleDominguez/Statistics-Applied-Bridging-Data-Decision-Making-in-Project-Management/main/LinkedIn%20Header.png
----
-
 # Statistics Applied: Bridging Data & Decision Making in Project Management
 
 Welcome to my portfolio showcasing key insights and practical applications from Elementary Statistics coursework at **Florida Southern College**.
